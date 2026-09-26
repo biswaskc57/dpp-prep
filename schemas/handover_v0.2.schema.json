@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dpp-prep/handover/0.2",
+  "title": "DPP-related handover package, version 0.2",
+  "description": "Approved information elements prepared by dpp-prep. Structural conformity to this schema does not establish factual correctness or regulatory compliance.",
+  "type": "object",
+  "required": ["schema_version", "product_id", "profile_version", "run_id", "generated_at", "released_by", "elements", "excluded"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "product_id": {"type": "string", "minLength": 1},
+    "profile_version": {"type": "string"},
+    "run_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string"},
+    "released_by": {"type": "string", "minLength": 1},
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["element_id", "name", "value", "method", "source", "doc_sha256", "quote", "reviewed_by", "approved_by", "record_version"],
+        "additionalProperties": false,
+        "properties": {
+          "element_id": {"type": "string", "pattern": "^E[0-9]{2}$"},
+          "name": {"type": "string"},
+          "value": {"type": "string", "minLength": 1},
+          "unit": {"type": ["string", "null"]},
+          "scope": {"type": ["string", "null"]},
+          "method": {"enum": ["ai", "import", "manual"]},
+          "source": {"type": "string"},
+          "doc_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "span": {"type": ["array", "null"], "items": {"type": "integer"}, "minItems": 2, "maxItems": 2},
+          "quote": {"type": "string", "minLength": 1},
+          "reviewed_by": {"type": "string"},
+          "approved_by": {"type": "string"},
+          "record_version": {"type": "string"}
+        }
+      }
+    },
+    "excluded": {"type": "object", "additionalProperties": {"type": "string"}}
+  }
+}

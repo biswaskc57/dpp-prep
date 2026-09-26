@@ -1,0 +1,11 @@
+# Evaluation scenarios for W-100. Written before running any AI model.
+# swap: which baseline document is replaced by which variant
+# expect: expected end state per element after preparation; elements not
+#         listed are expected to be "checked".
+baseline:            {swap: {}, expect: {}}
+uw_conflict:         {swap: {D3_performance_report: V2_D3_uw_conflict}, expect: {E06: flagged}}
+uw_other_size:       {swap: {D3_performance_report: V3_D3_uw_other_size}, expect: {E06: flagged}}
+uw_missing:          {swap: {D1_datasheet: V1_D1_uw_missing, D3_performance_report: V1_D3_uw_missing}, expect: {E06: unresolved}}
+ug_only_in_datasheet: {swap: {D1_datasheet: V6_D1_ug_only}, expect: {E06: checked}}   # Ug must not be taken as Uw
+composition_95:      {swap: {D2_supplier_declaration: V5_D2_composition_95}, expect: {E03: flagged}}
+wrong_product:       {swap: {D2_supplier_declaration: V4_D2_wrong_product}, expect: {E03: flagged}}

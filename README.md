@@ -1,0 +1,48 @@
+# dpp-prep v0.3
+
+Master's thesis prototype: governed preparation of DPP-relevant manufacturing
+information. AI may propose a value; the tool decides whether it is supported,
+checked, reviewed and authorised before it is handed over.
+
+Illustrative product: **W-100**, a fictitious timber-aluminium window.
+All product data in `data/` is invented research data.
+
+## The flow in one line
+
+    wish list + documents (Markdown or PDF) -> suggest (AI or import) -> fact-check
+      -> rule-check -> reviewer chooses on the review screen
+      -> different approver approves this exact version -> schema-checked export
+    (every step, including every refusal and every raw AI output, goes into the diary)
+
+## Run it
+
+    pip install -e ".[dev]"
+    pytest                                   # 39 tests
+    streamlit run app/review_app.py          # the review screen
+    python scripts/run_demo.py               # the story, step by step
+    python scripts/evaluate.py               # all scenarios, outcome vs expectation
+    python scripts/fault_injection.py        # do the tests notice removed safeguards?
+
+## With a real AI model (once chosen)
+
+    export LANGEXTRACT_API_KEY=...           # your key
+    python scripts/evaluate.py --extractor langextract --model <model-id> --runs 3
+
+Each run is kept; the results table lists every outcome that differs from
+what was expected in `config/evaluation_scenarios.yaml`.
+
+## Where things are
+
+    config/     wish list, stand-in patterns, LangExtract examples, evaluation scenarios
+    src/        engine: sources, extract, verify, checks, states, service, audit, export
+    app/        review screen (Streamlit)
+    schemas/    handover schema (JSON Schema)
+    data/w100/  baseline documents, variants, PDFs, ERP record, expected outcomes
+    tests/      workflow, rules, PDF, adapter, screen, runner, audit regressions
+    scripts/    demo, evaluation, fault injection, PDF generation
+    docs/       specification v0.3, architecture, process, traceability, development log
+
+## Status
+
+See docs/specification_v0.3.md, sections 5 and 7. Not yet done: a real AI run,
+authentic documents, Docling for complex PDFs, CIRPASS-2 mapping.

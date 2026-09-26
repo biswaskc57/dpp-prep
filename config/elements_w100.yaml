@@ -1,0 +1,70 @@
+# Information profile for the illustrative product W-100  (profile version 0.2)
+# Fictitious manufacturer and product. Illustrative research data only.
+#
+# route:   extract = proposed from documents (AI step)
+#          import  = taken directly from a structured record (no AI)
+# must_contain / must_not_contain: words the supporting quote must / must not
+#          contain, so a quote about the wrong attribute cannot support a value
+# controls: which rule checks apply
+profile_version: "0.2"
+product:
+  id: W-100
+  model: "W-100 Timber-Aluminium Casement"
+  manufacturer: "Nordwin Ikkunat Oy (fictitious)"
+  required_scope: "1230 x 1480 mm"      # reference size for size-dependent values
+
+elements:
+  - id: E01
+    name: product_identifier
+    description: Product identifier
+    route: import
+    import_field: product_id
+    value_type: text
+    controls: [identity]
+  - id: E02
+    name: manufacturer
+    description: Manufacturer name
+    route: import
+    import_field: manufacturer
+    value_type: text
+    controls: [identity]
+  - id: E03
+    name: frame_material_composition
+    description: Frame material composition by mass share
+    route: extract
+    unit: "%"
+    value_type: text
+    must_contain: ["%"]
+    controls: [identity, composition_sum]
+  - id: E04
+    name: glazing_specification
+    description: Glazing unit build-up
+    route: extract
+    value_type: text
+    must_contain: ["glazing"]
+    controls: [identity, conflict]
+  - id: E05
+    name: window_dimensions
+    description: Nominal window dimensions, width x height
+    route: import
+    import_field: nominal_size
+    unit: mm
+    value_type: text
+    controls: [identity, unit]
+  - id: E06
+    name: thermal_transmittance_uw
+    description: Declared thermal transmittance of the whole window (Uw)
+    route: extract
+    unit: "W/(m2K)"
+    value_type: number
+    must_contain: ["Uw"]
+    must_not_contain: ["Ug", "Uf"]      # glazing-only or frame-only values are not Uw
+    required_scope: reference_size
+    controls: [identity, unit, scope, conflict]
+  - id: E07
+    name: performance_report_id
+    description: Identifier of the supporting performance document
+    route: extract
+    value_type: text
+    must_contain: ["NW-PR-"]
+    controls: [identity, conflict]

@@ -1,0 +1,10 @@
+# Deterministic stand-in extractor for W-100 (NOT the research object).
+# It lets the controls be tested before the AI model is connected.
+# value: regex whose group 1 is the value; the whole matching line is the quote.
+# context: optional regex whose group 1 gives the scope; its line is the context quote.
+product_id: '(?:\*\*)?Product ID:(?:\*\*)?\s*(\S+)'   # works for Markdown and PDF text
+elements:
+  E03: {value: '^((?:Pine wood.*%)\.)$'}
+  E04: {value: '^(?:Glazing: )?([Tt]riple glazing .*)$'}
+  E06: {value: '^Uw = ([\d.,]+) W/\(m2K\).*$', context: '(?:reference )?size (\d+ x \d+ mm)'}
+  E07: {value: '(NW-PR-\d{4}-\d{3})'}
