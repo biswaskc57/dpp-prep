@@ -1,0 +1,21 @@
+# Few-shot example for the LangExtract adapter.
+# Deliberately a DIFFERENT fictitious product (door D-200), so the model never
+# sees W-100's answers in advance. The Ug line has no extraction on purpose:
+# it teaches that a glazing-only value is not the whole-window Uw.
+text: |
+  Product ID: D-200
+  Manufacturer: Esimerkki Ovet Oy
+  Frame: oak 81 %, steel 12 %, polyurethane core 6 %, seals 1 %.
+  Glazing: double glazing 4-16-4, one low-e coating, argon filled.
+  Ug = 0.6 W/(m2K) (glazing only).
+  Uw = 0.9 W/(m2K) for reference size 1230 x 1480 mm.
+  Declared in performance report EX-PR-2025-003.
+extractions:
+  - {class: document_product_id, text: "D-200", attributes: {value: "D-200"}}
+  - {class: frame_material_composition, text: "oak 81 %, steel 12 %, polyurethane core 6 %, seals 1 %.",
+     attributes: {value: "oak 81 %, steel 12 %, polyurethane core 6 %, seals 1 %."}}
+  - {class: glazing_specification, text: "double glazing 4-16-4, one low-e coating, argon filled.",
+     attributes: {value: "double glazing 4-16-4, one low-e coating, argon filled."}}
+  - {class: thermal_transmittance_uw, text: "Uw = 0.9 W/(m2K) for reference size 1230 x 1480 mm.",
+     attributes: {value: "0.9", unit: "W/(m2K)", scope: "1230 x 1480 mm"}}
+  - {class: performance_report_id, text: "EX-PR-2025-003", attributes: {value: "EX-PR-2025-003"}}
