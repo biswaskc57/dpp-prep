@@ -1,6 +1,6 @@
 [project]
 name = "dpp-prep"
-version = "0.3.0"
+version = "0.3.1"
 description = "AI-assisted preparation of DPP-relevant manufacturing information with evidence, checks, review and controlled approval"
 requires-python = ">=3.10"
 dependencies = ["pydantic>=2", "pyyaml", "jsonschema>=4", "pymupdf>=1.24"]

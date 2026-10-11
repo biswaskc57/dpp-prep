@@ -18,3 +18,5 @@
 | AI output treated as untrusted | R03, R04 | `LangExtractExtractor`: anchored, non-empty spans only; raw output logged | L01–L05 |
 | Real AI evaluation, repeated runs | method | `scripts/evaluate.py`, scenarios written in advance | E01 |
 | Tests detect removed safeguards | method | `scripts/fault_injection.py` | 12 of 12 |
+| AI output treated as untrusted (local model) | R03, R04 | `OllamaExtractor`: schema-bound answer; unanchored quotes passed to the evidence check; raw output logged and saved | O01-O09 |
+| Reproducible model runs | method | `ResponseRecorder`, `ReplayResponses`, `--replay` | O06, O07 |

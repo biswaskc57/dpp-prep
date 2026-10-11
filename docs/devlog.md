@@ -60,3 +60,20 @@
 - 39 tests pass. Fault injection extended to the adapter: 12 of 12 detected.
 - Open: model provider and API key; authentic documents; Docling for complex
   PDFs; CIRPASS-2 mapping; practitioner walkthrough.
+
+## 2026-10-11: v0.3.1, local language model through Ollama
+- Cloud route blocked in practice: gemini-2.5-flash withdrawn for new users,
+  gemini-3.8-flash returned 503 (high demand) on 8 Oct 2026; no budget for
+  paid API credit. Decision: run the AI step on local open-weight models.
+- Added `ollama_extract.OllamaExtractor`: one call per document to Ollama's
+  /api/chat; answer forced into a JSON schema built from the element profile;
+  temperature 0, seed 42, thinking off where supported; model digest recorded.
+- Design change against the LangExtract adapter: unanchored model quotes are
+  no longer discarded inside the adapter. They are passed on, so the ordinary
+  evidence check drops them and the diary records the reason. The controls
+  themselves are unchanged.
+- Every raw answer is saved to out/model_outputs_*.jsonl; `--replay` repeats a
+  run exactly from that file, without the model (reproducibility).
+- `scripts/check_ollama.py`: one-document check before a full run.
+- Tests O01-O09 (fake transport and a fake HTTP server): 48 tests pass;
+  fault injection still 12 of 12. No real model run yet at this point.

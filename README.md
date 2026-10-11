@@ -28,6 +28,13 @@ All product data in `data/` is invented research data.
     export LANGEXTRACT_API_KEY=...           # your key
     python scripts/evaluate.py --extractor langextract --model <model-id> --runs 3
 
+Local model through Ollama (v0.3.1), no API key needed:
+
+    ollama pull qwen3.5:9b
+    python scripts/check_ollama.py --model qwen3.5:9b          # one document, quick check
+    python scripts/evaluate.py --extractor ollama --model qwen3.5:9b --runs 3
+    python scripts/evaluate.py --replay out/model_outputs_<...>.jsonl   # repeat a run exactly
+
 Each run is kept; the results table lists every outcome that differs from
 what was expected in `config/evaluation_scenarios.yaml`.
 
