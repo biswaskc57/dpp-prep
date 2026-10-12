@@ -1,0 +1,59 @@
+# Production-like tier (added 12 Oct 2026, v0.3.1).
+# Expectations PRE-REGISTERED by scripts/preregister.py on 2026-10-12T12:36:05+00:00
+# by running the oracle (faithful proposals from config/ground_truth.yaml) through the
+# unchanged controls, before any language model saw these documents.
+# expect: Markdown documents; expect_pdf: the PDF versions. Elements not listed: checked.
+# reasons: which control produced a non-checked state for a faithful proposal.
+real_baseline:
+  docs:
+  - R1_datasheet
+  - R2_supplier_declaration
+  - R3_performance_report
+  - R4_declaration_of_performance
+  expect:
+    E06: flagged
+  reasons:
+    E06: support; unit; scope; scope; support; unit; scope; conflict
+  expect_pdf:
+    E06: flagged
+real_stale_report:
+  docs:
+  - R1_datasheet
+  - R2_supplier_declaration
+  - R3_performance_report
+  - R4_declaration_of_performance
+  - R5_old_performance_report
+  expect:
+    E04: flagged
+    E06: flagged
+    E07: flagged
+  reasons:
+    E04: conflict
+    E06: support; unit; scope; scope; support; unit; scope; conflict
+    E07: conflict
+  expect_pdf:
+    E04: flagged
+    E06: flagged
+    E07: flagged
+real_sash_only:
+  docs:
+  - R1_datasheet
+  - R2b_supplier_declaration_sash_only
+  - R3_performance_report
+  - R4_declaration_of_performance
+  expect:
+    E03: unresolved
+    E06: flagged
+  reasons:
+    E03: no supported value
+    E06: support; unit; scope; scope; support; unit; scope; conflict
+  expect_pdf:
+    E03: unresolved
+    E06: flagged
+_document_sha256:
+  R1_datasheet: 64cbec5fc40e79f61350cd10d15c09ae793060f209cfc16ec294b24b8f0b266a
+  R2_supplier_declaration: b1fb090dbea3945a02b880430a08eaee303b14f2e9513cb79c6497842fe22f2f
+  R2b_supplier_declaration_sash_only: 58c61ef664b697068607e5fcb4f899c9d81bbce2d4df145f3242e338b5dacd63
+  R3_performance_report: 22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b
+  R4_declaration_of_performance: dc92fa63348dfa28a0a86dbc0bf262ee97a480d96e86612cf7f5abe22e23adf0
+  R5_old_performance_report: 7e4af5024c2e28a690fa8e681d2d066292abfe407f4a84ab5b5abbe676320cbe

@@ -1,4 +1,4 @@
-# dpp-prep v0.3
+# dpp-prep v0.3.2
 
 Master's thesis prototype: governed preparation of DPP-relevant manufacturing
 information. AI may propose a value; the tool decides whether it is supported,
@@ -34,6 +34,12 @@ Local model through Ollama (v0.3.1), no API key needed:
     python scripts/check_ollama.py --model qwen3.5:9b          # one document, quick check
     python scripts/evaluate.py --extractor ollama --model qwen3.5:9b --runs 3
     python scripts/evaluate.py --replay out/model_outputs_<...>.jsonl   # repeat a run exactly
+
+Production-like documents (v0.3.2) and the analysis:
+
+    python scripts/evaluate.py --tier realistic --extractor ollama --model qwen3.5:9b --runs 3
+    python scripts/analyse.py                     # all results in out/ -> out/analysis/summary.md
+    python scripts/preregister.py                 # only to re-derive expectations; already done 12 Oct 2026
 
 Each run is kept; the results table lists every outcome that differs from
 what was expected in `config/evaluation_scenarios.yaml`.

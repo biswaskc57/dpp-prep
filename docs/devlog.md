@@ -77,3 +77,34 @@
 - `scripts/check_ollama.py`: one-document check before a full run.
 - Tests O01-O09 (fake transport and a fake HTTP server): 48 tests pass;
   fault injection still 12 of 12. No real model run yet at this point.
+
+## 2026-10-12: v0.3.2, production-like tier, oracle pre-registration, analysis
+- Realistic tier (data/w100/realistic, PDFs in data/w100/pdf_realistic): a
+  longer datasheet with two product variants, Finnish labels and typographic
+  units; a supplier declaration with frame and sash tables and recycled
+  content; a full test report with Ug/Uf/Psi inputs and a second, informative
+  Uw at another size; a Declaration of Performance; a replaced older report;
+  a sash-only declaration. Three scenarios: real_baseline, real_stale_report,
+  real_sash_only.
+- config/ground_truth.yaml: what each document states, distractors, and the
+  value that should finally be released per scenario.
+- Oracle proposer (proposes exactly what each document states). Validation:
+  it reproduces all 49 simple-tier expectations written in September.
+  Pre-registration: run through the UNCHANGED controls on the realistic tier
+  before any model saw the documents; expectations, date and document
+  SHA-256 written to config/evaluation_scenarios_realistic.yaml.
+- Pre-registered finding: faithful proposals of the thermal value are
+  flagged in every realistic scenario, because the controls compare units and
+  scopes literally (W/(m²K) vs W/(m2K), × vs x) and the Declaration of
+  Performance does not state the reference size. The controls are too
+  literal for production notation. Not fixed: the controls stay frozen; this
+  is reported as a finding.
+- Stand-in on the realistic tier: 15 of 21 (its patterns do not find the
+  product identifier in the new layouts) - fixed rules do not transfer.
+- scripts/analyse.py: state-level (outcomes matched, escapes, over-flagged,
+  stability) and proposal-level measures (correct, distractor, quote not
+  found, precision, recall, unwarranted proposals, product id, parse errors,
+  identical runs, seconds per call). Works on v0.3.1 output too.
+- PDF generator wraps long lines (no breaks at hyphens); simple-tier PDFs kept
+  byte-identical to v0.3.
+- 52 tests pass; fault injection 12 of 12.

@@ -1,0 +1,126 @@
+# Ground truth for the W-100 fixture (v0.3.1). Written 12 Oct 2026 BEFORE any
+# local model saw the realistic documents.
+#
+# documents:   what each document states, element by element.
+#   product    the product identifier the document is about
+#   statements faithful statements a correct extractor would propose
+#              (quote = exact text in the document; scope as written there)
+#   distractors values in the document that belong to something else
+#              (another product variant, Ug/Uf, a replaced report, the sash)
+# truth:       per scenario, the value that SHOULD finally be released, or null
+#              when no value can correctly be released from these documents.
+# Elements E01, E02, E05 come from the ERP record (no AI) and are not listed.
+
+documents:
+  # ---------------------------------------------------------- simple tier
+  D1_datasheet:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E06, value: "1.1", unit: "W/(m2K)", scope: "1230 x 1480 mm", quote: "Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm."}
+      - {element: E07, value: "NW-PR-2026-014", quote: "Declared in performance report NW-PR-2026-014."}
+  D2_supplier_declaration:
+    product: W-100
+    statements:
+      - {element: E03, value: "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.", quote: "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."}
+  D3_performance_report:
+    product: W-100
+    statements:
+      - {element: E04, value: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E06, value: "1.1", unit: "W/(m2K)", scope: "1230 x 1480 mm", quote: "Uw = 1.1 W/(m2K)"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "NW-PR-2026-014"}
+  V1_D1_uw_missing:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E07, value: "NW-PR-2026-014", quote: "Declared in performance report NW-PR-2026-014."}
+  V1_D3_uw_missing:
+    product: W-100
+    statements:
+      - {element: E04, value: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E07, value: "NW-PR-2026-014", quote: "NW-PR-2026-014"}
+  V2_D3_uw_conflict:
+    product: W-100
+    statements:
+      - {element: E04, value: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E06, value: "1.3", unit: "W/(m2K)", scope: "1230 x 1480 mm", quote: "Uw = 1.3 W/(m2K)"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "NW-PR-2026-014"}
+  V3_D3_uw_other_size:
+    product: W-100
+    statements:
+      - {element: E04, value: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "Triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E06, value: "1.1", unit: "W/(m2K)", scope: "1000 x 1000 mm", quote: "Uw = 1.1 W/(m2K)"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "NW-PR-2026-014"}
+  V4_D2_wrong_product:
+    product: W-110
+    statements:
+      - {element: E03, value: "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.", quote: "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."}
+  V5_D2_composition_95:
+    product: W-100
+    statements:
+      - {element: E03, value: "Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.", quote: "Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."}
+  V6_D1_ug_only:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E07, value: "NW-PR-2026-014", quote: "Declared in performance report NW-PR-2026-014."}
+    distractors:
+      - {element: E06, value: "0.5", why: "glazing-only Ug, not whole-window Uw"}
+
+  # ------------------------------------------------------- realistic tier
+  R1_datasheet:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled."}
+      - {element: E06, value: "1.1", unit: "W/(m²K)", scope: "1230 × 1480 mm", quote: "Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "Test report: NW-PR-2026-014 (replaces NW-PR-2025-031)."}
+    distractors:
+      - {element: E06, value: "1.0", why: "Uw of the W-100 XL variant at 1480 × 1780 mm"}
+      - {element: E06, value: "0.5", why: "centre-of-glass Ug"}
+      - {element: E06, value: "1.2", why: "frame Uf"}
+      - {element: E07, value: "NW-PR-2025-031", why: "replaced report"}
+  R2_supplier_declaration:
+    product: W-100
+    statements:
+      - {element: E03, value: "pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.", quote: "pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."}
+    distractors:
+      - {element: E03, value: "74 21 4 1", why: "sash profile set, not frame"}
+      - {element: E03, value: "35", why: "recycled aluminium content"}
+  R2b_supplier_declaration_sash_only:
+    product: W-100
+    statements: []
+    distractors:
+      - {element: E03, value: "74 21 4 1", why: "sash profile set, not frame"}
+  R3_performance_report:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled", quote: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled"}
+      - {element: E06, value: "1.1", unit: "W/(m2K)", scope: "1230 x 1480 mm", quote: "Uw = 1.1 W/(m2K)"}
+      - {element: E06, value: "1.2", unit: "W/(m2K)", scope: "1000 x 1200 mm", quote: "the calculated value is Uw = 1.2 W/(m2K)"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "| Report ID | NW-PR-2026-014 |"}
+    distractors:
+      - {element: E06, value: "0.5", why: "Ug input value"}
+      - {element: E07, value: "NW-PR-2025-031", why: "replaced report"}
+  R4_declaration_of_performance:
+    product: W-100
+    statements:
+      - {element: E06, value: "1.1", unit: "W/(m²·K)", scope: "", quote: "| Thermal transmittance | Uw = 1,1 W/(m²·K) |"}
+      - {element: E07, value: "NW-PR-2026-014", quote: "test report NW-PR-2026-014"}
+  R5_old_performance_report:
+    product: W-100
+    statements:
+      - {element: E04, value: "triple glazing 4-14-4-14-4, one low-e coating, argon filled", quote: "triple glazing 4-14-4-14-4, one low-e coating, argon filled"}
+      - {element: E06, value: "1.2", unit: "W/(m2K)", scope: "1230 x 1480 mm", quote: "Uw = 1.2 W/(m2K)"}
+      - {element: E07, value: "NW-PR-2025-031", quote: "| Report ID | NW-PR-2025-031 |"}
+
+truth:
+  _default:
+    E03: "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+    E04: "triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+    E06: "1.1"
+    E07: "NW-PR-2026-014"
+  uw_conflict: {E06: null}          # which of 1.1 and 1.3 is right cannot be decided from the documents
+  uw_missing: {E06: null}
+  composition_95: {E03: null}
+  wrong_product: {E03: null}
+  real_sash_only: {E03: null}       # no frame composition in the documents
