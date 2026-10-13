@@ -1,10 +1,12 @@
 # Python
 __pycache__/
 *.pyc
-.venv/
 *.egg-info/
 .pytest_cache/
-# Run outputs: every evaluation writes here; keep results out of the code history
+.venv/
+.env
+# Run outputs: every evaluation writes here; results are kept out of the code history
 out/
+*.sqlite
 # macOS
 .DS_Store
