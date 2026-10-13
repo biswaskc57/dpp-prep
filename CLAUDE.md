@@ -11,7 +11,8 @@ See docs/specification_v0.3.md and docs/architecture.md.
 - One small change at a time. Write or update the test first, then the code.
 - Explain every change in plain words: what changed and why.
 - Run `pytest` after every change. Report the result.
-- Never commit, push or tag. I commit myself.
+- Claude may commit, but asks me first and waits for my yes. Claude never
+  pushes or tags without asking.
 
 ## Never change without a decision record in docs/adr/
 - The approval and state rules (src/dpp_prep/states.py)
