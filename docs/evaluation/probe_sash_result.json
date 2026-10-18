@@ -1,0 +1,34 @@
+{
+  "probe": "sash-only E03, post hoc (not pre-registered)",
+  "frozen_code": "v0.3.2 (2be1ea5)",
+  "element": "E03",
+  "document": "R2b_supplier_declaration_sash_only.md",
+  "value": "pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",
+  "quote": "Sash profile set, share of sash mass: pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",
+  "recorded": {
+    "product_id": "PP-SA-100",
+    "quote_found": true,
+    "checks": {
+      "support": true,
+      "value_type": true,
+      "identity": false,
+      "composition_sum": true
+    },
+    "failed_checks": [
+      "identity"
+    ],
+    "state": "flagged"
+  },
+  "counterfactual": {
+    "product_id": "W-100",
+    "quote_found": true,
+    "checks": {
+      "support": true,
+      "value_type": true,
+      "identity": true,
+      "composition_sum": true
+    },
+    "failed_checks": [],
+    "state": "checked"
+  }
+}
