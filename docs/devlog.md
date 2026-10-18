@@ -108,3 +108,23 @@
 - PDF generator wraps long lines (no breaks at hyphens); simple-tier PDFs kept
   byte-identical to v0.3.
 - 52 tests pass; fault injection 12 of 12.
+
+## 2026-10-18 - Analysis correction after the model runs (analysis script only)
+
+- During post-processing of the 17-18 October runs, scripts/analyse.py was
+  found to count model items without a value as proposals (mostly as "quote
+  not found"). The adapter (ollama_extract) discards such items before any
+  check, so they never became proposals in the application.
+- Corrected: items with an empty, blank or null value are counted in a
+  separate "empty" column and listed in proposals.csv with class "empty";
+  they are excluded from proposals, precision, quote not found, other wrong
+  and unwarranted. "recall" is renamed "value recall": it counts every value
+  a document states, including values the element does not require (e.g.
+  the informative Uw for a test specimen size).
+- Test first: R05 failed on the old script and passes now; 53 tests pass.
+- Analysis regenerated from the saved results without calling any model.
+  State-level results (outcomes matched, escapes, over-flagged, stability)
+  and escapes.csv are unchanged. The previous output is kept as
+  analysis_before_fix/ next to the results.
+- Not changed: the frozen demonstrator (v0.3.2), documents, profiles,
+  expected outcomes and raw model answers.

@@ -80,3 +80,26 @@ def test_R04_analysis_finds_escapes_and_classifies_distractors(tmp_path):
     props = list(csv.DictReader((tmp_path / "analysis/proposals.csv").open(encoding="utf-8")))
     assert any(p["class"] == "distractor" and p["element"] == "E03" for p in props)
     assert any(p["class"] == "distractor" and p["element"] == "E07" for p in props)
+
+
+def test_R05_empty_answers_are_counted_apart_from_proposals():
+    """An item without a value is not a proposal: the adapter discards it before any check
+    (ollama_extract: blank or null value -> skipped). The analysis must do the same, so that
+    'quote not found' only counts real proposals whose quote is not in the document."""
+    text = "Uw = 1.1 W/(m2K)\nUf = 1.3 W/(m2K)\n"
+    answer = {"product_id": "W-100", "extractions": [
+        {"element": "uw", "value": "1.1", "quote": "Uw = 1.1 W/(m2K)"},       # correct
+        {"element": "uw", "value": "1.3", "quote": "Uf = 1.3 W/(m2K)"},       # genuine quote, wrong value
+        {"element": "uw", "value": "1.1", "quote": "Uw is 1.1 everywhere"},   # quote not in the document
+        {"element": "uw", "value": "", "quote": "Uw = 1.1 W/(m2K)"},          # empty
+        {"element": "uw", "value": None, "quote": ""},                        # null
+        {"element": "uw", "value": "   ", "quote": "x"},                      # blank
+    ]}
+    entries = [(1, "s", "doc", {"raw": json.dumps(answer), "seconds": 1.0, "_doc_text": text})]
+    docs_gt = {"doc": {"product": "W-100", "statements": [{"element": "E06", "value": "1.1"}]}}
+    c, props = an.analyse_proposals(entries, docs_gt, {"uw": "E06"})
+    assert c["empty"] == 3
+    assert c["proposals"] == 3
+    assert (c["correct"], c["other wrong"], c["quote not found"]) == (1, 1, 1)
+    assert c["proposals"] == c["correct"] + c["distractor"] + c["other wrong"] + c["quote not found"]
+    assert [p["class"] for p in props].count("empty") == 3

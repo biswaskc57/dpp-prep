@@ -25,8 +25,11 @@ Measures (all reported as counts with their denominators)
     quote not found    the quote is not in the document (invented evidence;
                        the evidence check drops these)
     other wrong        anything else
-    precision          correct / all proposals
-    recall             statements found / statements in the documents
+    empty              items without a value; the adapter discards them before
+                       any check, so they are not proposals (counted apart)
+    precision          correct / all proposals (empty items excluded)
+    value recall       statements found / statements in the documents (every
+                       value a document states, required for the element or not)
     unwarranted        proposals for an element the document says nothing about
     product id correct the identifier the model reported equals the document's
     parse errors       answers that were not valid JSON
@@ -213,7 +216,18 @@ def analyse_proposals(entries, docs_gt, name_to_id):
             eid = name_to_id.get(x.get("element"))
             if eid is None:
                 continue
-            value, quote = str(x.get("value", "")).strip(), str(x.get("quote", "")).strip()
+            value = "" if x.get("value") is None else str(x.get("value")).strip()
+            quote = "" if x.get("quote") is None else str(x.get("quote")).strip()
+            if not value:
+                # Same rule as the adapter (ollama_extract): an item without a value is
+                # discarded before any check, so it is not a proposal. Counted apart.
+                c["empty"] += 1
+                props.append({"run": run, "scenario": scen, "document": doc, "element": eid, "value": "",
+                              "unit": x.get("unit", ""), "scope": x.get("scope", ""), "quote": quote,
+                              "class": "empty", "document_states": "; ".join(
+                                  str(s["value"]) for s in (g.get("statements") or []) if s["element"] == eid)
+                              or "(nothing)"})
+                continue
             c["proposals"] += 1
             stmts = [s for s in (g.get("statements") or []) if s["element"] == eid]
             dis = [d for d in (g.get("distractors") or []) if d["element"] == eid]
@@ -294,7 +308,8 @@ def main(argv=None) -> None:
             row.update({
                 "proposals": c["proposals"], "correct": c["correct"], "distractor": c["distractor"],
                 "quote not found": c["quote not found"], "other wrong": c["other wrong"],
-                "precision": pct(c["correct"], c["proposals"]), "recall": pct(c["found"], c["statements"]),
+                "empty": c["empty"],
+                "precision": pct(c["correct"], c["proposals"]), "value recall": pct(c["found"], c["statements"]),
                 "unwarranted": c["unwarranted"], "product id correct": pct(c["pid_correct"], c["pid_total"]),
                 "parse errors": c["parse_errors"], "identical runs": pct(c["identical_runs"], c["answer_groups"]),
                 "seconds per call (mean/max)": f"{c['sec_mean']} / {c['sec_max']}",
