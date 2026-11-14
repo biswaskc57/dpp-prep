@@ -1,0 +1,164 @@
+{
+  "pool": "basic",
+  "element": "E06",
+  "prompt": "A",
+  "system_prompt": "You prepare product information for a Digital Product Passport. You have tools to list and read the sources available for a product, to get its ERP record, and to submit a candidate value with its exact supporting quote for automated checks. Find the value of information element E06 (Declared thermal transmittance of the whole window (Uw)) for product W-100 and submit it for checks. When you are finished, reply with only a JSON object: {\"status\": \"proposed\" or \"unresolved\", \"value\": ..., \"source_id\": ..., \"quote\": ..., \"reason\": ...}.",
+  "steps": [
+    {
+      "type": "tool",
+      "n": 1,
+      "name": "list_sources",
+      "arguments": {
+        "product_id": "W-100"
+      },
+      "result": {
+        "product_id": "W-100",
+        "sources": [
+          {
+            "source_id": "erp_product_record",
+            "title": "ERP product record (export)",
+            "kind": "structured record",
+            "sha256": "81d0f30ebbeb7b80ceb6ce8992f4831c8b622c796f686c5e6eb1e168b6daa8f1"
+          },
+          {
+            "source_id": "doc_1",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "4bf3f48b2d6c429ff30b7a5693ebf3fe4392f1904a44dd3c5f77950527e65adb"
+          },
+          {
+            "source_id": "doc_2",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "93d9af2e01e7f50acfbbb6745db8960386756e3bd2355c5ba5ab0b73a0c07609"
+          },
+          {
+            "source_id": "doc_3",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "d7713dcba6f5d013e07493f87f3b99bd2eefa6aaa619392b8be0d2e10e8214d5"
+          }
+        ],
+        "note": "fictional research data"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 2,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_1"
+      },
+      "result": {
+        "source_id": "doc_1",
+        "text": "# Performance Report NW-PR-2026-014\n*Fictitious test report. Illustrative research data only.*\n\n**Product ID:** W-100\n**Manufacturer:** Nordwin Ikkunat Oy\n**Report ID:** NW-PR-2026-014\n\n## Thermal transmittance\nCalculated for reference size 1230 x 1480 mm.\nUw = 1.1 W/(m2K)\n\n## Glazing\nTriple glazing 4-16-4-16-4, two low-e coatings, argon filled.\n",
+        "sha256": "4bf3f48b2d6c429ff30b7a5693ebf3fe4392f1904a44dd3c5f77950527e65adb"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 3,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_2"
+      },
+      "result": {
+        "source_id": "doc_2",
+        "text": "# Nordwin Ikkunat Oy — Product Datasheet\n*Fictitious manufacturer and product. Illustrative research data only.*\n\n**Product:** W-100 Timber-Aluminium Casement\n**Product ID:** W-100\n**Manufacturer:** Nordwin Ikkunat Oy, Lahti, Finland\n\n## Construction\nFrame: laminated pine, exterior aluminium cladding.\nGlazing: triple glazing 4-16-4-16-4, two low-e coatings, argon filled.\n\n## Dimensions\nNominal size: 1230 x 1480 mm (width x height).\n\n## Thermal performance\nUw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.\nDeclared in performance report NW-PR-2026-014.\n",
+        "sha256": "93d9af2e01e7f50acfbbb6745db8960386756e3bd2355c5ba5ab0b73a0c07609"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 4,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_3"
+      },
+      "result": {
+        "source_id": "doc_3",
+        "text": "# Supplier Material Declaration\n*Fictitious supplier and product. Illustrative research data only.*\n\n**Supplier:** Pohjan Profiili Oy\n**Customer:** Nordwin Ikkunat Oy\n**Product ID:** W-100\n**Component:** Frame profile set\n\n## Frame material composition (share of frame mass)\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\n\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.\n",
+        "sha256": "d7713dcba6f5d013e07493f87f3b99bd2eefa6aaa619392b8be0d2e10e8214d5"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 5,
+      "name": "run_candidate_checks",
+      "arguments": {
+        "element_id": "E06",
+        "value": "1.1",
+        "quote": "Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.",
+        "source_id": "doc_2",
+        "unit": "W/(m2K)",
+        "scope": "1230 x 1480 mm",
+        "product_id": "W-100"
+      },
+      "result": {
+        "element_id": "E06",
+        "element": "Declared thermal transmittance of the whole window (Uw)",
+        "source_id": "doc_2",
+        "source_sha256": "93d9af2e01e7f50acfbbb6745db8960386756e3bd2355c5ba5ab0b73a0c07609",
+        "quote_found": true,
+        "dropped_reason": null,
+        "checks": [
+          {
+            "name": "support",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "value_type",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "identity",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "unit",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "scope",
+            "passed": true,
+            "reason": ""
+          }
+        ],
+        "state": "checked",
+        "state_source": "frozen dpp-prep v0.3.2 pipeline (commit 08d5840)",
+        "not_executed": [
+          "review",
+          "approval",
+          "readiness assessment",
+          "package release"
+        ],
+        "note": "'checked' means the configured checks passed; it does not mean DPP-ready."
+      }
+    },
+    {
+      "type": "final",
+      "content": "{\"status\": \"proposed\", \"value\": 1.1, \"source_id\": \"doc_2\", \"quote\": \"Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.\", \"reason\": \"All checks passed\"}",
+      "parsed": {
+        "status": "proposed",
+        "value": 1.1,
+        "source_id": "doc_2",
+        "quote": "Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.",
+        "reason": "All checks passed"
+      }
+    }
+  ],
+  "final": {
+    "status": "proposed",
+    "value": 1.1,
+    "source_id": "doc_2",
+    "quote": "Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.",
+    "reason": "All checks passed"
+  },
+  "stop": "final answer",
+  "seconds": 200.6,
+  "run": 1
+}

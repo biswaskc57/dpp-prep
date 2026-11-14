@@ -1,0 +1,148 @@
+tier,run,scenario,element,demonstrator_state,failed_checks,criterion,criterion_result,criterion_rule,Available,Aligned,Representable,Of sufficient quality,Evidenced,Validated,Authorised,Current,Available rule,Aligned rule,Representable rule,Of sufficient quality rule,Evidenced rule,Validated rule,Authorised rule,Current rule,readiness
+simple,1,baseline,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,baseline,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,baseline,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,1,baseline,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,baseline,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,baseline,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,1,baseline,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_conflict,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_conflict,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_conflict,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,1,uw_conflict,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_conflict,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_conflict,E06,flagged,scope; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+simple,1,uw_conflict,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_other_size,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_other_size,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_other_size,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,1,uw_other_size,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_other_size,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_other_size,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,1,uw_other_size,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_missing,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_missing,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_missing,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,1,uw_missing,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,uw_missing,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,uw_missing,E06,unresolved,,consistency,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+simple,1,uw_missing,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E03,checked,,composition,pass,B-crit-1,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,ug_only_in_datasheet,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,1,ug_only_in_datasheet,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,composition_95,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,composition_95,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,composition_95,E03,flagged,support; composition_sum; composition_sum,composition,fail,B-crit-2,met,met,met,not met,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C12,C14,C18,C21,C2,not ready
+simple,1,composition_95,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,composition_95,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,composition_95,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,1,composition_95,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,wrong_product,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,wrong_product,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,wrong_product,E03,flagged,support; composition_sum; identity,composition,insufficient evidence,B-crit-4,met,not met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C8,C9,C13,C14,C18,C21,C2,not ready
+simple,1,wrong_product,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,1,wrong_product,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,1,wrong_product,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,1,wrong_product,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,baseline,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,baseline,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,baseline,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,2,baseline,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,baseline,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,baseline,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,2,baseline,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_conflict,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_conflict,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_conflict,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,2,uw_conflict,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_conflict,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_conflict,E06,flagged,scope; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+simple,2,uw_conflict,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_other_size,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_other_size,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_other_size,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,2,uw_other_size,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_other_size,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_other_size,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,2,uw_other_size,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_missing,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_missing,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_missing,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,2,uw_missing,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,uw_missing,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,uw_missing,E06,unresolved,,consistency,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+simple,2,uw_missing,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E03,checked,,composition,pass,B-crit-1,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,ug_only_in_datasheet,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,2,ug_only_in_datasheet,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,composition_95,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,composition_95,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,composition_95,E03,flagged,support; composition_sum; composition_sum,composition,fail,B-crit-2,met,met,met,not met,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C12,C14,C18,C21,C2,not ready
+simple,2,composition_95,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,composition_95,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,composition_95,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,2,composition_95,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,wrong_product,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,wrong_product,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,wrong_product,E03,flagged,support; composition_sum; identity,composition,insufficient evidence,B-crit-4,met,not met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C8,C9,C13,C14,C18,C21,C2,not ready
+simple,2,wrong_product,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,2,wrong_product,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,2,wrong_product,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,2,wrong_product,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,baseline,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,baseline,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,baseline,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,3,baseline,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,baseline,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,baseline,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,3,baseline,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_conflict,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_conflict,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_conflict,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,3,uw_conflict,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_conflict,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_conflict,E06,flagged,scope; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+simple,3,uw_conflict,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_other_size,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_other_size,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_other_size,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,3,uw_other_size,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_other_size,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_other_size,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,3,uw_other_size,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_missing,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_missing,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_missing,E03,flagged,support; composition_sum,composition,insufficient evidence,B-crit-4,met,met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C13,C14,C18,C21,C2,not ready
+simple,3,uw_missing,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,uw_missing,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,uw_missing,E06,unresolved,,consistency,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+simple,3,uw_missing,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E03,checked,,composition,pass,B-crit-1,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,ug_only_in_datasheet,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,3,ug_only_in_datasheet,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,composition_95,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,composition_95,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,composition_95,E03,flagged,support; composition_sum; composition_sum,composition,fail,B-crit-2,met,met,met,not met,not met,not met,not yet assessed,not yet assessed,C3,C7,C9,C12,C14,C18,C21,C2,not ready
+simple,3,composition_95,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,composition_95,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,composition_95,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,3,composition_95,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,wrong_product,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,wrong_product,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,wrong_product,E03,flagged,support; composition_sum; identity,composition,insufficient evidence,B-crit-4,met,not met,met,not yet assessed,not met,not met,not yet assessed,not yet assessed,C3,C8,C9,C13,C14,C18,C21,C2,not ready
+simple,3,wrong_product,E04,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined
+simple,3,wrong_product,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+simple,3,wrong_product,E06,flagged,scope,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+simple,3,wrong_product,E07,checked,,consistency,pass,B-crit-5,met,met,met,met,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C11,C16,C17,C21,C2,undetermined

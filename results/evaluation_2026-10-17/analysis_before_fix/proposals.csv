@@ -1,0 +1,880 @@
+proposer,tier,format,run,scenario,document,element,value,unit,scope,quote,class,document_states
+ollama-gemma4-12b,realistic,md,1,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_baseline,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,1,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,1,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,1,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-gemma4-12b,realistic,md,1,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"Sash profile set, share of sash mass: pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_baseline,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,2,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,2,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,2,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-gemma4-12b,realistic,md,2,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"Sash profile set, share of sash mass: pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_baseline,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,3,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,3,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,3,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Frame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-gemma4-12b,realistic,md,3,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R1_datasheet,E06,"1,0",W/(m²K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"Sash profile set, share of sash mass: pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-gemma4-12b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R5_old_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-4b,realistic,md,1,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E07,PP-MD-2026-119,,,PP-MD-2026-119,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R5_old_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-4b,realistic,md,2,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E07,PP-MD-2026-119,,,PP-MD-2026-119,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R2_supplier_declaration,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R2_supplier_declaration,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R2_supplier_declaration,E07,PP-MD-2026-118,,,PP-MD-2026-118,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R5_old_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-4b,realistic,md,3,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R1_datasheet,E03,"laminated Nordic pine, finger-jointed, water-based paint.",,,"laminated Nordic pine, finger-jointed, water-based paint.",other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R1_datasheet,E06,1.1,W/(m2K),1230 × 1480 mm,"Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R1_datasheet,E06,1.0,W/(m2K),1480 × 1780 mm,"Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | 1,0 W/(m²K)",quote not found,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E03,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",,,"pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %.",distractor,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E07,PP-MD-2026-119,,,PP-MD-2026-119,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R3_performance_report,E03,laminated pine frame with aluminium cladding.,,,laminated pine frame with aluminium cladding.,other wrong,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-4b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R5_old_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-9b,realistic,md,1,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R2b_supplier_declaration_sash_only,E03,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",,,Sash profile set (PP-SA-100) | 74 | 21 | 4 | 1 | 100,distractor,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,1,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R5_old_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-9b,realistic,md,2,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R2b_supplier_declaration_sash_only,E03,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",,,Sash profile set (PP-SA-100) | 74 | 21 | 4 | 1 | 100,distractor,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,2,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_baseline,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R2_supplier_declaration,E03,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R5_old_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R5_old_performance_report,E04,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",,,"triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",correct,"triple glazing 4-14-4-14-4, one low-e coating, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R5_old_performance_report,E06,1.2,W/(m2K),1230 x 1480 mm,Uw = 1.2 W/(m2K),correct,1.2
+ollama-qwen3.5-9b,realistic,md,3,real_stale_report,R5_old_performance_report,E07,NW-PR-2025-031,,,NW-PR-2025-031,correct,NW-PR-2025-031
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R1_datasheet,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R1_datasheet,E06,"1,1",W/(m²K),1230 × 1480 mm,"1,1 W/(m²K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R2b_supplier_declaration_sash_only,E03,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",,,Sash profile set (PP-SA-100) | 74 | 21 | 4 | 1 | 100,distractor,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R3_performance_report,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R3_performance_report,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1; 1.2
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E06,"1,1",W/(m²·K),,"Uw = 1,1 W/(m²·K)",correct,1.1
+ollama-qwen3.5-9b,realistic,md,3,real_sash_only,R4_declaration_of_performance,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,1,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,1,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,1,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-gemma4-12b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,1,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,1,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,1,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,1,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,1,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,1,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,1,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,1,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,1,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,2,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,2,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,2,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-gemma4-12b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,2,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,2,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,2,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,2,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,2,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,2,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,2,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,2,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,2,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,3,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,3,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,3,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-gemma4-12b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,3,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,3,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,3,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-gemma4-12b,simple,md,3,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-gemma4-12b,simple,md,3,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-gemma4-12b,simple,md,3,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-gemma4-12b,simple,md,3,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-gemma4-12b,simple,md,3,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-gemma4-12b,simple,md,3,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,1,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,1,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D1_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D3_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D3_uw_missing,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,1,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,1,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,1,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,1,wrong_product,V4_D2_wrong_product,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,wrong_product,V4_D2_wrong_product,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,wrong_product,V4_D2_wrong_product,E07,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,1,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,2,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,2,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D1_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D3_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D3_uw_missing,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,2,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,2,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,2,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,2,wrong_product,V4_D2_wrong_product,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,wrong_product,V4_D2_wrong_product,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,wrong_product,V4_D2_wrong_product,E07,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,2,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,3,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,baseline,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,3,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),1230 x 1480 mm,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),1000 x 1000 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D1_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D3_uw_missing,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D3_uw_missing,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,3,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,composition_95,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,3,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-4b,simple,md,3,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-4b,simple,md,3,wrong_product,V4_D2_wrong_product,E04,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,wrong_product,V4_D2_wrong_product,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,wrong_product,V4_D2_wrong_product,E07,,,,,quote not found,(nothing)
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D3_performance_report,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-4b,simple,md,3,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,1,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,baseline,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,1,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D3_uw_missing,E06,,,1230 x 1480 mm,Calculated for reference size 1230 x 1480 mm.,other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,1,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,composition_95,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,1,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,1,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,1,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,2,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,baseline,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,2,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D3_uw_missing,E06,,,1230 x 1480 mm,Calculated for reference size 1230 x 1480 mm.,other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,2,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,composition_95,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,2,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,2,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,2,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,baseline,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,baseline,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,baseline,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,3,baseline,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,baseline,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,baseline,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,3,baseline,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,baseline,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E06,1.3,W/(m2K),,Uw = 1.3 W/(m2K),correct,1.3
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_conflict,V2_D3_uw_conflict,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_other_size,V3_D3_uw_other_size,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D1_uw_missing,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D1_uw_missing,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D1_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,uw_missing,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D3_uw_missing,E06,,,1230 x 1480 mm,Calculated for reference size 1230 x 1480 mm.,other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D3_uw_missing,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,uw_missing,V1_D3_uw_missing,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E03,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E06,,,,,quote not found,(nothing)
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,V6_D1_ug_only,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,D2_supplier_declaration,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,ug_only_in_datasheet,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,composition_95,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,composition_95,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,composition_95,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,3,composition_95,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,composition_95,V5_D2_composition_95,E03,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,composition_95,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,3,composition_95,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,composition_95,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D1_datasheet,E03,"laminated pine, exterior aluminium cladding.",,,"laminated pine, exterior aluminium cladding.",other wrong,(nothing)
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D1_datasheet,E04,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D1_datasheet,E06,1.1,W/(m2K),1230 x 1480 mm,Uw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.,correct,1.1
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D1_datasheet,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014
+ollama-qwen3.5-9b,simple,md,3,wrong_product,V4_D2_wrong_product,E03,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",,,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",correct,"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %."
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D3_performance_report,E06,1.1,W/(m2K),,Uw = 1.1 W/(m2K),correct,1.1
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D3_performance_report,E04,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",,,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",correct,"Triple glazing 4-16-4-16-4, two low-e coatings, argon filled"
+ollama-qwen3.5-9b,simple,md,3,wrong_product,D3_performance_report,E07,NW-PR-2026-014,,,NW-PR-2026-014,correct,NW-PR-2026-014

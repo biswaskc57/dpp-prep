@@ -1,0 +1,64 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks
+realistic,1,real_baseline,463db0882a4c,E01,checked,checked,True,W-100,0,
+realistic,1,real_baseline,463db0882a4c,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_baseline,463db0882a4c,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,1,real_baseline,463db0882a4c,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,1,real_baseline,463db0882a4c,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_baseline,463db0882a4c,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,1,real_baseline,463db0882a4c,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,1,real_stale_report,ca022eb1bb4c,E01,checked,checked,True,W-100,0,
+realistic,1,real_stale_report,ca022eb1bb4c,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_stale_report,ca022eb1bb4c,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,1,real_stale_report,ca022eb1bb4c,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; conflict
+realistic,1,real_stale_report,ca022eb1bb4c,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_stale_report,ca022eb1bb4c,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,0,support; unit; scope; support; unit; scope; identity; conflict
+realistic,1,real_stale_report,ca022eb1bb4c,E07,flagged,flagged,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; conflict
+realistic,1,real_sash_only,492db700694b,E01,checked,checked,True,W-100,0,
+realistic,1,real_sash_only,492db700694b,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_sash_only,492db700694b,E03,unresolved,flagged,False,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",0,support
+realistic,1,real_sash_only,492db700694b,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,1,real_sash_only,492db700694b,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_sash_only,492db700694b,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,1,real_sash_only,492db700694b,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,2,real_baseline,0257837f953f,E01,checked,checked,True,W-100,0,
+realistic,2,real_baseline,0257837f953f,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_baseline,0257837f953f,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,2,real_baseline,0257837f953f,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,2,real_baseline,0257837f953f,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_baseline,0257837f953f,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,2,real_baseline,0257837f953f,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,2,real_stale_report,2baa40e2eab8,E01,checked,checked,True,W-100,0,
+realistic,2,real_stale_report,2baa40e2eab8,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_stale_report,2baa40e2eab8,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,2,real_stale_report,2baa40e2eab8,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; conflict
+realistic,2,real_stale_report,2baa40e2eab8,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_stale_report,2baa40e2eab8,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,0,support; unit; scope; support; unit; scope; identity; conflict
+realistic,2,real_stale_report,2baa40e2eab8,E07,flagged,flagged,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; conflict
+realistic,2,real_sash_only,f7fab6d4522a,E01,checked,checked,True,W-100,0,
+realistic,2,real_sash_only,f7fab6d4522a,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_sash_only,f7fab6d4522a,E03,unresolved,flagged,False,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",0,support
+realistic,2,real_sash_only,f7fab6d4522a,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,2,real_sash_only,f7fab6d4522a,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_sash_only,f7fab6d4522a,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,2,real_sash_only,f7fab6d4522a,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,3,real_baseline,676e7629a0da,E01,checked,checked,True,W-100,0,
+realistic,3,real_baseline,676e7629a0da,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_baseline,676e7629a0da,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,3,real_baseline,676e7629a0da,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,3,real_baseline,676e7629a0da,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_baseline,676e7629a0da,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,3,real_baseline,676e7629a0da,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,3,real_stale_report,c98c0dd8a442,E01,checked,checked,True,W-100,0,
+realistic,3,real_stale_report,c98c0dd8a442,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_stale_report,c98c0dd8a442,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,3,real_stale_report,c98c0dd8a442,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; conflict
+realistic,3,real_stale_report,c98c0dd8a442,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_stale_report,c98c0dd8a442,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,0,support; unit; scope; support; unit; scope; identity; conflict
+realistic,3,real_stale_report,c98c0dd8a442,E07,flagged,flagged,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; conflict
+realistic,3,real_sash_only,a9b4272adbf1,E01,checked,checked,True,W-100,0,
+realistic,3,real_sash_only,a9b4272adbf1,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_sash_only,a9b4272adbf1,E03,unresolved,flagged,False,"Pine wood 74 %, Aluminium 21 %, EPDM 4 %, Steel 1 %",0,support
+realistic,3,real_sash_only,a9b4272adbf1,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,conflict
+realistic,3,real_sash_only,a9b4272adbf1,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_sash_only,a9b4272adbf1,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,0,support; unit; scope; support; unit; scope
+realistic,3,real_sash_only,a9b4272adbf1,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,

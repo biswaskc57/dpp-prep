@@ -1,0 +1,237 @@
+date:        Sat Oct 17 23:01:44 EEST 2026
+git commit:  2be1ea5621023934ea5527b523dc624e258b7c6a
+git status:  3 changed files (should be 0)
+ollama:      ollama version is 0.33.2
+mac:         Apple M1, 16 GB
+python:      Python 3.11.1
+
+=== stand-in, basic documents  (started 2026-10-17 23:01:45)
+49 of 49 element outcomes matched the expectation
+results: out/evaluation_standin_md_20261017-230145.csv
+=== stand-in, basic documents  finished: exit code 0, 0 seconds
+
+=== stand-in, production-like  (started 2026-10-17 23:01:45)
+15 of 21 element outcomes matched the expectation
+  run 1 real_baseline E03: expected checked, got unresolved (no value)
+  run 1 real_baseline E04: expected checked, got flagged (identity)
+  run 1 real_baseline E07: expected checked, got flagged (identity; identity; identity)
+  run 1 real_stale_report E03: expected checked, got unresolved (no value)
+  run 1 real_sash_only E04: expected checked, got flagged (identity)
+  run 1 real_sash_only E07: expected checked, got flagged (identity; identity; identity)
+results: out/evaluation_standin_realistic_md_20261017-230146.csv
+=== stand-in, production-like  finished: exit code 0, 1 seconds
+
+=== oracle, basic documents  (started 2026-10-17 23:01:46)
+49 of 49 element outcomes matched the expectation
+results: out/evaluation_oracle_md_20261017-230146.csv
+=== oracle, basic documents  finished: exit code 0, 0 seconds
+
+=== oracle, production-like  (started 2026-10-17 23:01:46)
+21 of 21 element outcomes matched the expectation
+results: out/evaluation_oracle_realistic_md_20261017-230147.csv
+=== oracle, production-like  finished: exit code 0, 1 seconds
+
+=== pull qwen3.5:9b  (started 2026-10-17 23:01:47)
+[?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠹ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠼ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠴ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠦ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠧ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K
+pulling f836f08f9211: 100% ▕██████████████████▏ 921 MB                         [K
+pulling 02d45dc1cf45: 100% ▕██████████████████▏ 5.6 GB                         [K
+pulling b507b9c2f6ca: 100% ▕██████████████████▏   13 B                         [K
+pulling 50cbab8a892c: 100% ▕██████████████████▏  11 KB                         [K
+pulling 9371364b27a5: 100% ▕██████████████████▏   65 B                         [K
+pulling 08f9698c1116: 100% ▕██████████████████▏  177 B                         [K
+verifying sha256 digest [K
+writing manifest [K
+success [K[?25h[?2026l
+=== pull qwen3.5:9b  finished: exit code 0, 1 seconds
+
+qwen3.5:9b    56671c2ab938    6.6 GB    Less than a second ago    
+qwen3.5:4b    d8b0f5e9760c    3.3 GB    6 days ago                
+=== qwen3.5:9b, basic documents, 3 runs  (started 2026-10-17 23:01:48)
+model qwen3.5:9b; digest 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90; raw answers -> out/model_outputs_ollama-qwen3.5-9b_simple_md_20261017-230148.jsonl
+123 of 147 element outcomes matched the expectation
+  run 1 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 1 baseline E06: expected checked, got flagged (scope)
+  run 1 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 1 ug_only_in_datasheet E06: expected checked, got flagged (scope)
+  run 1 composition_95 E06: expected checked, got flagged (scope)
+  run 1 wrong_product E06: expected checked, got flagged (scope)
+  run 2 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 2 baseline E06: expected checked, got flagged (scope)
+  run 2 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 2 ug_only_in_datasheet E06: expected checked, got flagged (scope)
+  run 2 composition_95 E06: expected checked, got flagged (scope)
+  run 2 wrong_product E06: expected checked, got flagged (scope)
+  run 3 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 3 baseline E06: expected checked, got flagged (scope)
+  run 3 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 3 ug_only_in_datasheet E06: expected checked, got flagged (scope)
+  run 3 composition_95 E06: expected checked, got flagged (scope)
+  run 3 wrong_product E06: expected checked, got flagged (scope)
+results: out/evaluation_ollama-qwen3.5-9b_md_20261017-230148.csv
+=== qwen3.5:9b, basic documents, 3 runs  finished: exit code 0, 3906 seconds
+
+=== qwen3.5:9b, production-like, 3 runs  (started 2026-10-18 00:06:54)
+model qwen3.5:9b; digest 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90; raw answers -> out/model_outputs_ollama-qwen3.5-9b_realistic_md_20261018-000655.jsonl
+54 of 63 element outcomes matched the expectation
+  run 1 real_baseline E04: expected checked, got flagged (conflict)
+  run 1 real_sash_only E03: expected unresolved, got flagged (support)
+  run 1 real_sash_only E04: expected checked, got flagged (conflict)
+  run 2 real_baseline E04: expected checked, got flagged (conflict)
+  run 2 real_sash_only E03: expected unresolved, got flagged (support)
+  run 2 real_sash_only E04: expected checked, got flagged (conflict)
+  run 3 real_baseline E04: expected checked, got flagged (conflict)
+  run 3 real_sash_only E03: expected unresolved, got flagged (support)
+  run 3 real_sash_only E04: expected checked, got flagged (conflict)
+results: out/evaluation_ollama-qwen3.5-9b_realistic_md_20261018-000655.csv
+=== qwen3.5:9b, production-like, 3 runs  finished: exit code 0, 2276 seconds
+
+=== pull qwen3.5:4b  (started 2026-10-18 00:44:50)
+[?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠴ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠴ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠦ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠇ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K
+pulling e56a899b1540: 100% ▕██████████████████▏ 675 MB                         [K
+pulling a9d0a3e1d8c9: 100% ▕██████████████████▏ 2.6 GB                         [K
+pulling b507b9c2f6ca: 100% ▕██████████████████▏   13 B                         [K
+pulling 50cbab8a892c: 100% ▕██████████████████▏  11 KB                         [K
+pulling 9371364b27a5: 100% ▕██████████████████▏   65 B                         [K
+pulling 788a4d94bc3f: 100% ▕██████████████████▏  177 B                         [K
+verifying sha256 digest [K
+writing manifest [K
+success [K[?25h[?2026l
+=== pull qwen3.5:4b  finished: exit code 0, 1 seconds
+
+qwen3.5:4b    d8b0f5e9760c    3.3 GB    Less than a second ago    
+qwen3.5:9b    56671c2ab938    6.6 GB    2 hours ago               
+=== qwen3.5:4b, basic documents, 3 runs  (started 2026-10-18 00:44:51)
+model qwen3.5:4b; digest d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04; raw answers -> out/model_outputs_ollama-qwen3.5-4b_simple_md_20261018-004451.jsonl
+132 of 147 element outcomes matched the expectation
+  run 1 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 1 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+  run 2 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 2 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+  run 3 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 3 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+results: out/evaluation_ollama-qwen3.5-4b_md_20261018-004451.csv
+=== qwen3.5:4b, basic documents, 3 runs  finished: exit code 0, 1967 seconds
+
+=== qwen3.5:4b, production-like, 3 runs  (started 2026-10-18 01:17:38)
+model qwen3.5:4b; digest d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04; raw answers -> out/model_outputs_ollama-qwen3.5-4b_realistic_md_20261018-011738.jsonl
+42 of 63 element outcomes matched the expectation
+  run 1 real_baseline E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum)
+  run 1 real_baseline E04: expected checked, got flagged (identity; conflict)
+  run 1 real_baseline E07: expected checked, got flagged (identity; support; conflict)
+  run 1 real_stale_report E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum; support; identity; composition_sum)
+  run 1 real_sash_only E03: expected unresolved, got flagged (support; identity; composition_sum; identity; support; composition_sum)
+  run 1 real_sash_only E04: expected checked, got flagged (identity; conflict)
+  run 1 real_sash_only E07: expected checked, got flagged (identity; support; identity; conflict)
+  run 2 real_baseline E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum)
+  run 2 real_baseline E04: expected checked, got flagged (identity; conflict)
+  run 2 real_baseline E07: expected checked, got flagged (identity; support; conflict)
+  run 2 real_stale_report E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum; support; identity; composition_sum)
+  run 2 real_sash_only E03: expected unresolved, got flagged (support; identity; composition_sum; identity; support; composition_sum)
+  run 2 real_sash_only E04: expected checked, got flagged (identity; conflict)
+  run 2 real_sash_only E07: expected checked, got flagged (identity; support; identity; conflict)
+  run 3 real_baseline E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum)
+  run 3 real_baseline E04: expected checked, got flagged (identity; conflict)
+  run 3 real_baseline E07: expected checked, got flagged (identity; support; conflict)
+  run 3 real_stale_report E03: expected checked, got flagged (support; identity; composition_sum; support; composition_sum; support; identity; composition_sum)
+  run 3 real_sash_only E03: expected unresolved, got flagged (support; identity; composition_sum; identity; support; composition_sum)
+  run 3 real_sash_only E04: expected checked, got flagged (identity; conflict)
+  run 3 real_sash_only E07: expected checked, got flagged (identity; support; identity; conflict)
+results: out/evaluation_ollama-qwen3.5-4b_realistic_md_20261018-011738.csv
+=== qwen3.5:4b, production-like, 3 runs  finished: exit code 0, 1517 seconds
+
+=== pull gemma4:12b  (started 2026-10-18 01:42:55)
+[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠼ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠦ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠧ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠇ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K
+pulling 0cb0cd0a5c49: 100% ▕██████████████████▏ 175 MB                         [K
+pulling bb722270d543: 100% ▕██████████████████▏ 7.4 GB                         [K
+pulling 7008a656050b: 100% ▕██████████████████▏ 465 MB                         [K
+pulling b507b9c2f6ca: 100% ▕██████████████████▏   13 B                         [K
+pulling 0d542e0c8804: 100% ▕██████████████████▏  10 KB                         [K
+pulling 2365fbb6d97b: 100% ▕██████████████████▏   64 B                         [K
+pulling e5ca99f91896: 100% ▕██████████████████▏  242 B                         [K
+verifying sha256 digest [K
+writing manifest [K
+success [K[?25h[?2026l
+=== pull gemma4:12b  finished: exit code 0, 1 seconds
+
+gemma4:12b    6114515d63c1    8.0 GB    Less than a second ago    
+=== gemma4:12b, basic documents, 3 runs  (started 2026-10-18 01:42:56)
+model gemma4:12b; digest 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b; raw answers -> out/model_outputs_ollama-gemma4-12b_simple_md_20261018-014257.jsonl
+132 of 147 element outcomes matched the expectation
+  run 1 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 1 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 1 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+  run 2 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 2 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 2 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+  run 3 baseline E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_conflict E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_other_size E03: expected checked, got flagged (support; composition_sum)
+  run 3 uw_missing E03: expected checked, got flagged (support; composition_sum)
+  run 3 ug_only_in_datasheet E03: expected checked, got flagged (support; composition_sum)
+results: out/evaluation_ollama-gemma4-12b_md_20261018-014257.csv
+=== gemma4:12b, basic documents, 3 runs  finished: exit code 0, 2831 seconds
+
+=== gemma4:12b, production-like, 3 runs  (started 2026-10-18 02:30:07)
+model gemma4:12b; digest 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b; raw answers -> out/model_outputs_ollama-gemma4-12b_realistic_md_20261018-023008.jsonl
+54 of 63 element outcomes matched the expectation
+  run 1 real_baseline E04: expected checked, got flagged (conflict)
+  run 1 real_sash_only E03: expected unresolved, got flagged (identity)
+  run 1 real_sash_only E04: expected checked, got flagged (conflict)
+  run 2 real_baseline E04: expected checked, got flagged (conflict)
+  run 2 real_sash_only E03: expected unresolved, got flagged (identity)
+  run 2 real_sash_only E04: expected checked, got flagged (conflict)
+  run 3 real_baseline E04: expected checked, got flagged (conflict)
+  run 3 real_sash_only E03: expected unresolved, got flagged (identity)
+  run 3 real_sash_only E04: expected checked, got flagged (conflict)
+results: out/evaluation_ollama-gemma4-12b_realistic_md_20261018-023008.csv
+=== gemma4:12b, production-like, 3 runs  finished: exit code 0, 2082 seconds
+
+=== analysis  (started 2026-10-18 03:04:50)
+# Evaluation summary
+
+Source folder: /Users/test_user/Desktop/thesis/dpp-prep-repo/out
+
+## Simple tier
+
+| proposer | tier | format | runs | outcomes matched | escapes | over-flagged | stable elements | proposals | correct | distractor | quote not found | other wrong | precision | recall | unwarranted | product id correct | parse errors | identical runs | seconds per call (mean/max) | model digest |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ollama-gemma4-12b | simple | md | 3 | 132/147 (90 %) | 0 | 15 | 49/49 (100 %) | 159 | 138 | 0 | 0 | 21 | 138/159 (87 %) | 138/138 (100 %) | 21 | 63/63 (100 %) | 0 | 21/21 (100 %) | 44.9 / 80.3 | 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b |
+| ollama-qwen3.5-4b | simple | md | 3 | 132/147 (90 %) | 0 | 15 | 49/49 (100 %) | 180 | 138 | 0 | 21 | 21 | 138/180 (77 %) | 138/138 (100 %) | 42 | 63/63 (100 %) | 0 | 21/21 (100 %) | 31.2 / 48.0 | d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04 |
+| ollama-qwen3.5-9b | simple | md | 3 | 123/147 (84 %) | 0 | 24 | 49/49 (100 %) | 165 | 138 | 0 | 6 | 21 | 138/165 (84 %) | 138/138 (100 %) | 27 | 63/63 (100 %) | 0 | 21/21 (100 %) | 62.0 / 111.6 | 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90 |
+| oracle | simple | md | 1 | 49/49 (100 %) | 0 | 0 | 49/49 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| standin | simple | md | 1 | 49/49 (100 %) | 0 | 0 | 49/49 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+## Realistic tier
+
+| proposer | tier | format | runs | outcomes matched | escapes | over-flagged | stable elements | proposals | correct | distractor | quote not found | other wrong | precision | recall | unwarranted | product id correct | parse errors | identical runs | seconds per call (mean/max) | model digest |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ollama-gemma4-12b | realistic | md | 3 | 54/63 (86 %) | 0 | 6 | 21/21 (100 %) | 99 | 87 | 3 | 9 | 0 | 87/99 (88 %) | 87/96 (91 %) | 3 | 33/39 (85 %) | 0 | 13/13 (100 %) | 53.4 / 88.4 | 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b |
+| ollama-qwen3.5-4b | realistic | md | 3 | 42/63 (67 %) | 0 | 18 | 21/21 (100 %) | 165 | 87 | 3 | 45 | 30 | 87/165 (53 %) | 87/96 (91 %) | 69 | 24/39 (62 %) | 0 | 13/13 (100 %) | 38.9 / 60.0 | d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04 |
+| ollama-qwen3.5-9b | realistic | md | 3 | 54/63 (86 %) | 0 | 6 | 21/21 (100 %) | 111 | 87 | 3 | 21 | 0 | 87/111 (78 %) | 87/96 (91 %) | 24 | 36/39 (92 %) | 0 | 13/13 (100 %) | 58.3 / 102.9 | 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90 |
+| oracle | realistic | md | 1 | 21/21 (100 %) | 0 | 0 | 21/21 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| standin | realistic | md | 1 | 15/21 (71 %) | 0 | 6 | 21/21 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+
+written to /Users/test_user/Desktop/thesis/dpp-prep-repo/out/analysis
+=== analysis  finished: exit code 0, 0 seconds
+
+ALL DONE. Send this file: /Users/test_user/dpp_results_20261018-0304.zip

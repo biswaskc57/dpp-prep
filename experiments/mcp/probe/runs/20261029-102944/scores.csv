@@ -1,0 +1,2 @@
+pool,element,prompt,run,stop,tool_calls,seconds,docs_read,read_unsuitable,read_all_suitable,submissions,attempted_wrong,wrong_reached_checked,correct_but_flagged,first_value,first_state,final_status,final_value,final_source,relied_on_unsuitable,outcome,changed_after_feedback,retry_behaviour,failed_checks
+basic,E06,A,1,final answer,4,178.0,doc_3(not_relevant) doc_2(suitable),1,False,1,0,0,1,1.1 W/(m2K),flagged,unresolved,,,False,conservative abstention,False,-,"support,value_type,unit,scope"

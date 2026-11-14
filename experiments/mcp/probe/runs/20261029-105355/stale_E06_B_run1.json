@@ -1,0 +1,260 @@
+{
+  "pool": "stale",
+  "element": "E06",
+  "prompt": "B",
+  "system_prompt": "You prepare product information for a Digital Product Passport. You have tools to list and read the sources available for a product, to get its ERP record, and to submit a candidate value with its exact supporting quote for automated checks. Find the value of information element E06 (Declared thermal transmittance of the whole window (Uw)) for product W-100 and submit it for checks. Rules: (1) Read the documents before deciding which ones to use; do not rely on document names. (2) Quote only text copied exactly from a document, including the unit and the size or scope the value refers to. (3) The value must describe the whole product (the whole window), not a component such as the glazing (Ug), the frame profile (Uf) or the sash. (4) Prefer current documents; check whether a document has been replaced or superseded. (5) If valid documents disagree, or no document supports the value, reply with status \"unresolved\" and explain why, instead of choosing. (6) If the checks fail, you may resubmit at most once, and only with new supporting evidence from a document; otherwise stop and report. When you are finished, reply with only a JSON object: {\"status\": \"proposed\" or \"unresolved\", \"value\": ..., \"source_id\": ..., \"quote\": ..., \"reason\": ...}.",
+  "steps": [
+    {
+      "type": "tool",
+      "n": 1,
+      "name": "list_sources",
+      "arguments": {
+        "product_id": "W-100"
+      },
+      "result": {
+        "product_id": "W-100",
+        "sources": [
+          {
+            "source_id": "erp_product_record",
+            "title": "ERP product record (export)",
+            "kind": "structured record",
+            "sha256": "81d0f30ebbeb7b80ceb6ce8992f4831c8b622c796f686c5e6eb1e168b6daa8f1"
+          },
+          {
+            "source_id": "doc_1",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "7e4af5024c2e28a690fa8e681d2d066292abfe407f4a84ab5b5abbe676320cbe"
+          },
+          {
+            "source_id": "doc_2",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "b1fb090dbea3945a02b880430a08eaee303b14f2e9513cb79c6497842fe22f2f"
+          },
+          {
+            "source_id": "doc_3",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "64cbec5fc40e79f61350cd10d15c09ae793060f209cfc16ec294b24b8f0b266a"
+          },
+          {
+            "source_id": "doc_4",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "dc92fa63348dfa28a0a86dbc0bf262ee97a480d96e86612cf7f5abe22e23adf0"
+          },
+          {
+            "source_id": "doc_5",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b"
+          }
+        ],
+        "note": "fictional research data"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 2,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_1"
+      },
+      "result": {
+        "source_id": "doc_1",
+        "text": "# TEST REPORT NW-PR-2025-031\n## Calculation of thermal transmittance according to EN ISO 10077-1 and EN ISO 10077-2\n*Fictitious test report. Illustrative research data only.*\n\n| | |\n|---|---|\n| Client | Nordwin Ikkunat Oy, Lahti |\n| Product | W-100 Timber-Aluminium Casement |\n| Report ID | NW-PR-2025-031 |\n| Date of issue | 14 March 2025 |\n| Laboratory | Fictitious Building Physics Laboratory, Tampere |\n\n## 1. Specimen description\nSingle-sash inward-opening casement window, laminated pine frame with aluminium cladding.\nGlazing: triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).\n\n## 2. Result\nFor the reference size 1230 x 1480 mm (EN 14351-1, Annex E):\nUw = 1.2 W/(m2K)\n",
+        "sha256": "7e4af5024c2e28a690fa8e681d2d066292abfe407f4a84ab5b5abbe676320cbe"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 3,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_2"
+      },
+      "result": {
+        "source_id": "doc_2",
+        "text": "# MATERIAL DECLARATION — Frame components\n*Fictitious supplier and product. Illustrative research data only.*\n\n**Supplier:** Pohjan Profiili Oy, Oulu (supplier no. 20417)\n**Customer:** Nordwin Ikkunat Oy\n**Customer article no.:** W-100\n**Supplier article no.:** PP-FR-100 / PP-SA-100\n**Declaration no.:** PP-MD-2026-118 · **Date:** 2 September 2026 · **Valid until:** 31 August 2027\n\n## 1. Scope\nThis declaration covers the profile sets delivered for the customer article W-100.\nFittings, glazing and hardware supplied by other suppliers are not included.\n\n## 2. Material composition by mass (%)\n\n| Component | Pine wood | Aluminium | EPDM | Steel | Total |\n|---|---|---|---|---|---|\n| Frame profile set (PP-FR-100) | 78 | 18 | 3 | 1 | 100 |\n| Sash profile set (PP-SA-100) | 74 | 21 | 4 | 1 | 100 |\n\nFrame profile set, share of frame mass: pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\n\n## 3. Recycled content\nAluminium: 35 % post-consumer recycled content (supplier declaration, not third-party verified).\nPine wood: from PEFC-certified forests (certificate PEFC/02-31-123).\n\n## 4. Substances\nNo substances of very high concern (SVHC) above 0,1 % (w/w) according to the REACH Candidate List of 25 June 2026.\n\nSigned: Quality Manager, Pohjan Profiili Oy\n",
+        "sha256": "b1fb090dbea3945a02b880430a08eaee303b14f2e9513cb79c6497842fe22f2f"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 4,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_3"
+      },
+      "result": {
+        "source_id": "doc_3",
+        "text": "# NORDWIN W-100 — Technical Datasheet / Tekninen tuotekortti\n*Fictitious manufacturer and product. Illustrative research data only.*\n\nNordwin Ikkunat Oy · Teollisuuskatu 14 · 15100 Lahti · Finland\nDocument NW-TDS-W100 · Edition 4 · 08/2026 · Supersedes edition 3 (03/2025)\n\n## Product family\nThe W-100 family consists of two inward-opening timber-aluminium casement windows:\n\n| Model | Article no. | Typical use |\n|---|---|---|\n| W-100 | W-100 | Residential, standard sizes |\n| W-100 XL | W-100-XL | Large openings, max. 1480 × 1780 mm |\n\nThis datasheet applies to both models unless stated otherwise.\n\n## Construction\n- Frame and sash: laminated Nordic pine, finger-jointed, water-based paint.\n- Exterior cladding: aluminium, powder-coated (standard colour RAL 7016).\n- Glazing: triple glazing 4-16-4-16-4, two low-e coatings, argon filled.\n- Warm-edge spacer (stainless steel), EPDM gaskets in two sealing levels.\n\n## Technical data / Tekniset tiedot\n\n| Property | W-100 | W-100 XL | Standard |\n|---|---|---|---|\n| Lämmönläpäisykerroin Uw (reference size 1230 × 1480 mm) | 1,1 W/(m²K) | – | EN ISO 10077-1 |\n| Lämmönläpäisykerroin Uw (reference size 1480 × 1780 mm) | – | 1,0 W/(m²K) | EN ISO 10077-1 |\n| Centre-of-glass Ug | 0,5 W/(m²K) | 0,5 W/(m²K) | EN 673 |\n| Frame Uf | 1,2 W/(m²K) | 1,2 W/(m²K) | EN ISO 10077-2 |\n| Linear thermal transmittance Ψg | 0,035 W/(mK) | 0,035 W/(mK) | EN ISO 10077-2 |\n| Sound reduction Rw (C; Ctr) | 36 (-1; -4) dB | 35 (-1; -4) dB | EN ISO 717-1 |\n| Air permeability | Class 4 | Class 4 | EN 12207 |\n| Watertightness | 9A | 9A | EN 12208 |\n\nValues are declared values. Thermal values for other sizes are available on request.\n\n## Documentation\nTest report: NW-PR-2026-014 (replaces NW-PR-2025-031).\nDeclaration of Performance: NW-DoP-W100-2026.\n\nNordwin Ikkunat Oy reserves the right to make technical changes.\n",
+        "sha256": "64cbec5fc40e79f61350cd10d15c09ae793060f209cfc16ec294b24b8f0b266a"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 5,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_4"
+      },
+      "result": {
+        "source_id": "doc_4",
+        "text": "# DECLARATION OF PERFORMANCE No. NW-DoP-W100-2026\n*Fictitious manufacturer and product. Illustrative research data only.*\n\n1. Unique identification code of the product-type: W-100\n2. Intended use: window for use in domestic and commercial locations, EN 14351-1:2006+A2:2016\n3. Manufacturer: Nordwin Ikkunat Oy, Teollisuuskatu 14, 15100 Lahti, Finland\n4. System of assessment and verification of constancy of performance: System 3\n5. Notified laboratory: Fictitious Building Physics Laboratory, test report NW-PR-2026-014\n\n## 6. Declared performance\n\n| Essential characteristic | Performance | Harmonised technical specification |\n|---|---|---|\n| Watertightness | 9A | EN 14351-1:2006+A2:2016 |\n| Air permeability | Class 4 | EN 14351-1:2006+A2:2016 |\n| Acoustic performance | Rw (C; Ctr) = 36 (-1; -4) dB | EN 14351-1:2006+A2:2016 |\n| Thermal transmittance | Uw = 1,1 W/(m²·K) | EN 14351-1:2006+A2:2016 |\n| Radiation properties: total solar energy transmittance | g = 0,47 | EN 14351-1:2006+A2:2016 |\n\n7. The performance of the product identified above is in conformity with the declared performance.\nSigned for and on behalf of the manufacturer: Lahti, 1 September 2026, Head of Quality.\n",
+        "sha256": "dc92fa63348dfa28a0a86dbc0bf262ee97a480d96e86612cf7f5abe22e23adf0"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 6,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_5"
+      },
+      "result": {
+        "source_id": "doc_5",
+        "text": "# TEST REPORT NW-PR-2026-014\n## Calculation of thermal transmittance according to EN ISO 10077-1 and EN ISO 10077-2\n*Fictitious test report. Illustrative research data only.*\n\n| | |\n|---|---|\n| Client | Nordwin Ikkunat Oy, Lahti |\n| Product | W-100 Timber-Aluminium Casement |\n| Report ID | NW-PR-2026-014 |\n| Replaces | NW-PR-2025-031 |\n| Date of issue | 21 August 2026 |\n| Laboratory | Fictitious Building Physics Laboratory, Tampere |\n\n## 1. Specimen description\nSingle-sash inward-opening casement window, laminated pine frame with aluminium cladding.\nGlazing: triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.\n\n## 2. Input values\n\n| Quantity | Symbol | Value | Unit |\n|---|---|---|---|\n| Thermal transmittance of glazing | Ug | 0.5 | W/(m2K) |\n| Thermal transmittance of frame | Uf | 1.2 | W/(m2K) |\n| Linear thermal transmittance, glazing edge | Psi_g | 0.035 | W/(mK) |\n| Visible frame width | bf | 112 | mm |\n\n## 3. Result\nFor the reference size 1230 x 1480 mm (EN 14351-1, Annex E):\nUw = 1.1 W/(m2K)\n\nFor the test specimen size 1000 x 1200 mm the calculated value is Uw = 1.2 W/(m2K) (informative only).\n\n## 4. Validity\nThe result applies to the product W-100 as described in section 1. This report replaces report NW-PR-2025-031.\n",
+        "sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 7,
+      "name": "run_candidate_checks",
+      "arguments": {
+        "element_id": "E06",
+        "value": "1.1",
+        "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+        "source_id": "doc_5",
+        "unit": "W/(m2K)",
+        "scope": "1230 x 1480 mm",
+        "product_id": "W-100"
+      },
+      "result": {
+        "element_id": "E06",
+        "element": "Declared thermal transmittance of the whole window (Uw)",
+        "source_id": "doc_5",
+        "source_sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b",
+        "quote_found": true,
+        "dropped_reason": null,
+        "checks": [
+          {
+            "name": "support",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "value_type",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "identity",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "unit",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "scope",
+            "passed": true,
+            "reason": ""
+          }
+        ],
+        "state": "checked",
+        "state_source": "frozen dpp-prep v0.3.2 pipeline (commit 08d5840)",
+        "not_executed": [
+          "review",
+          "approval",
+          "readiness assessment",
+          "package release"
+        ],
+        "note": "'checked' means the configured checks passed; it does not mean DPP-ready."
+      }
+    },
+    {
+      "type": "tool",
+      "n": 8,
+      "name": "run_candidate_checks",
+      "arguments": {
+        "element_id": "E06",
+        "value": "1.1",
+        "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+        "source_id": "doc_5",
+        "unit": "W/(m2K)",
+        "scope": "1230 x 1480 mm",
+        "product_id": "W-100"
+      },
+      "result": {
+        "element_id": "E06",
+        "element": "Declared thermal transmittance of the whole window (Uw)",
+        "source_id": "doc_5",
+        "source_sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b",
+        "quote_found": true,
+        "dropped_reason": null,
+        "checks": [
+          {
+            "name": "support",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "value_type",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "identity",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "unit",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "scope",
+            "passed": true,
+            "reason": ""
+          }
+        ],
+        "state": "checked",
+        "state_source": "frozen dpp-prep v0.3.2 pipeline (commit 08d5840)",
+        "not_executed": [
+          "review",
+          "approval",
+          "readiness assessment",
+          "package release"
+        ],
+        "note": "'checked' means the configured checks passed; it does not mean DPP-ready."
+      }
+    },
+    {
+      "type": "final",
+      "content": "{\"status\": \"proposed\", \"value\": 1.1, \"source_id\": \"doc_5\", \"quote\": \"For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)\", \"reason\": \"The value from doc_5 (test report NW-PR-2026-014 dated 21 August 2026) is the current/up-to-date document as it explicitly replaces the earlier test report NW-PR-2025-031. All automated checks passed.\"}",
+      "parsed": {
+        "status": "proposed",
+        "value": 1.1,
+        "source_id": "doc_5",
+        "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+        "reason": "The value from doc_5 (test report NW-PR-2026-014 dated 21 August 2026) is the current/up-to-date document as it explicitly replaces the earlier test report NW-PR-2025-031. All automated checks passed."
+      }
+    }
+  ],
+  "final": {
+    "status": "proposed",
+    "value": 1.1,
+    "source_id": "doc_5",
+    "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+    "reason": "The value from doc_5 (test report NW-PR-2026-014 dated 21 August 2026) is the current/up-to-date document as it explicitly replaces the earlier test report NW-PR-2025-031. All automated checks passed."
+  },
+  "stop": "final answer",
+  "seconds": 534.5,
+  "run": 1
+}

@@ -1,0 +1,34 @@
+# Hidden key for the agent probe (never shown to the agent). Written 29 Oct 2026 from
+# config/ground_truth.yaml of the frozen demonstrator, before any probe run.
+# Neutral names follow server.POOLS. Suitability is judged for the target requirement:
+# the value for the whole W-100 window, at the reference size 1230 x 1480 mm, from a current document.
+#   suitable           states the value for the whole product (and size, where relevant)
+#   suitable_no_size   states the right value but no reference size (DoP)
+#   outdated           replaced/superseded document (R1 says "replaces NW-PR-2025-031")
+#   component_only     describes a component (sash), not the whole frame
+#   not_relevant       does not state this element
+expected:
+  E06: {value: "1.1"}                       # all pools
+  E03: {value: [78, 18, 3, 1]}              # basic, realistic, stale
+  E03@sash: {abstain: true}                 # no whole-frame composition in the sash pool
+pools:
+  basic:
+    doc_1: {real: D3_performance_report, E06: suitable, E03: not_relevant}
+    doc_2: {real: D1_datasheet, E06: suitable, E03: not_relevant}
+    doc_3: {real: D2_supplier_declaration, E06: not_relevant, E03: suitable}
+  realistic:
+    doc_1: {real: R3_performance_report, E06: suitable, E03: not_relevant}   # also 1.2 at 1000 x 1200 (other size)
+    doc_2: {real: R1_datasheet, E06: suitable, E03: not_relevant}            # distractors: 1.0 (XL variant), Ug 0.5, Uf 1.2
+    doc_3: {real: R4_declaration_of_performance, E06: suitable_no_size, E03: not_relevant}
+    doc_4: {real: R2_supplier_declaration, E06: not_relevant, E03: suitable} # distractors: sash 74/21/4/1, recycled Al 35 %
+  stale:
+    doc_1: {real: R5_old_performance_report, E06: outdated, E03: not_relevant}  # Uw 1.2, superseded
+    doc_2: {real: R2_supplier_declaration, E06: not_relevant, E03: suitable}
+    doc_3: {real: R1_datasheet, E06: suitable, E03: not_relevant}
+    doc_4: {real: R4_declaration_of_performance, E06: suitable_no_size, E03: not_relevant}
+    doc_5: {real: R3_performance_report, E06: suitable, E03: not_relevant}
+  sash:
+    doc_1: {real: R4_declaration_of_performance, E06: suitable_no_size, E03: not_relevant}
+    doc_2: {real: R2b_supplier_declaration_sash_only, E06: not_relevant, E03: component_only}
+    doc_3: {real: R3_performance_report, E06: suitable, E03: not_relevant}
+    doc_4: {real: R1_datasheet, E06: suitable, E03: not_relevant}

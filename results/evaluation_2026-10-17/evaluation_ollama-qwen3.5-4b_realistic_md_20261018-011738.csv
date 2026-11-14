@@ -1,0 +1,64 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks
+realistic,1,real_baseline,c28342dea7a0,E01,checked,checked,True,W-100,0,
+realistic,1,real_baseline,c28342dea7a0,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_baseline,c28342dea7a0,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum
+realistic,1,real_baseline,c28342dea7a0,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,1,real_baseline,c28342dea7a0,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_baseline,c28342dea7a0,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,1,real_baseline,c28342dea7a0,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; conflict
+realistic,1,real_stale_report,ad67618f14db,E01,checked,checked,True,W-100,0,
+realistic,1,real_stale_report,ad67618f14db,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_stale_report,ad67618f14db,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum; support; identity; composition_sum
+realistic,1,real_stale_report,ad67618f14db,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; identity; conflict
+realistic,1,real_stale_report,ad67618f14db,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_stale_report,ad67618f14db,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,1,support; identity; scope; support; unit; scope; identity; conflict
+realistic,1,real_stale_report,ad67618f14db,E07,flagged,flagged,True,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; support; identity; conflict
+realistic,1,real_sash_only,d17dd6c5589a,E01,checked,checked,True,W-100,0,
+realistic,1,real_sash_only,d17dd6c5589a,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_sash_only,d17dd6c5589a,E03,unresolved,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; identity; support; composition_sum
+realistic,1,real_sash_only,d17dd6c5589a,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,1,real_sash_only,d17dd6c5589a,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_sash_only,d17dd6c5589a,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,1,real_sash_only,d17dd6c5589a,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-119 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; identity; conflict
+realistic,2,real_baseline,6d25c4a28357,E01,checked,checked,True,W-100,0,
+realistic,2,real_baseline,6d25c4a28357,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_baseline,6d25c4a28357,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum
+realistic,2,real_baseline,6d25c4a28357,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,2,real_baseline,6d25c4a28357,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_baseline,6d25c4a28357,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,2,real_baseline,6d25c4a28357,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; conflict
+realistic,2,real_stale_report,5e862fab4e93,E01,checked,checked,True,W-100,0,
+realistic,2,real_stale_report,5e862fab4e93,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_stale_report,5e862fab4e93,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum; support; identity; composition_sum
+realistic,2,real_stale_report,5e862fab4e93,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; identity; conflict
+realistic,2,real_stale_report,5e862fab4e93,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_stale_report,5e862fab4e93,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,1,support; identity; scope; support; unit; scope; identity; conflict
+realistic,2,real_stale_report,5e862fab4e93,E07,flagged,flagged,True,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; support; identity; conflict
+realistic,2,real_sash_only,665a30387950,E01,checked,checked,True,W-100,0,
+realistic,2,real_sash_only,665a30387950,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,2,real_sash_only,665a30387950,E03,unresolved,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; identity; support; composition_sum
+realistic,2,real_sash_only,665a30387950,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,2,real_sash_only,665a30387950,E05,checked,checked,True,1230 x 1480,0,
+realistic,2,real_sash_only,665a30387950,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,2,real_sash_only,665a30387950,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-119 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; identity; conflict
+realistic,3,real_baseline,4260cad0eadc,E01,checked,checked,True,W-100,0,
+realistic,3,real_baseline,4260cad0eadc,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_baseline,4260cad0eadc,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum
+realistic,3,real_baseline,4260cad0eadc,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,3,real_baseline,4260cad0eadc,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_baseline,4260cad0eadc,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,3,real_baseline,4260cad0eadc,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; conflict
+realistic,3,real_stale_report,2ce42b834a57,E01,checked,checked,True,W-100,0,
+realistic,3,real_stale_report,2ce42b834a57,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_stale_report,2ce42b834a57,E03,checked,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %. | laminated pine frame with aluminium cladding. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; support; composition_sum; support; identity; composition_sum
+realistic,3,real_stale_report,2ce42b834a57,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; identity; conflict
+realistic,3,real_stale_report,2ce42b834a57,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_stale_report,2ce42b834a57,E06,flagged,flagged,True,1.1 | 1.1 | 1.1 | 1.2,1,support; identity; scope; support; unit; scope; identity; conflict
+realistic,3,real_stale_report,2ce42b834a57,E07,flagged,flagged,True,NW-PR-2026-014 | PP-MD-2026-118 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; support; identity; conflict
+realistic,3,real_sash_only,bc1cd16e98f8,E01,checked,checked,True,W-100,0,
+realistic,3,real_sash_only,bc1cd16e98f8,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,3,real_sash_only,bc1cd16e98f8,E03,unresolved,flagged,False,"laminated Nordic pine, finger-jointed, water-based paint. | pine wood 74 %, aluminium 21 %, EPDM seals 4 %, steel fittings 1 %. | laminated pine frame with aluminium cladding.",0,support; identity; composition_sum; identity; support; composition_sum
+realistic,3,real_sash_only,bc1cd16e98f8,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity; conflict
+realistic,3,real_sash_only,bc1cd16e98f8,E05,checked,checked,True,1230 x 1480,0,
+realistic,3,real_sash_only,bc1cd16e98f8,E06,flagged,flagged,True,1.1 | 1.1 | 1.1,1,support; identity; scope; support; unit; scope
+realistic,3,real_sash_only,bc1cd16e98f8,E07,checked,flagged,False,NW-PR-2026-014 | PP-MD-2026-119 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; support; identity; conflict

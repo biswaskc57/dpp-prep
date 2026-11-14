@@ -1,0 +1,26 @@
+# Real public documents, one scenario per product. Phase 3, post hoc.
+# PRE-REGISTER: fill in 'expect' for E03 and E06 BEFORE the first model run, commit, then run.
+# States: checked | flagged | unresolved.
+# Draft expectations below are Claude's predictions (29 Oct): the frozen identity check compares the
+# product identifier literally, so any proposal is expected to be flagged; no value -> unresolved.
+# Correct answers are in real_key.yaml. Change any line you disagree with BEFORE the first run.  Documents live in ../docs (original PDFs, unchanged).
+tiivi:
+  profile: elements_real_tiivi.yaml
+  docs: [P1_tiivi_kristalli_plus_EPD_HUB-0384.pdf]
+  expect: {E03: flagged, E06: unresolved}
+cetonia:
+  profile: elements_real_cetonia.yaml
+  docs: [P2_cetonia_ITB_EPD_450_2024.pdf]
+  expect: {E03: flagged, E06: flagged}
+norgesvinduet:
+  profile: elements_real_norgesvinduet.yaml
+  docs: [P3_norgesvinduet_NEPD-2996-1653.pdf]
+  expect: {E03: flagged, E06: flagged}
+etri:
+  profile: elements_real_etri.yaml
+  docs: [P4_etri_EA-FFL_S-P-06573.pdf]
+  expect: {E03: flagged, E06: flagged}
+pvc_association:
+  profile: elements_real_pvc_association.yaml
+  docs: [P5_pvc_association_EPD-QKE-20170001.pdf]
+  expect: {E03: flagged, E06: flagged}

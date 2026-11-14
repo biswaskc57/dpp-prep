@@ -1,0 +1,32 @@
+{
+  "started": "2026-10-29T08:53:55.174169+00:00",
+  "server": "dpp-sources v1.4 (pool mode)",
+  "tasks": [
+    "basic:E06:A",
+    "basic:E06:B",
+    "basic:E03:A",
+    "basic:E03:B",
+    "realistic:E06:A",
+    "realistic:E06:B",
+    "realistic:E03:A",
+    "realistic:E03:B",
+    "stale:E06:A",
+    "stale:E06:B",
+    "stale:E03:A",
+    "stale:E03:B",
+    "sash:E06:A",
+    "sash:E06:B",
+    "sash:E03:A",
+    "sash:E03:B"
+  ],
+  "repeat": 1,
+  "max_steps": 15,
+  "llm": {
+    "model": "qwen3.5:9b",
+    "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+    "seed": 42,
+    "temperature": 0,
+    "think": false,
+    "num_ctx": 16384
+  }
+}

@@ -1,0 +1,31 @@
+# Answer key for the real documents. Two levels per element:
+#   stated  = what the document actually says (extraction truth: is there a value to find?)
+#   usable  = whether it meets the requirement (readiness truth), with the failing condition
+# Requirement: E03 = frame material composition by mass share; E06 = declared Uw of the whole
+# window at 1230 x 1480 mm, from a current, product-specific document.
+# Draft by Claude, 29 Oct 2026 -- VERIFY each line against the PDF and add page numbers before the runs.
+# Never edit after the runs.
+tiivi:            # EPD Hub HUB-0384, valid to 07.04.2028
+  E03: {stated: "whole product only: metals 7.4, minerals 57.7, fossil 2.9, bio-based 32.0 %", page: ,
+        usable: no, condition: Representable/Aligned, note: "material categories of the whole product, not frame materials"}
+  E06: {stated: none, page: , usable: no, condition: Available}
+cetonia:          # ITB EPD 450/2024, valid to 10.05.2028
+  E03: {stated: "whole window: wood 18.8, aluminium 7.5, PVC 6.7, glass 64.7, paints 2.4 %", page: ,
+        usable: no, condition: Aligned, note: "whole window, not frame"}
+  E06: {stated: "Uw 0.76 (tilt and turn), 0.68 (fixed) at 1230 x 1480 mm", page: ,
+        usable: "yes, once the variant is chosen", condition: Aligned (variant), note: "cleanest positive case"}
+norgesvinduet:    # NEPD-2996-1653-EN, valid to 13.08.2026
+  E03: {stated: "whole window, kg and %, two variants (with / without aluminium cladding)", page: ,
+        usable: no, condition: Aligned}
+  E06: {stated: "'U-value for the product: 0,72 W / m2K' (unit printed with spaces); functional unit 1.23 x 1.48 m", page: ,
+        usable: no, condition: Current, note: "expired before the run; not labelled Uw; unit format differs from W/(m2K)"}
+etri:             # S-P-06573, version 2 (2023-03-20), valid to 2027-11-23
+  E03: {stated: "component weights in kg, no shares", page: ,
+        usable: no, condition: Representable/Quality, note: "weights sum ~64.6 kg vs stated 35.47 kg/m2"}
+  E06: {stated: "U 1.2 (standard glass), 0.87 (energy glass); standard size 1230 x 1480 mm", page: ,
+        usable: "yes, once the glass variant is chosen", condition: Aligned (variant)}
+pvc_association:  # IBU EPD-QKE-20170001-IBG1-EN, valid to 26.04.2022
+  E03: {stated: "whole window mass %: glazing 58.7, PVC-U 22.9, steel 13.9, fittings 3.4, seals 0.9, other 0.2", page: ,
+        usable: no, condition: Aligned/Current, note: "association average, not a product; expired"}
+  E06: {stated: "Uw 0.92 W/(m2K) at 1.23 x 1.48 m", page: ,
+        usable: no, condition: Aligned/Current, note: "association average; expired"}

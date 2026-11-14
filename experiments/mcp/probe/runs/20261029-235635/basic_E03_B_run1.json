@@ -1,0 +1,159 @@
+{
+  "pool": "basic",
+  "element": "E03",
+  "prompt": "B",
+  "system_prompt": "You prepare product information for a Digital Product Passport. You have tools to list and read the sources available for a product, to get its ERP record, and to submit a candidate value with its exact supporting quote for automated checks. Find the value of information element E03 (Frame material composition by mass share) for product W-100 and submit it for checks. Rules: (1) Read the documents before deciding which ones to use; do not rely on document names. (2) Quote only text copied exactly from a document, including the unit and the size or scope the value refers to. (3) The value must describe the whole product (the whole window), not a component such as the glazing (Ug), the frame profile (Uf) or the sash. (4) Prefer current documents; check whether a document has been replaced or superseded. (5) If valid documents disagree, or no document supports the value, reply with status \"unresolved\" and explain why, instead of choosing. (6) If the checks fail, you may resubmit at most once, and only with new supporting evidence from a document; otherwise stop and report. When you are finished, reply with only a JSON object: {\"status\": \"proposed\" or \"unresolved\", \"value\": ..., \"source_id\": ..., \"quote\": ..., \"reason\": ...}.",
+  "steps": [
+    {
+      "type": "tool",
+      "n": 1,
+      "name": "list_sources",
+      "arguments": {
+        "product_id": "W-100"
+      },
+      "result": {
+        "product_id": "W-100",
+        "sources": [
+          {
+            "source_id": "erp_product_record",
+            "title": "ERP product record (export)",
+            "kind": "structured record",
+            "sha256": "81d0f30ebbeb7b80ceb6ce8992f4831c8b622c796f686c5e6eb1e168b6daa8f1"
+          },
+          {
+            "source_id": "doc_1",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "4bf3f48b2d6c429ff30b7a5693ebf3fe4392f1904a44dd3c5f77950527e65adb"
+          },
+          {
+            "source_id": "doc_2",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "93d9af2e01e7f50acfbbb6745db8960386756e3bd2355c5ba5ab0b73a0c07609"
+          },
+          {
+            "source_id": "doc_3",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "d7713dcba6f5d013e07493f87f3b99bd2eefa6aaa619392b8be0d2e10e8214d5"
+          }
+        ],
+        "note": "fictional research data"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 2,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_1"
+      },
+      "result": {
+        "source_id": "doc_1",
+        "text": "# Performance Report NW-PR-2026-014\n*Fictitious test report. Illustrative research data only.*\n\n**Product ID:** W-100\n**Manufacturer:** Nordwin Ikkunat Oy\n**Report ID:** NW-PR-2026-014\n\n## Thermal transmittance\nCalculated for reference size 1230 x 1480 mm.\nUw = 1.1 W/(m2K)\n\n## Glazing\nTriple glazing 4-16-4-16-4, two low-e coatings, argon filled.\n",
+        "sha256": "4bf3f48b2d6c429ff30b7a5693ebf3fe4392f1904a44dd3c5f77950527e65adb"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 3,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_2"
+      },
+      "result": {
+        "source_id": "doc_2",
+        "text": "# Nordwin Ikkunat Oy — Product Datasheet\n*Fictitious manufacturer and product. Illustrative research data only.*\n\n**Product:** W-100 Timber-Aluminium Casement\n**Product ID:** W-100\n**Manufacturer:** Nordwin Ikkunat Oy, Lahti, Finland\n\n## Construction\nFrame: laminated pine, exterior aluminium cladding.\nGlazing: triple glazing 4-16-4-16-4, two low-e coatings, argon filled.\n\n## Dimensions\nNominal size: 1230 x 1480 mm (width x height).\n\n## Thermal performance\nUw = 1.1 W/(m2K) for reference size 1230 x 1480 mm.\nDeclared in performance report NW-PR-2026-014.\n",
+        "sha256": "93d9af2e01e7f50acfbbb6745db8960386756e3bd2355c5ba5ab0b73a0c07609"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 4,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_3"
+      },
+      "result": {
+        "source_id": "doc_3",
+        "text": "# Supplier Material Declaration\n*Fictitious supplier and product. Illustrative research data only.*\n\n**Supplier:** Pohjan Profiili Oy\n**Customer:** Nordwin Ikkunat Oy\n**Product ID:** W-100\n**Component:** Frame profile set\n\n## Frame material composition (share of frame mass)\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\n\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.\n",
+        "sha256": "d7713dcba6f5d013e07493f87f3b99bd2eefa6aaa619392b8be0d2e10e8214d5"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 5,
+      "name": "run_candidate_checks",
+      "arguments": {
+        "element_id": "E03",
+        "value": "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %",
+        "quote": "Frame material composition (share of frame mass)\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.",
+        "source_id": "doc_3",
+        "unit": "",
+        "scope": "",
+        "product_id": "W-100"
+      },
+      "result": {
+        "element_id": "E03",
+        "element": "Frame material composition by mass share",
+        "source_id": "doc_3",
+        "source_sha256": "d7713dcba6f5d013e07493f87f3b99bd2eefa6aaa619392b8be0d2e10e8214d5",
+        "quote_found": true,
+        "dropped_reason": null,
+        "checks": [
+          {
+            "name": "support",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "value_type",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "identity",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "composition_sum",
+            "passed": true,
+            "reason": ""
+          }
+        ],
+        "state": "checked",
+        "state_source": "frozen dpp-prep v0.3.2 pipeline (commit 08d5840)",
+        "not_executed": [
+          "review",
+          "approval",
+          "readiness assessment",
+          "package release"
+        ],
+        "note": "'checked' means the configured checks passed; it does not mean DPP-ready."
+      }
+    },
+    {
+      "type": "final",
+      "content": "{\"status\": \"proposed\", \"value\": \"Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %\", \"source_id\": \"doc_3\", \"quote\": \"Frame material composition (share of frame mass)\\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.\", \"reason\": \"All checks passed (support, value_type, identity, composition_sum). The value describes the frame material composition by mass share for product W-100 as declared in doc_3.\"}",
+      "parsed": {
+        "status": "proposed",
+        "value": "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %",
+        "source_id": "doc_3",
+        "quote": "Frame material composition (share of frame mass)\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.",
+        "reason": "All checks passed (support, value_type, identity, composition_sum). The value describes the frame material composition by mass share for product W-100 as declared in doc_3."
+      }
+    }
+  ],
+  "final": {
+    "status": "proposed",
+    "value": "Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %",
+    "source_id": "doc_3",
+    "quote": "Frame material composition (share of frame mass)\nPine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.\nDeclared by: Quality Manager, Pohjan Profiili Oy, 2 September 2026.",
+    "reason": "All checks passed (support, value_type, identity, composition_sum). The value describes the frame material composition by mass share for product W-100 as declared in doc_3."
+  },
+  "stop": "final answer",
+  "seconds": 227.5,
+  "run": 1
+}

@@ -1,0 +1,7 @@
+# Pinned to the versions used to build and test this demo (26 October 2026)
+mcp==1.27.0
+pydantic==2.13.3
+PyYAML==6.0.3
+jsonschema==4.26.0
+pymupdf==1.28.2
+pytest

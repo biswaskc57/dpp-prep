@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="DPP_readiness_step__Figure_9c_" name="DPP readiness step (Figure 9c)" namespace="http://dpp-prep.thesis/DPP_readiness_step__Figure_9c_">
+  <inputData id="in_Condition" name="Condition"><variable id="v_in_Condition" name="Condition" typeRef="string"/></inputData>
+  <inputData id="in_Quality_criterion_configured" name="Quality criterion configured"><variable id="v_in_Quality_criterion_configured" name="Quality criterion configured" typeRef="boolean"/></inputData>
+  <inputData id="in_Approval_statement" name="Approval statement"><variable id="v_in_Approval_statement" name="Approval statement" typeRef="string"/></inputData>
+  <inputData id="in_Validity_statement" name="Validity statement"><variable id="v_in_Validity_statement" name="Validity statement" typeRef="string"/></inputData>
+  <inputData id="in_Quality_statement" name="Quality statement"><variable id="v_in_Quality_statement" name="Quality statement" typeRef="string"/></inputData>
+  <inputData id="in_Supported_proposal_exists" name="Supported proposal exists"><variable id="v_in_Supported_proposal_exists" name="Supported proposal exists" typeRef="boolean"/></inputData>
+  <inputData id="in_Not_in_sources_and_obtain_failed" name="Not in sources and obtain failed"><variable id="v_in_Not_in_sources_and_obtain_failed" name="Not in sources and obtain failed" typeRef="boolean"/></inputData>
+  <inputData id="in_Alignment_checks" name="Alignment checks"><variable id="v_in_Alignment_checks" name="Alignment checks" typeRef="string"/></inputData>
+  <inputData id="in_Value_type_check" name="Value type check"><variable id="v_in_Value_type_check" name="Value type check" typeRef="string"/></inputData>
+  <inputData id="in_Support_check" name="Support check"><variable id="v_in_Support_check" name="Support check" typeRef="string"/></inputData>
+  <inputData id="in_Evidence_inspected" name="Evidence inspected"><variable id="v_in_Evidence_inspected" name="Evidence inspected" typeRef="boolean"/></inputData>
+  <inputData id="in_All_configured_checks" name="All configured checks"><variable id="v_in_All_configured_checks" name="All configured checks" typeRef="string"/></inputData>
+  <inputData id="in_Approval_on_this_version" name="Approval on this version"><variable id="v_in_Approval_on_this_version" name="Approval on this version" typeRef="string"/></inputData>
+  <inputData id="in_Source_validity" name="Source validity"><variable id="v_in_Source_validity" name="Source validity" typeRef="string"/></inputData>
+  <inputData id="in_Number_of_criteria" name="Number of criteria"><variable id="v_in_Number_of_criteria" name="Number of criteria" typeRef="number"/></inputData>
+  <inputData id="in_Failed_criteria" name="Failed criteria"><variable id="v_in_Failed_criteria" name="Failed criteria" typeRef="number"/></inputData>
+  <inputData id="in_Insufficient_criteria" name="Insufficient criteria"><variable id="v_in_Insufficient_criteria" name="Insufficient criteria" typeRef="number"/></inputData>
+  <decision id="d_Applicability" name="Applicability">
+    <variable id="v_d_Applicability" name="Applicability" typeRef="string"/>
+    <informationRequirement id="ir_d_Applicability_Condition"><requiredInput href="#in_Condition"/></informationRequirement>
+    <informationRequirement id="ir_d_Applicability_Quality_criterion_configured"><requiredInput href="#in_Quality_criterion_configured"/></informationRequirement>
+    <informationRequirement id="ir_d_Applicability_Approval_statement"><requiredInput href="#in_Approval_statement"/></informationRequirement>
+    <informationRequirement id="ir_d_Applicability_Validity_statement"><requiredInput href="#in_Validity_statement"/></informationRequirement>
+    <informationRequirement id="ir_d_Applicability_Quality_statement"><requiredInput href="#in_Quality_statement"/></informationRequirement>
+    <decisionTable id="t_d_Applicability" hitPolicy="FIRST">
+      <input id="i_d_Applicability_0" label="Condition"><inputExpression id="e_d_Applicability_0" typeRef="string"><text>Condition</text></inputExpression></input>
+      <input id="i_d_Applicability_1" label="Quality criterion configured"><inputExpression id="e_d_Applicability_1" typeRef="boolean"><text>Quality criterion configured</text></inputExpression></input>
+      <input id="i_d_Applicability_2" label="Approval statement"><inputExpression id="e_d_Applicability_2" typeRef="string"><text>Approval statement</text></inputExpression></input>
+      <input id="i_d_Applicability_3" label="Validity statement"><inputExpression id="e_d_Applicability_3" typeRef="string"><text>Validity statement</text></inputExpression></input>
+      <input id="i_d_Applicability_4" label="Quality statement"><inputExpression id="e_d_Applicability_4" typeRef="string"><text>Quality statement</text></inputExpression></input>
+      <output id="o_d_Applicability" name="Applicability" typeRef="string"/>
+      <rule id="r_A1"><description>A1</description>
+        <inputEntry id="ie_A1_0"><text>"Available","Aligned","Representable","Evidenced","Validated"</text></inputEntry>
+        <inputEntry id="ie_A1_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A1_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A1_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A1_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A1"><text>"applicable"</text></outputEntry></rule>
+      <rule id="r_A2"><description>A2</description>
+        <inputEntry id="ie_A2_0"><text>"Of sufficient quality"</text></inputEntry>
+        <inputEntry id="ie_A2_1"><text>true</text></inputEntry>
+        <inputEntry id="ie_A2_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A2_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A2_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A2"><text>"applicable"</text></outputEntry></rule>
+      <rule id="r_A3"><description>A3</description>
+        <inputEntry id="ie_A3_0"><text>"Of sufficient quality"</text></inputEntry>
+        <inputEntry id="ie_A3_1"><text>false</text></inputEntry>
+        <inputEntry id="ie_A3_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A3_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A3_4"><text>"stated not required"</text></inputEntry>
+        <outputEntry id="oe_A3"><text>"not applicable"</text></outputEntry></rule>
+      <rule id="r_A4"><description>A4</description>
+        <inputEntry id="ie_A4_0"><text>"Authorised"</text></inputEntry>
+        <inputEntry id="ie_A4_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A4_2"><text>"stated required"</text></inputEntry>
+        <inputEntry id="ie_A4_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A4_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A4"><text>"applicable"</text></outputEntry></rule>
+      <rule id="r_A5"><description>A5</description>
+        <inputEntry id="ie_A5_0"><text>"Authorised"</text></inputEntry>
+        <inputEntry id="ie_A5_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A5_2"><text>"stated not required"</text></inputEntry>
+        <inputEntry id="ie_A5_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A5_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A5"><text>"not applicable"</text></outputEntry></rule>
+      <rule id="r_A6"><description>A6</description>
+        <inputEntry id="ie_A6_0"><text>"Current"</text></inputEntry>
+        <inputEntry id="ie_A6_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A6_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A6_3"><text>"stated required"</text></inputEntry>
+        <inputEntry id="ie_A6_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A6"><text>"applicable"</text></outputEntry></rule>
+      <rule id="r_A7"><description>A7</description>
+        <inputEntry id="ie_A7_0"><text>"Current"</text></inputEntry>
+        <inputEntry id="ie_A7_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A7_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A7_3"><text>"stated not required"</text></inputEntry>
+        <inputEntry id="ie_A7_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A7"><text>"not applicable"</text></outputEntry></rule>
+      <rule id="r_A8"><description>A8</description>
+        <inputEntry id="ie_A8_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_A8_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_A8_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_A8_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_A8_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_A8"><text>"cannot yet determine"</text></outputEntry></rule>
+    </decisionTable>
+  </decision>
+  <decision id="d_Available_status" name="Available status">
+    <variable id="v_d_Available_status" name="Available status" typeRef="string"/>
+    <informationRequirement id="ir_d_Available_status_Supported_proposal_exists"><requiredInput href="#in_Supported_proposal_exists"/></informationRequirement>
+    <informationRequirement id="ir_d_Available_status_Not_in_sources_and_obtain_failed"><requiredInput href="#in_Not_in_sources_and_obtain_failed"/></informationRequirement>
+    <decisionTable id="t_d_Available_status" hitPolicy="UNIQUE">
+      <input id="i_d_Available_status_0" label="Supported proposal exists"><inputExpression id="e_d_Available_status_0" typeRef="boolean"><text>Supported proposal exists</text></inputExpression></input>
+      <input id="i_d_Available_status_1" label="Not in sources and obtain failed"><inputExpression id="e_d_Available_status_1" typeRef="boolean"><text>Not in sources and obtain failed</text></inputExpression></input>
+      <output id="o_d_Available_status" name="Available status" typeRef="string"/>
+      <rule id="r_AV1"><description>AV1</description>
+        <inputEntry id="ie_AV1_0"><text>true</text></inputEntry>
+        <inputEntry id="ie_AV1_1"><text>-</text></inputEntry>
+        <outputEntry id="oe_AV1"><text>"met"</text></outputEntry></rule>
+      <rule id="r_AV2"><description>AV2</description>
+        <inputEntry id="ie_AV2_0"><text>false</text></inputEntry>
+        <inputEntry id="ie_AV2_1"><text>true</text></inputEntry>
+        <outputEntry id="oe_AV2"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_AV3"><description>AV3</description>
+        <inputEntry id="ie_AV3_0"><text>false</text></inputEntry>
+        <inputEntry id="ie_AV3_1"><text>false</text></inputEntry>
+        <outputEntry id="oe_AV3"><text>"not yet assessed"</text></outputEntry></rule>
+    </decisionTable>
+  </decision>
+  <decision id="d_Quality_status" name="Quality status">
+    <variable id="v_d_Quality_status" name="Quality status" typeRef="string"/>
+    <informationRequirement id="ir_d_Quality_status_Number_of_criteria"><requiredInput href="#in_Number_of_criteria"/></informationRequirement>
+    <informationRequirement id="ir_d_Quality_status_Failed_criteria"><requiredInput href="#in_Failed_criteria"/></informationRequirement>
+    <informationRequirement id="ir_d_Quality_status_Insufficient_criteria"><requiredInput href="#in_Insufficient_criteria"/></informationRequirement>
+    <decisionTable id="t_d_Quality_status" hitPolicy="FIRST">
+      <input id="i_d_Quality_status_0" label="Number of criteria"><inputExpression id="e_d_Quality_status_0" typeRef="number"><text>Number of criteria</text></inputExpression></input>
+      <input id="i_d_Quality_status_1" label="Failed criteria"><inputExpression id="e_d_Quality_status_1" typeRef="number"><text>Failed criteria</text></inputExpression></input>
+      <input id="i_d_Quality_status_2" label="Insufficient criteria"><inputExpression id="e_d_Quality_status_2" typeRef="number"><text>Insufficient criteria</text></inputExpression></input>
+      <output id="o_d_Quality_status" name="Quality status" typeRef="string"/>
+      <rule id="r_B_agg_4"><description>B-agg-4</description>
+        <inputEntry id="ie_B_agg_4_0"><text>0</text></inputEntry>
+        <inputEntry id="ie_B_agg_4_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_4_2"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_agg_4"><text>"no criteria"</text></outputEntry></rule>
+      <rule id="r_B_agg_1"><description>B-agg-1</description>
+        <inputEntry id="ie_B_agg_1_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_1_1"><text>&gt;0</text></inputEntry>
+        <inputEntry id="ie_B_agg_1_2"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_agg_1"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_B_agg_2"><description>B-agg-2</description>
+        <inputEntry id="ie_B_agg_2_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_2_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_2_2"><text>&gt;0</text></inputEntry>
+        <outputEntry id="oe_B_agg_2"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_B_agg_3"><description>B-agg-3</description>
+        <inputEntry id="ie_B_agg_3_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_3_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_agg_3_2"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_agg_3"><text>"met"</text></outputEntry></rule>
+    </decisionTable>
+  </decision>
+  <decision id="d_Condition_status" name="Condition status">
+    <variable id="v_d_Condition_status" name="Condition status" typeRef="string"/>
+    <informationRequirement id="ir_d_Condition_status_Condition"><requiredInput href="#in_Condition"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Alignment_checks"><requiredInput href="#in_Alignment_checks"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Value_type_check"><requiredInput href="#in_Value_type_check"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Support_check"><requiredInput href="#in_Support_check"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Evidence_inspected"><requiredInput href="#in_Evidence_inspected"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_All_configured_checks"><requiredInput href="#in_All_configured_checks"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Approval_on_this_version"><requiredInput href="#in_Approval_on_this_version"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Source_validity"><requiredInput href="#in_Source_validity"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Applicability"><requiredDecision href="#d_Applicability"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Available_status"><requiredDecision href="#d_Available_status"/></informationRequirement>
+    <informationRequirement id="ir_d_Condition_status_Quality_status"><requiredDecision href="#d_Quality_status"/></informationRequirement>
+    <decisionTable id="t_d_Condition_status" hitPolicy="FIRST">
+      <input id="i_d_Condition_status_0" label="Condition"><inputExpression id="e_d_Condition_status_0" typeRef="string"><text>Condition</text></inputExpression></input>
+      <input id="i_d_Condition_status_1" label="Applicability"><inputExpression id="e_d_Condition_status_1" typeRef="string"><text>Applicability</text></inputExpression></input>
+      <input id="i_d_Condition_status_2" label="Available status"><inputExpression id="e_d_Condition_status_2" typeRef="string"><text>Available status</text></inputExpression></input>
+      <input id="i_d_Condition_status_3" label="Alignment checks"><inputExpression id="e_d_Condition_status_3" typeRef="string"><text>Alignment checks</text></inputExpression></input>
+      <input id="i_d_Condition_status_4" label="Value type check"><inputExpression id="e_d_Condition_status_4" typeRef="string"><text>Value type check</text></inputExpression></input>
+      <input id="i_d_Condition_status_5" label="Quality status"><inputExpression id="e_d_Condition_status_5" typeRef="string"><text>Quality status</text></inputExpression></input>
+      <input id="i_d_Condition_status_6" label="Support check"><inputExpression id="e_d_Condition_status_6" typeRef="string"><text>Support check</text></inputExpression></input>
+      <input id="i_d_Condition_status_7" label="Evidence inspected"><inputExpression id="e_d_Condition_status_7" typeRef="boolean"><text>Evidence inspected</text></inputExpression></input>
+      <input id="i_d_Condition_status_8" label="All configured checks"><inputExpression id="e_d_Condition_status_8" typeRef="string"><text>All configured checks</text></inputExpression></input>
+      <input id="i_d_Condition_status_9" label="Approval on this version"><inputExpression id="e_d_Condition_status_9" typeRef="string"><text>Approval on this version</text></inputExpression></input>
+      <input id="i_d_Condition_status_10" label="Source validity"><inputExpression id="e_d_Condition_status_10" typeRef="string"><text>Source validity</text></inputExpression></input>
+      <output id="o_d_Condition_status" name="Condition status" typeRef="string"/>
+      <rule id="r_C1"><description>C1</description>
+        <inputEntry id="ie_C1_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_1"><text>"not applicable"</text></inputEntry>
+        <inputEntry id="ie_C1_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C1_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C1"><text>"not required"</text></outputEntry></rule>
+      <rule id="r_C2"><description>C2</description>
+        <inputEntry id="ie_C2_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_1"><text>"cannot yet determine"</text></inputEntry>
+        <inputEntry id="ie_C2_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C2_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C2"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C3"><description>C3</description>
+        <inputEntry id="ie_C3_0"><text>"Available"</text></inputEntry>
+        <inputEntry id="ie_C3_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_2"><text>"met"</text></inputEntry>
+        <inputEntry id="ie_C3_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C3_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C3"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C4"><description>C4</description>
+        <inputEntry id="ie_C4_0"><text>"Available"</text></inputEntry>
+        <inputEntry id="ie_C4_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_2"><text>"not met"</text></inputEntry>
+        <inputEntry id="ie_C4_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C4_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C4"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C5"><description>C5</description>
+        <inputEntry id="ie_C5_0"><text>"Available"</text></inputEntry>
+        <inputEntry id="ie_C5_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_2"><text>"not yet assessed"</text></inputEntry>
+        <inputEntry id="ie_C5_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C5_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C5"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C6"><description>C6</description>
+        <inputEntry id="ie_C6_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_2"><text>not("met")</text></inputEntry>
+        <inputEntry id="ie_C6_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C6_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C6"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C7"><description>C7</description>
+        <inputEntry id="ie_C7_0"><text>"Aligned"</text></inputEntry>
+        <inputEntry id="ie_C7_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_3"><text>"all passed"</text></inputEntry>
+        <inputEntry id="ie_C7_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C7_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C7"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C8"><description>C8</description>
+        <inputEntry id="ie_C8_0"><text>"Aligned"</text></inputEntry>
+        <inputEntry id="ie_C8_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_3"><text>"any failed"</text></inputEntry>
+        <inputEntry id="ie_C8_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C8_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C8"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C9"><description>C9</description>
+        <inputEntry id="ie_C9_0"><text>"Representable"</text></inputEntry>
+        <inputEntry id="ie_C9_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_4"><text>"passed"</text></inputEntry>
+        <inputEntry id="ie_C9_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C9_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C9"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C10"><description>C10</description>
+        <inputEntry id="ie_C10_0"><text>"Representable"</text></inputEntry>
+        <inputEntry id="ie_C10_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_4"><text>"failed"</text></inputEntry>
+        <inputEntry id="ie_C10_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C10_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C10"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C11"><description>C11</description>
+        <inputEntry id="ie_C11_0"><text>"Of sufficient quality"</text></inputEntry>
+        <inputEntry id="ie_C11_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_5"><text>"met"</text></inputEntry>
+        <inputEntry id="ie_C11_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C11_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C11"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C12"><description>C12</description>
+        <inputEntry id="ie_C12_0"><text>"Of sufficient quality"</text></inputEntry>
+        <inputEntry id="ie_C12_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_5"><text>"not met"</text></inputEntry>
+        <inputEntry id="ie_C12_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C12_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C12"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C13"><description>C13</description>
+        <inputEntry id="ie_C13_0"><text>"Of sufficient quality"</text></inputEntry>
+        <inputEntry id="ie_C13_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_5"><text>"not yet assessed","no criteria"</text></inputEntry>
+        <inputEntry id="ie_C13_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C13_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C13"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C14"><description>C14</description>
+        <inputEntry id="ie_C14_0"><text>"Evidenced"</text></inputEntry>
+        <inputEntry id="ie_C14_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_6"><text>"failed"</text></inputEntry>
+        <inputEntry id="ie_C14_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C14_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C14"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C15"><description>C15</description>
+        <inputEntry id="ie_C15_0"><text>"Evidenced"</text></inputEntry>
+        <inputEntry id="ie_C15_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_6"><text>"passed"</text></inputEntry>
+        <inputEntry id="ie_C15_7"><text>true</text></inputEntry>
+        <inputEntry id="ie_C15_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C15_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C15"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C16"><description>C16</description>
+        <inputEntry id="ie_C16_0"><text>"Evidenced"</text></inputEntry>
+        <inputEntry id="ie_C16_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_6"><text>"passed"</text></inputEntry>
+        <inputEntry id="ie_C16_7"><text>false</text></inputEntry>
+        <inputEntry id="ie_C16_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C16_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C16"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C17"><description>C17</description>
+        <inputEntry id="ie_C17_0"><text>"Validated"</text></inputEntry>
+        <inputEntry id="ie_C17_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_8"><text>"all passed"</text></inputEntry>
+        <inputEntry id="ie_C17_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C17_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C17"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C18"><description>C18</description>
+        <inputEntry id="ie_C18_0"><text>"Validated"</text></inputEntry>
+        <inputEntry id="ie_C18_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_8"><text>"any failed"</text></inputEntry>
+        <inputEntry id="ie_C18_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C18_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C18"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C19"><description>C19</description>
+        <inputEntry id="ie_C19_0"><text>"Authorised"</text></inputEntry>
+        <inputEntry id="ie_C19_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C19_9"><text>"approved"</text></inputEntry>
+        <inputEntry id="ie_C19_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C19"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C20"><description>C20</description>
+        <inputEntry id="ie_C20_0"><text>"Authorised"</text></inputEntry>
+        <inputEntry id="ie_C20_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C20_9"><text>"refused"</text></inputEntry>
+        <inputEntry id="ie_C20_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C20"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C21"><description>C21</description>
+        <inputEntry id="ie_C21_0"><text>"Authorised"</text></inputEntry>
+        <inputEntry id="ie_C21_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C21_9"><text>"none"</text></inputEntry>
+        <inputEntry id="ie_C21_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C21"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C22"><description>C22</description>
+        <inputEntry id="ie_C22_0"><text>"Current"</text></inputEntry>
+        <inputEntry id="ie_C22_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C22_10"><text>"within"</text></inputEntry>
+        <outputEntry id="oe_C22"><text>"met"</text></outputEntry></rule>
+      <rule id="r_C23"><description>C23</description>
+        <inputEntry id="ie_C23_0"><text>"Current"</text></inputEntry>
+        <inputEntry id="ie_C23_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C23_10"><text>"expired or superseded"</text></inputEntry>
+        <outputEntry id="oe_C23"><text>"not met"</text></outputEntry></rule>
+      <rule id="r_C24"><description>C24</description>
+        <inputEntry id="ie_C24_0"><text>"Current"</text></inputEntry>
+        <inputEntry id="ie_C24_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C24_10"><text>"unknown"</text></inputEntry>
+        <outputEntry id="oe_C24"><text>"not yet assessed"</text></outputEntry></rule>
+      <rule id="r_C25"><description>C25</description>
+        <inputEntry id="ie_C25_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_1"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_4"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_5"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_6"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_7"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_8"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_9"><text>-</text></inputEntry>
+        <inputEntry id="ie_C25_10"><text>-</text></inputEntry>
+        <outputEntry id="oe_C25"><text>"not yet assessed"</text></outputEntry></rule>
+    </decisionTable>
+  </decision>
+</definitions>

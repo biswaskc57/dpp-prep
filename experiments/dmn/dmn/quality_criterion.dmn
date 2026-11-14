@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="Quality_criterion__Table_B__per_criterion_" name="Quality criterion (Table B, per criterion)" namespace="http://dpp-prep.thesis/Quality_criterion__Table_B__per_criterion_">
+  <inputData id="in_Criterion_type" name="Criterion type"><variable id="v_in_Criterion_type" name="Criterion type" typeRef="string"/></inputData>
+  <inputData id="in_Evaluation_state" name="Evaluation state"><variable id="v_in_Evaluation_state" name="Evaluation state" typeRef="string"/></inputData>
+  <inputData id="in_Parse_state" name="Parse state"><variable id="v_in_Parse_state" name="Parse state" typeRef="string"/></inputData>
+  <inputData id="in_Total_within_tolerance" name="Total within tolerance"><variable id="v_in_Total_within_tolerance" name="Total within tolerance" typeRef="string"/></inputData>
+  <inputData id="in_Agreement" name="Agreement"><variable id="v_in_Agreement" name="Agreement" typeRef="string"/></inputData>
+  <decision id="d_Criterion_result" name="Criterion result">
+    <variable id="v_d_Criterion_result" name="Criterion result" typeRef="string"/>
+    <informationRequirement id="ir_d_Criterion_result_Criterion_type"><requiredInput href="#in_Criterion_type"/></informationRequirement>
+    <informationRequirement id="ir_d_Criterion_result_Evaluation_state"><requiredInput href="#in_Evaluation_state"/></informationRequirement>
+    <informationRequirement id="ir_d_Criterion_result_Parse_state"><requiredInput href="#in_Parse_state"/></informationRequirement>
+    <informationRequirement id="ir_d_Criterion_result_Total_within_tolerance"><requiredInput href="#in_Total_within_tolerance"/></informationRequirement>
+    <informationRequirement id="ir_d_Criterion_result_Agreement"><requiredInput href="#in_Agreement"/></informationRequirement>
+    <decisionTable id="t_d_Criterion_result" hitPolicy="UNIQUE">
+      <input id="i_d_Criterion_result_0" label="Criterion type"><inputExpression id="e_d_Criterion_result_0" typeRef="string"><text>Criterion type</text></inputExpression></input>
+      <input id="i_d_Criterion_result_1" label="Evaluation state"><inputExpression id="e_d_Criterion_result_1" typeRef="string"><text>Evaluation state</text></inputExpression></input>
+      <input id="i_d_Criterion_result_2" label="Parse state"><inputExpression id="e_d_Criterion_result_2" typeRef="string"><text>Parse state</text></inputExpression></input>
+      <input id="i_d_Criterion_result_3" label="Total within tolerance"><inputExpression id="e_d_Criterion_result_3" typeRef="string"><text>Total within tolerance</text></inputExpression></input>
+      <input id="i_d_Criterion_result_4" label="Agreement"><inputExpression id="e_d_Criterion_result_4" typeRef="string"><text>Agreement</text></inputExpression></input>
+      <output id="o_d_Criterion_result" name="Criterion result" typeRef="string"/>
+      <rule id="r_B_crit_1"><description>B-crit-1</description>
+        <inputEntry id="ie_B_crit_1_0"><text>"composition"</text></inputEntry>
+        <inputEntry id="ie_B_crit_1_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_1_2"><text>"all"</text></inputEntry>
+        <inputEntry id="ie_B_crit_1_3"><text>"yes"</text></inputEntry>
+        <inputEntry id="ie_B_crit_1_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_crit_1"><text>"pass"</text></outputEntry></rule>
+      <rule id="r_B_crit_2"><description>B-crit-2</description>
+        <inputEntry id="ie_B_crit_2_0"><text>"composition"</text></inputEntry>
+        <inputEntry id="ie_B_crit_2_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_2_2"><text>"all"</text></inputEntry>
+        <inputEntry id="ie_B_crit_2_3"><text>"no"</text></inputEntry>
+        <inputEntry id="ie_B_crit_2_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_crit_2"><text>"fail"</text></outputEntry></rule>
+      <rule id="r_B_crit_3"><description>B-crit-3</description>
+        <inputEntry id="ie_B_crit_3_0"><text>"composition"</text></inputEntry>
+        <inputEntry id="ie_B_crit_3_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_3_2"><text>"partial or malformed"</text></inputEntry>
+        <inputEntry id="ie_B_crit_3_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_3_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_crit_3"><text>"insufficient evidence"</text></outputEntry></rule>
+      <rule id="r_B_crit_4"><description>B-crit-4</description>
+        <inputEntry id="ie_B_crit_4_0"><text>"composition"</text></inputEntry>
+        <inputEntry id="ie_B_crit_4_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_4_2"><text>"none"</text></inputEntry>
+        <inputEntry id="ie_B_crit_4_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_4_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_crit_4"><text>"insufficient evidence"</text></outputEntry></rule>
+      <rule id="r_B_crit_5"><description>B-crit-5</description>
+        <inputEntry id="ie_B_crit_5_0"><text>"consistency"</text></inputEntry>
+        <inputEntry id="ie_B_crit_5_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_5_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_5_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_5_4"><text>"agree"</text></inputEntry>
+        <outputEntry id="oe_B_crit_5"><text>"pass"</text></outputEntry></rule>
+      <rule id="r_B_crit_6"><description>B-crit-6</description>
+        <inputEntry id="ie_B_crit_6_0"><text>"consistency"</text></inputEntry>
+        <inputEntry id="ie_B_crit_6_1"><text>"evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_6_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_6_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_6_4"><text>"disagree"</text></inputEntry>
+        <outputEntry id="oe_B_crit_6"><text>"fail"</text></outputEntry></rule>
+      <rule id="r_B_crit_7"><description>B-crit-7</description>
+        <inputEntry id="ie_B_crit_7_0"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_7_1"><text>"not evaluated"</text></inputEntry>
+        <inputEntry id="ie_B_crit_7_2"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_7_3"><text>-</text></inputEntry>
+        <inputEntry id="ie_B_crit_7_4"><text>-</text></inputEntry>
+        <outputEntry id="oe_B_crit_7"><text>"insufficient evidence"</text></outputEntry></rule>
+    </decisionTable>
+  </decision>
+</definitions>

@@ -1,0 +1,144 @@
+{
+  "pool": "realistic",
+  "element": "E06",
+  "prompt": "A",
+  "system_prompt": "You prepare product information for a Digital Product Passport. You have tools to list and read the sources available for a product, to get its ERP record, and to submit a candidate value with its exact supporting quote for automated checks. Find the value of information element E06 (Declared thermal transmittance of the whole window (Uw)) for product W-100 and submit it for checks. When you are finished, reply with only a JSON object: {\"status\": \"proposed\" or \"unresolved\", \"value\": ..., \"source_id\": ..., \"quote\": ..., \"reason\": ...}.",
+  "steps": [
+    {
+      "type": "tool",
+      "n": 1,
+      "name": "list_sources",
+      "arguments": {
+        "product_id": "W-100"
+      },
+      "result": {
+        "product_id": "W-100",
+        "sources": [
+          {
+            "source_id": "erp_product_record",
+            "title": "ERP product record (export)",
+            "kind": "structured record",
+            "sha256": "81d0f30ebbeb7b80ceb6ce8992f4831c8b622c796f686c5e6eb1e168b6daa8f1"
+          },
+          {
+            "source_id": "doc_1",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b"
+          },
+          {
+            "source_id": "doc_2",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "64cbec5fc40e79f61350cd10d15c09ae793060f209cfc16ec294b24b8f0b266a"
+          },
+          {
+            "source_id": "doc_3",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "dc92fa63348dfa28a0a86dbc0bf262ee97a480d96e86612cf7f5abe22e23adf0"
+          },
+          {
+            "source_id": "doc_4",
+            "title": "Document",
+            "kind": "document",
+            "sha256": "b1fb090dbea3945a02b880430a08eaee303b14f2e9513cb79c6497842fe22f2f"
+          }
+        ],
+        "note": "fictional research data"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 2,
+      "name": "read_source",
+      "arguments": {
+        "source_id": "doc_1"
+      },
+      "result": {
+        "source_id": "doc_1",
+        "text": "# TEST REPORT NW-PR-2026-014\n## Calculation of thermal transmittance according to EN ISO 10077-1 and EN ISO 10077-2\n*Fictitious test report. Illustrative research data only.*\n\n| | |\n|---|---|\n| Client | Nordwin Ikkunat Oy, Lahti |\n| Product | W-100 Timber-Aluminium Casement |\n| Report ID | NW-PR-2026-014 |\n| Replaces | NW-PR-2025-031 |\n| Date of issue | 21 August 2026 |\n| Laboratory | Fictitious Building Physics Laboratory, Tampere |\n\n## 1. Specimen description\nSingle-sash inward-opening casement window, laminated pine frame with aluminium cladding.\nGlazing: triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.\n\n## 2. Input values\n\n| Quantity | Symbol | Value | Unit |\n|---|---|---|---|\n| Thermal transmittance of glazing | Ug | 0.5 | W/(m2K) |\n| Thermal transmittance of frame | Uf | 1.2 | W/(m2K) |\n| Linear thermal transmittance, glazing edge | Psi_g | 0.035 | W/(mK) |\n| Visible frame width | bf | 112 | mm |\n\n## 3. Result\nFor the reference size 1230 x 1480 mm (EN 14351-1, Annex E):\nUw = 1.1 W/(m2K)\n\nFor the test specimen size 1000 x 1200 mm the calculated value is Uw = 1.2 W/(m2K) (informative only).\n\n## 4. Validity\nThe result applies to the product W-100 as described in section 1. This report replaces report NW-PR-2025-031.\n",
+        "sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b"
+      }
+    },
+    {
+      "type": "tool",
+      "n": 3,
+      "name": "run_candidate_checks",
+      "arguments": {
+        "element_id": "E06",
+        "value": "1.1",
+        "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+        "source_id": "doc_1",
+        "unit": "W/(m2K)",
+        "scope": "1230 x 1480 mm",
+        "product_id": "W-100"
+      },
+      "result": {
+        "element_id": "E06",
+        "element": "Declared thermal transmittance of the whole window (Uw)",
+        "source_id": "doc_1",
+        "source_sha256": "22e2340d2958b1d70ea7f7e135275a34c0bde2f3be09a9893479a64ce18a226b",
+        "quote_found": true,
+        "dropped_reason": null,
+        "checks": [
+          {
+            "name": "support",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "value_type",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "identity",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "unit",
+            "passed": true,
+            "reason": ""
+          },
+          {
+            "name": "scope",
+            "passed": true,
+            "reason": ""
+          }
+        ],
+        "state": "checked",
+        "state_source": "frozen dpp-prep v0.3.2 pipeline (commit 08d5840)",
+        "not_executed": [
+          "review",
+          "approval",
+          "readiness assessment",
+          "package release"
+        ],
+        "note": "'checked' means the configured checks passed; it does not mean DPP-ready."
+      }
+    },
+    {
+      "type": "final",
+      "content": "{\"status\": \"proposed\", \"value\": 1.1, \"source_id\": \"doc_1\", \"quote\": \"For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)\", \"reason\": \"All checks passed\"}",
+      "parsed": {
+        "status": "proposed",
+        "value": 1.1,
+        "source_id": "doc_1",
+        "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+        "reason": "All checks passed"
+      }
+    }
+  ],
+  "final": {
+    "status": "proposed",
+    "value": 1.1,
+    "source_id": "doc_1",
+    "quote": "For the reference size 1230 x 1480 mm (EN 14351-1, Annex E): Uw = 1.1 W/(m2K)",
+    "reason": "All checks passed"
+  },
+  "stop": "final answer",
+  "seconds": 146.3,
+  "run": 1
+}

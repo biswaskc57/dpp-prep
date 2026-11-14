@@ -1,0 +1,39 @@
+# Real-document profile (pvc_association). Created 29 Oct 2026 for the phase-3 real-document run.
+# Elements E03 and E06 are copied UNCHANGED from dpp-prep/config/elements_w100.yaml (profile 0.2).
+# Only the product block differs. product.id is the identifier as written in the document's title;
+# the frozen identity check compares it literally with the identifier the model reports.
+profile_version: 0.2-real
+product:
+  id: PVC-U single-sash window (association EPD)
+  model: PVC-U single-sash window (association EPD)
+  manufacturer: QKE / EPPA
+  required_scope: 1230 x 1480 mm
+elements:
+- id: E03
+  name: frame_material_composition
+  description: Frame material composition by mass share
+  route: extract
+  unit: '%'
+  value_type: text
+  must_contain:
+  - '%'
+  controls:
+  - identity
+  - composition_sum
+- id: E06
+  name: thermal_transmittance_uw
+  description: Declared thermal transmittance of the whole window (Uw)
+  route: extract
+  unit: W/(m2K)
+  value_type: number
+  must_contain:
+  - Uw
+  must_not_contain:
+  - Ug
+  - Uf
+  required_scope: reference_size
+  controls:
+  - identity
+  - unit
+  - scope
+  - conflict

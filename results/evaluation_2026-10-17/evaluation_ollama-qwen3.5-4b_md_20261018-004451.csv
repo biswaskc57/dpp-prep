@@ -1,0 +1,148 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks
+simple,1,baseline,50210084aadb,E01,checked,checked,True,W-100,0,
+simple,1,baseline,50210084aadb,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,baseline,50210084aadb,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,1,baseline,50210084aadb,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,baseline,50210084aadb,E05,checked,checked,True,1230 x 1480,0,
+simple,1,baseline,50210084aadb,E06,checked,checked,True,1.1 | 1.1,0,
+simple,1,baseline,50210084aadb,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,uw_conflict,337b5cbe0b3b,E01,checked,checked,True,W-100,0,
+simple,1,uw_conflict,337b5cbe0b3b,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,uw_conflict,337b5cbe0b3b,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,1,uw_conflict,337b5cbe0b3b,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,uw_conflict,337b5cbe0b3b,E05,checked,checked,True,1230 x 1480,0,
+simple,1,uw_conflict,337b5cbe0b3b,E06,flagged,flagged,True,1.1 | 1.3,0,conflict
+simple,1,uw_conflict,337b5cbe0b3b,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,uw_other_size,12c23893e6ba,E01,checked,checked,True,W-100,0,
+simple,1,uw_other_size,12c23893e6ba,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,uw_other_size,12c23893e6ba,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,1,uw_other_size,12c23893e6ba,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,uw_other_size,12c23893e6ba,E05,checked,checked,True,1230 x 1480,0,
+simple,1,uw_other_size,12c23893e6ba,E06,flagged,flagged,True,1.1 | 1.1,0,scope
+simple,1,uw_other_size,12c23893e6ba,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,uw_missing,3a98e8ecfee6,E01,checked,checked,True,W-100,0,
+simple,1,uw_missing,3a98e8ecfee6,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,uw_missing,3a98e8ecfee6,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,1,uw_missing,3a98e8ecfee6,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,uw_missing,3a98e8ecfee6,E05,checked,checked,True,1230 x 1480,0,
+simple,1,uw_missing,3a98e8ecfee6,E06,unresolved,unresolved,True,,0,
+simple,1,uw_missing,3a98e8ecfee6,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E01,checked,checked,True,W-100,0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,1,ug_only_in_datasheet,2a48492164a0,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E05,checked,checked,True,1230 x 1480,0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E06,checked,checked,True,1.1,0,
+simple,1,ug_only_in_datasheet,2a48492164a0,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,composition_95,9c331efa820d,E01,checked,checked,True,W-100,0,
+simple,1,composition_95,9c331efa820d,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,composition_95,9c331efa820d,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; composition_sum
+simple,1,composition_95,9c331efa820d,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,composition_95,9c331efa820d,E05,checked,checked,True,1230 x 1480,0,
+simple,1,composition_95,9c331efa820d,E06,checked,checked,True,1.1 | 1.1,0,
+simple,1,composition_95,9c331efa820d,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,1,wrong_product,f71bd3ff950c,E01,checked,checked,True,W-100,0,
+simple,1,wrong_product,f71bd3ff950c,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,1,wrong_product,f71bd3ff950c,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; identity
+simple,1,wrong_product,f71bd3ff950c,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,1,wrong_product,f71bd3ff950c,E05,checked,checked,True,1230 x 1480,0,
+simple,1,wrong_product,f71bd3ff950c,E06,checked,checked,True,1.1 | 1.1,0,
+simple,1,wrong_product,f71bd3ff950c,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,baseline,c2e2ed18c343,E01,checked,checked,True,W-100,0,
+simple,2,baseline,c2e2ed18c343,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,baseline,c2e2ed18c343,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,2,baseline,c2e2ed18c343,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,baseline,c2e2ed18c343,E05,checked,checked,True,1230 x 1480,0,
+simple,2,baseline,c2e2ed18c343,E06,checked,checked,True,1.1 | 1.1,0,
+simple,2,baseline,c2e2ed18c343,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,uw_conflict,2a25a1d67182,E01,checked,checked,True,W-100,0,
+simple,2,uw_conflict,2a25a1d67182,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,uw_conflict,2a25a1d67182,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,2,uw_conflict,2a25a1d67182,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,uw_conflict,2a25a1d67182,E05,checked,checked,True,1230 x 1480,0,
+simple,2,uw_conflict,2a25a1d67182,E06,flagged,flagged,True,1.1 | 1.3,0,conflict
+simple,2,uw_conflict,2a25a1d67182,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,uw_other_size,39dd508f697b,E01,checked,checked,True,W-100,0,
+simple,2,uw_other_size,39dd508f697b,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,uw_other_size,39dd508f697b,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,2,uw_other_size,39dd508f697b,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,uw_other_size,39dd508f697b,E05,checked,checked,True,1230 x 1480,0,
+simple,2,uw_other_size,39dd508f697b,E06,flagged,flagged,True,1.1 | 1.1,0,scope
+simple,2,uw_other_size,39dd508f697b,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,uw_missing,a95ed08e3717,E01,checked,checked,True,W-100,0,
+simple,2,uw_missing,a95ed08e3717,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,uw_missing,a95ed08e3717,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,2,uw_missing,a95ed08e3717,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,uw_missing,a95ed08e3717,E05,checked,checked,True,1230 x 1480,0,
+simple,2,uw_missing,a95ed08e3717,E06,unresolved,unresolved,True,,0,
+simple,2,uw_missing,a95ed08e3717,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E01,checked,checked,True,W-100,0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E05,checked,checked,True,1230 x 1480,0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E06,checked,checked,True,1.1,0,
+simple,2,ug_only_in_datasheet,8b81bbe99c29,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,composition_95,5d9d2b520b02,E01,checked,checked,True,W-100,0,
+simple,2,composition_95,5d9d2b520b02,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,composition_95,5d9d2b520b02,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; composition_sum
+simple,2,composition_95,5d9d2b520b02,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,composition_95,5d9d2b520b02,E05,checked,checked,True,1230 x 1480,0,
+simple,2,composition_95,5d9d2b520b02,E06,checked,checked,True,1.1 | 1.1,0,
+simple,2,composition_95,5d9d2b520b02,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,2,wrong_product,13e8a1b0a084,E01,checked,checked,True,W-100,0,
+simple,2,wrong_product,13e8a1b0a084,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,2,wrong_product,13e8a1b0a084,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; identity
+simple,2,wrong_product,13e8a1b0a084,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,2,wrong_product,13e8a1b0a084,E05,checked,checked,True,1230 x 1480,0,
+simple,2,wrong_product,13e8a1b0a084,E06,checked,checked,True,1.1 | 1.1,0,
+simple,2,wrong_product,13e8a1b0a084,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,baseline,64daf11cabce,E01,checked,checked,True,W-100,0,
+simple,3,baseline,64daf11cabce,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,baseline,64daf11cabce,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,3,baseline,64daf11cabce,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,baseline,64daf11cabce,E05,checked,checked,True,1230 x 1480,0,
+simple,3,baseline,64daf11cabce,E06,checked,checked,True,1.1 | 1.1,0,
+simple,3,baseline,64daf11cabce,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,uw_conflict,081beb72e8f4,E01,checked,checked,True,W-100,0,
+simple,3,uw_conflict,081beb72e8f4,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,uw_conflict,081beb72e8f4,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,3,uw_conflict,081beb72e8f4,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,uw_conflict,081beb72e8f4,E05,checked,checked,True,1230 x 1480,0,
+simple,3,uw_conflict,081beb72e8f4,E06,flagged,flagged,True,1.1 | 1.3,0,conflict
+simple,3,uw_conflict,081beb72e8f4,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,uw_other_size,3f5cce2e3f9b,E01,checked,checked,True,W-100,0,
+simple,3,uw_other_size,3f5cce2e3f9b,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,uw_other_size,3f5cce2e3f9b,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,3,uw_other_size,3f5cce2e3f9b,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,uw_other_size,3f5cce2e3f9b,E05,checked,checked,True,1230 x 1480,0,
+simple,3,uw_other_size,3f5cce2e3f9b,E06,flagged,flagged,True,1.1 | 1.1,0,scope
+simple,3,uw_other_size,3f5cce2e3f9b,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,uw_missing,7f1fe77defc1,E01,checked,checked,True,W-100,0,
+simple,3,uw_missing,7f1fe77defc1,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,uw_missing,7f1fe77defc1,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,3,uw_missing,7f1fe77defc1,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,uw_missing,7f1fe77defc1,E05,checked,checked,True,1230 x 1480,0,
+simple,3,uw_missing,7f1fe77defc1,E06,unresolved,unresolved,True,,0,
+simple,3,uw_missing,7f1fe77defc1,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E01,checked,checked,True,W-100,0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E03,checked,flagged,False,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum
+simple,3,ug_only_in_datasheet,fd16613f18ea,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E05,checked,checked,True,1230 x 1480,0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E06,checked,checked,True,1.1,0,
+simple,3,ug_only_in_datasheet,fd16613f18ea,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,composition_95,2f44d0ebbd32,E01,checked,checked,True,W-100,0,
+simple,3,composition_95,2f44d0ebbd32,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,composition_95,2f44d0ebbd32,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 73 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; composition_sum
+simple,3,composition_95,2f44d0ebbd32,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,composition_95,2f44d0ebbd32,E05,checked,checked,True,1230 x 1480,0,
+simple,3,composition_95,2f44d0ebbd32,E06,checked,checked,True,1.1 | 1.1,0,
+simple,3,composition_95,2f44d0ebbd32,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,
+simple,3,wrong_product,028f1ad9e6f2,E01,checked,checked,True,W-100,0,
+simple,3,wrong_product,028f1ad9e6f2,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+simple,3,wrong_product,028f1ad9e6f2,E03,flagged,flagged,True,"laminated pine, exterior aluminium cladding. | Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,support; composition_sum; identity
+simple,3,wrong_product,028f1ad9e6f2,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled. | Triple glazing 4-16-4-16-4, two low-e coatings, argon filled.",0,
+simple,3,wrong_product,028f1ad9e6f2,E05,checked,checked,True,1230 x 1480,0,
+simple,3,wrong_product,028f1ad9e6f2,E06,checked,checked,True,1.1 | 1.1,0,
+simple,3,wrong_product,028f1ad9e6f2,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014,0,

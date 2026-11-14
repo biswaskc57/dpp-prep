@@ -1,0 +1,22 @@
+tier,run,scenario,element,demonstrator_state,failed_checks,criterion,criterion_result,criterion_rule,Available,Aligned,Representable,Of sufficient quality,Evidenced,Validated,Authorised,Current,Available rule,Aligned rule,Representable rule,Of sufficient quality rule,Evidenced rule,Validated rule,Authorised rule,Current rule,readiness
+realistic,1,real_baseline,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_baseline,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_baseline,E03,unresolved,,composition,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+realistic,1,real_baseline,E04,flagged,identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+realistic,1,real_baseline,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_baseline,E06,flagged,identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+realistic,1,real_baseline,E07,flagged,identity; identity; identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+realistic,1,real_stale_report,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_stale_report,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_stale_report,E03,unresolved,,composition,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+realistic,1,real_stale_report,E04,flagged,identity; identity; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+realistic,1,real_stale_report,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_stale_report,E06,flagged,identity; identity; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+realistic,1,real_stale_report,E07,flagged,identity; identity; identity; identity; conflict,consistency,fail,B-crit-6,met,not met,met,not met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C12,C16,C18,C21,C2,not ready
+realistic,1,real_sash_only,E01,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_sash_only,E02,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_sash_only,E03,unresolved,,composition,insufficient evidence,B-crit-7,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,not yet assessed,C5,C6,C6,C6,C6,C6,C6,C2,undetermined
+realistic,1,real_sash_only,E04,flagged,identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+realistic,1,real_sash_only,E05,checked,,,,,met,met,met,not yet assessed,not yet assessed,met,not yet assessed,not yet assessed,C3,C7,C9,C2,C16,C17,C21,C2,undetermined
+realistic,1,real_sash_only,E06,flagged,identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready
+realistic,1,real_sash_only,E07,flagged,identity; identity; identity,consistency,pass,B-crit-5,met,not met,met,met,not yet assessed,not met,not yet assessed,not yet assessed,C3,C8,C9,C11,C16,C18,C21,C2,not ready

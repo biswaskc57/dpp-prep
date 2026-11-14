@@ -1,0 +1,24 @@
+# Evaluation summary
+
+Source folder: /Users/test_user/Desktop/thesis/dpp-prep-repo/out
+
+## Simple tier
+
+| proposer | tier | format | runs | outcomes matched | escapes | over-flagged | stable elements | proposals | correct | distractor | quote not found | other wrong | precision | recall | unwarranted | product id correct | parse errors | identical runs | seconds per call (mean/max) | model digest |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ollama-gemma4-12b | simple | md | 3 | 132/147 (90 %) | 0 | 15 | 49/49 (100 %) | 159 | 138 | 0 | 0 | 21 | 138/159 (87 %) | 138/138 (100 %) | 21 | 63/63 (100 %) | 0 | 21/21 (100 %) | 44.9 / 80.3 | 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b |
+| ollama-qwen3.5-4b | simple | md | 3 | 132/147 (90 %) | 0 | 15 | 49/49 (100 %) | 180 | 138 | 0 | 21 | 21 | 138/180 (77 %) | 138/138 (100 %) | 42 | 63/63 (100 %) | 0 | 21/21 (100 %) | 31.2 / 48.0 | d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04 |
+| ollama-qwen3.5-9b | simple | md | 3 | 123/147 (84 %) | 0 | 24 | 49/49 (100 %) | 165 | 138 | 0 | 6 | 21 | 138/165 (84 %) | 138/138 (100 %) | 27 | 63/63 (100 %) | 0 | 21/21 (100 %) | 62.0 / 111.6 | 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90 |
+| oracle | simple | md | 1 | 49/49 (100 %) | 0 | 0 | 49/49 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| standin | simple | md | 1 | 49/49 (100 %) | 0 | 0 | 49/49 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+## Realistic tier
+
+| proposer | tier | format | runs | outcomes matched | escapes | over-flagged | stable elements | proposals | correct | distractor | quote not found | other wrong | precision | recall | unwarranted | product id correct | parse errors | identical runs | seconds per call (mean/max) | model digest |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ollama-gemma4-12b | realistic | md | 3 | 54/63 (86 %) | 0 | 6 | 21/21 (100 %) | 99 | 87 | 3 | 9 | 0 | 87/99 (88 %) | 87/96 (91 %) | 3 | 33/39 (85 %) | 0 | 13/13 (100 %) | 53.4 / 88.4 | 6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b |
+| ollama-qwen3.5-4b | realistic | md | 3 | 42/63 (67 %) | 0 | 18 | 21/21 (100 %) | 165 | 87 | 3 | 45 | 30 | 87/165 (53 %) | 87/96 (91 %) | 69 | 24/39 (62 %) | 0 | 13/13 (100 %) | 38.9 / 60.0 | d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04 |
+| ollama-qwen3.5-9b | realistic | md | 3 | 54/63 (86 %) | 0 | 6 | 21/21 (100 %) | 111 | 87 | 3 | 21 | 0 | 87/111 (78 %) | 87/96 (91 %) | 24 | 36/39 (92 %) | 0 | 13/13 (100 %) | 58.3 / 102.9 | 56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90 |
+| oracle | realistic | md | 1 | 21/21 (100 %) | 0 | 0 | 21/21 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| standin | realistic | md | 1 | 15/21 (71 %) | 0 | 6 | 21/21 (100 %) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+

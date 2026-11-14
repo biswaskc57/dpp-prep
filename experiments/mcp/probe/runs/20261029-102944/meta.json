@@ -1,0 +1,17 @@
+{
+  "started": "2026-10-29T08:29:44.951302+00:00",
+  "server": "dpp-sources v1.4 (pool mode)",
+  "tasks": [
+    "basic:E06:A"
+  ],
+  "repeat": 1,
+  "max_steps": 15,
+  "llm": {
+    "model": "qwen3.5:9b",
+    "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+    "seed": 42,
+    "temperature": 0,
+    "think": false,
+    "num_ctx": 16384
+  }
+}
