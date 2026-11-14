@@ -1,0 +1,22 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks
+realistic,1,real_baseline,39b21334038b,E01,checked,checked,True,W-100,0,
+realistic,1,real_baseline,39b21334038b,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_baseline,39b21334038b,E03,checked,unresolved,False,,0,
+realistic,1,real_baseline,39b21334038b,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity
+realistic,1,real_baseline,39b21334038b,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_baseline,39b21334038b,E06,flagged,flagged,True,1.1,0,identity
+realistic,1,real_baseline,39b21334038b,E07,checked,flagged,False,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; identity; identity
+realistic,1,real_stale_report,8e135c620e3c,E01,checked,checked,True,W-100,0,
+realistic,1,real_stale_report,8e135c620e3c,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_stale_report,8e135c620e3c,E03,checked,unresolved,False,,0,
+realistic,1,real_stale_report,8e135c620e3c,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer. | triple glazing 4-14-4-14-4, one low-e coating, argon filled (90 %).",0,identity; identity; conflict
+realistic,1,real_stale_report,8e135c620e3c,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_stale_report,8e135c620e3c,E06,flagged,flagged,True,1.1 | 1.2,0,identity; identity; conflict
+realistic,1,real_stale_report,8e135c620e3c,E07,flagged,flagged,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,identity; identity; identity; identity; conflict
+realistic,1,real_sash_only,af69ba043c64,E01,checked,checked,True,W-100,0,
+realistic,1,real_sash_only,af69ba043c64,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_sash_only,af69ba043c64,E03,unresolved,unresolved,True,,0,
+realistic,1,real_sash_only,af69ba043c64,E04,checked,flagged,False,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled (90 %), warm-edge spacer.",0,identity
+realistic,1,real_sash_only,af69ba043c64,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_sash_only,af69ba043c64,E06,flagged,flagged,True,1.1,0,identity
+realistic,1,real_sash_only,af69ba043c64,E07,checked,flagged,False,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,identity; identity; identity

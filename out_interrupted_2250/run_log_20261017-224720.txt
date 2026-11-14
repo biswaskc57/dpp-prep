@@ -1,0 +1,49 @@
+date:        Sat Oct 17 22:47:20 EEST 2026
+git commit:  2be1ea5621023934ea5527b523dc624e258b7c6a
+git status:  2 changed files (should be 0)
+ollama:      ollama version is 0.33.2
+mac:         Apple M1, 16 GB
+python:      Python 3.11.1
+
+=== stand-in, basic documents  (started 2026-10-17 22:47:20)
+49 of 49 element outcomes matched the expectation
+results: out/evaluation_standin_md_20261017-224720.csv
+=== stand-in, basic documents  finished: exit code 0, 0 seconds
+
+=== stand-in, production-like  (started 2026-10-17 22:47:21)
+15 of 21 element outcomes matched the expectation
+  run 1 real_baseline E03: expected checked, got unresolved (no value)
+  run 1 real_baseline E04: expected checked, got flagged (identity)
+  run 1 real_baseline E07: expected checked, got flagged (identity; identity; identity)
+  run 1 real_stale_report E03: expected checked, got unresolved (no value)
+  run 1 real_sash_only E04: expected checked, got flagged (identity)
+  run 1 real_sash_only E07: expected checked, got flagged (identity; identity; identity)
+results: out/evaluation_standin_realistic_md_20261017-224721.csv
+=== stand-in, production-like  finished: exit code 0, 0 seconds
+
+=== oracle, basic documents  (started 2026-10-17 22:47:21)
+49 of 49 element outcomes matched the expectation
+results: out/evaluation_oracle_md_20261017-224721.csv
+=== oracle, basic documents  finished: exit code 0, 0 seconds
+
+=== oracle, production-like  (started 2026-10-17 22:47:21)
+21 of 21 element outcomes matched the expectation
+results: out/evaluation_oracle_realistic_md_20261017-224722.csv
+=== oracle, production-like  finished: exit code 0, 1 seconds
+
+=== pull qwen3.5:9b  (started 2026-10-17 22:47:22)
+[?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠹ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠸ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠼ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠴ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠦ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠧ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠇ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠏ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K
+pulling f836f08f9211: 100% ▕██████████████████▏ 921 MB                         [K
+pulling 02d45dc1cf45: 100% ▕██████████████████▏ 5.6 GB                         [K
+pulling b507b9c2f6ca: 100% ▕██████████████████▏   13 B                         [K
+pulling 50cbab8a892c: 100% ▕██████████████████▏  11 KB                         [K
+pulling 9371364b27a5: 100% ▕██████████████████▏   65 B                         [K
+pulling 08f9698c1116: 100% ▕██████████████████▏  177 B                         [K
+verifying sha256 digest [K
+writing manifest [K
+success [K[?25h[?2026l
+=== pull qwen3.5:9b  finished: exit code 0, 1 seconds
+
+qwen3.5:9b    56671c2ab938    6.6 GB    Less than a second ago    
+qwen3.5:4b    d8b0f5e9760c    3.3 GB    6 days ago                
+=== qwen3.5:9b, basic documents, 3 runs  (started 2026-10-17 22:47:23)

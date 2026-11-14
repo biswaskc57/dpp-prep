@@ -1,0 +1,22 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks
+realistic,1,real_baseline,df49ae6467c6,E01,checked,checked,True,W-100,0,
+realistic,1,real_baseline,df49ae6467c6,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_baseline,df49ae6467c6,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,1,real_baseline,df49ae6467c6,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled | triple glazing 4-16-4-16-4, two low-e coatings, argon filled",0,
+realistic,1,real_baseline,df49ae6467c6,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_baseline,df49ae6467c6,E06,flagged,flagged,True,1.1 | 1.1 | 1.2 | 1.1,0,support; unit; scope; scope; support; unit; scope; conflict
+realistic,1,real_baseline,df49ae6467c6,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
+realistic,1,real_stale_report,a3d50beedfdb,E01,checked,checked,True,W-100,0,
+realistic,1,real_stale_report,a3d50beedfdb,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_stale_report,a3d50beedfdb,E03,checked,checked,True,"pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %.",0,
+realistic,1,real_stale_report,a3d50beedfdb,E04,flagged,flagged,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled | triple glazing 4-16-4-16-4, two low-e coatings, argon filled | triple glazing 4-14-4-14-4, one low-e coating, argon filled",0,conflict
+realistic,1,real_stale_report,a3d50beedfdb,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_stale_report,a3d50beedfdb,E06,flagged,flagged,True,1.1 | 1.1 | 1.2 | 1.1 | 1.2,0,support; unit; scope; scope; support; unit; scope; conflict
+realistic,1,real_stale_report,a3d50beedfdb,E07,flagged,flagged,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2025-031,0,conflict
+realistic,1,real_sash_only,227542790fea,E01,checked,checked,True,W-100,0,
+realistic,1,real_sash_only,227542790fea,E02,checked,checked,True,Nordwin Ikkunat Oy,0,
+realistic,1,real_sash_only,227542790fea,E03,unresolved,unresolved,True,,0,
+realistic,1,real_sash_only,227542790fea,E04,checked,checked,True,"triple glazing 4-16-4-16-4, two low-e coatings, argon filled | triple glazing 4-16-4-16-4, two low-e coatings, argon filled",0,
+realistic,1,real_sash_only,227542790fea,E05,checked,checked,True,1230 x 1480,0,
+realistic,1,real_sash_only,227542790fea,E06,flagged,flagged,True,1.1 | 1.1 | 1.2 | 1.1,0,support; unit; scope; scope; support; unit; scope; conflict
+realistic,1,real_sash_only,227542790fea,E07,checked,checked,True,NW-PR-2026-014 | NW-PR-2026-014 | NW-PR-2026-014,0,
