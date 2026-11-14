@@ -1,0 +1,11 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks,messages
+real,1,tiivi,e790a7ba679e,E03,flagged,unresolved,False,,0,,
+real,1,tiivi,e790a7ba679e,E06,unresolved,unresolved,True,,0,,
+real,1,cetonia,667201a8e90f,E03,flagged,flagged,True,"12.7 kg. wood, 5.1 kg. aluminium, 4.5 kg. composite PVC, 43.8 kg. glass and 1.6 kg. paints",0,support; identity; composition_sum,"quote does not mention '%'; quote does not state the unit '%' | source refers to None, expected 'Cetonia wood/aluminium triple glazed window' | shares add up to 0 %"
+real,1,cetonia,667201a8e90f,E06,flagged,unresolved,False,,1,,
+real,1,norgesvinduet,20514d7d7b4e,E03,flagged,flagged,True,laminated pine (FKN),0,support; identity; composition_sum,"quote does not mention '%'; quote does not state the unit '%' | source refers to 'NEPD-2996-1653-EN', expected 'Norgesvinduet Fixed Frame Window' | shares add up to 0 %"
+real,1,norgesvinduet,20514d7d7b4e,E06,flagged,flagged,True,0.72,0,support; identity; unit; scope,"quote does not mention 'Uw'; quote does not state the unit 'W/(m2K)' | source refers to 'NEPD-2996-1653-EN', expected 'Norgesvinduet Fixed Frame Window' | unit 'W/m2K', expected 'W/(m2K)' | value applies to None, required '1230 x 1480 mm'"
+real,1,etri,63043fb94164,E03,flagged,unresolved,False,,0,,
+real,1,etri,63043fb94164,E06,flagged,unresolved,False,,0,,
+real,1,pvc_association,5b10850de977,E03,flagged,flagged,True,"PVC-U 22.9 mass %, steel 13.9 mass %, fittings 3.4 mass %, seals 0.9 mass %, glazing blogs/screws 0.2 mass %",0,support; identity; composition_sum,"value 'PVC-U 22.9 mass %, steel 13.9 mass %, fittings 3.4 mass %, seals 0.9 mass %, glazing blogs/screws 0.2 mass %' does not appear in the quote | source refers to 'EPD-QKE-20170001-IBG1-EN', expected 'PVC-U single-sash window (association EPD)' | shares add up to 0 %"
+real,1,pvc_association,5b10850de977,E06,flagged,flagged,True,0.92,0,identity; scope,"source refers to 'EPD-QKE-20170001-IBG1-EN', expected 'PVC-U single-sash window (association EPD)' | value applies to None, required '1230 x 1480 mm'"

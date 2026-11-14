@@ -1,0 +1,163 @@
+=== Thu Oct 29 22:42:34 EET 2026 START
+=== Thu Oct 29 22:42:34 EET 2026 probe qwen3.5:9b seed 1
+[22:42:35] basic E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (5 tool calls, 200.6 s)
+[22:45:55] basic E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (8 tool calls, 458.7 s)
+[22:53:34] basic E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (5 tool calls, 142.4 s)
+[22:55:57] basic E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (5 tool calls, 233.7 s)
+[22:59:50] realistic E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (3 tool calls, 146.3 s)
+[23:02:17] realistic E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (6 tool calls, 358.0 s)
+[23:08:15] realistic E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value='Pine wood 78 %, aluminium 18 %, EPDM 3 %, steel 1 %' (6 tool calls, 217.0 s)
+[23:11:52] realistic E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (8 tool calls, 505.2 s)
+[23:20:17] stale E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value=1.2 (3 tool calls, 101.5 s)
+[23:21:58] stale E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (8 tool calls, 437.7 s)
+[23:29:16] stale E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value='Pine wood 78 %, aluminium 18 %, EPDM 3 %, steel 1 %' (4 tool calls, 139.7 s)
+[23:31:36] stale E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (7 tool calls, 320.8 s)
+[23:36:57] sash E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (3 tool calls, 119.0 s)
+[23:38:56] sash E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (10 tool calls, 625.2 s)
+[23:49:21] sash E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (7 tool calls, 192.4 s)
+[23:52:33] sash E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (6 tool calls, 241.3 s)
+logs: /Users/test_user/Desktop/thesis/dpp-prep-mcp/probe/runs/20261029-224235
+next: python probe/score.py /Users/test_user/Desktop/thesis/dpp-prep-mcp/probe/runs/20261029-224235
+=== Thu Oct 29 23:56:35 EET 2026 probe qwen3.5:9b seed 2
+[23:56:35] basic E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (5 tool calls, 124.6 s)
+[23:58:40] basic E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (8 tool calls, 413.4 s)
+[00:05:33] basic E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (5 tool calls, 132.8 s)
+[00:07:46] basic E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (5 tool calls, 227.5 s)
+[00:11:34] realistic E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (3 tool calls, 117.6 s)
+[00:13:31] realistic E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (6 tool calls, 322.4 s)
+[00:18:54] realistic E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value='Pine wood 78 %, aluminium 18 %, EPDM 3 %, steel 1 %' (6 tool calls, 189.4 s)
+[00:22:03] realistic E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (8 tool calls, 445.9 s)
+[00:29:29] stale E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value=1.2 (3 tool calls, 102.0 s)
+[00:31:11] stale E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (8 tool calls, 437.2 s)
+[00:38:28] stale E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=flagged value='Pine wood 78 %, aluminium 18 %, EPDM 3 %, steel 1 %' (4 tool calls, 139.7 s)
+[00:40:48] stale E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value='Pine wood 78 %, aluminium 18 %, EPDM seals 3 %, steel fittings 1 %' (7 tool calls, 326.6 s)
+[00:46:14] sash E06 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (3 tool calls, 116.3 s)
+[00:48:11] sash E06 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=proposed value=1.1 (10 tool calls, 627.8 s)
+[00:58:39] sash E03 prompt A run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (7 tool calls, 190.4 s)
+[01:01:49] sash E03 prompt B run 1 ...
+/Users/test_user/Desktop/thesis/dpp-prep-mcp/.venv/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:51: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(  # noqa: B028  (called from many sources at differing depths, so no stacklevel is correct)
+    -> final answer; status=unresolved value=None (6 tool calls, 240.3 s)
+logs: /Users/test_user/Desktop/thesis/dpp-prep-mcp/probe/runs/20261029-235635
+next: python probe/score.py /Users/test_user/Desktop/thesis/dpp-prep-mcp/probe/runs/20261029-235635
+=== Fri Oct 30 01:05:49 EET 2026 real documents, second execution: qwen3.5:4b
+dpp-prep used (read only): /Users/test_user/Desktop/thesis/dpp-prep-mcp/vendor/dpp-prep-08d5840
+run 1 tiivi: E03=unresolved, E06=unresolved
+run 1 cetonia: E03=unresolved, E06=unresolved
+run 1 norgesvinduet: E03=unresolved, E06=flagged
+run 1 etri: E03=flagged, E06=unresolved
+run 1 pvc_association: E03=unresolved, E06=flagged
+4 of 10 outcomes matched the pre-registered expectation
+results: /Users/test_user/Desktop/thesis/dpp-real/out/evaluation_ollama-qwen3.5-4b_real_md_20261030-010550.csv
+=== Fri Oct 30 01:20:30 EET 2026 real documents, second execution: gemma4:12b
+dpp-prep used (read only): /Users/test_user/Desktop/thesis/dpp-prep-mcp/vendor/dpp-prep-08d5840
+run 1 tiivi: E03=flagged, E06=unresolved
+run 1 cetonia: E03=flagged, E06=unresolved
+run 1 norgesvinduet: E03=flagged, E06=flagged
+run 1 etri: E03=flagged, E06=unresolved
+run 1 pvc_association: E03=flagged, E06=flagged
+8 of 10 outcomes matched the pre-registered expectation
+results: /Users/test_user/Desktop/thesis/dpp-real/out/evaluation_ollama-gemma4-12b_real_md_20261030-012030.csv
+=== Fri Oct 30 02:09:55 EET 2026 real documents, second execution: qwen3.5:9b
+dpp-prep used (read only): /Users/test_user/Desktop/thesis/dpp-prep-mcp/vendor/dpp-prep-08d5840
+run 1 tiivi: E03=unresolved, E06=unresolved
+run 1 cetonia: E03=flagged, E06=unresolved
+run 1 norgesvinduet: E03=flagged, E06=flagged
+run 1 etri: E03=unresolved, E06=unresolved
+run 1 pvc_association: E03=flagged, E06=flagged
+6 of 10 outcomes matched the pre-registered expectation
+results: /Users/test_user/Desktop/thesis/dpp-real/out/evaluation_ollama-qwen3.5-9b_real_md_20261030-020955.csv
+=== Fri Oct 30 02:36:00 EET 2026 ALL DONE

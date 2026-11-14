@@ -1,0 +1,11 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks,messages
+real,1,tiivi,aea25d448d98,E03,flagged,unresolved,False,,0,,
+real,1,tiivi,aea25d448d98,E06,unresolved,unresolved,True,,0,,
+real,1,cetonia,e08198312073,E03,flagged,unresolved,False,,0,,
+real,1,cetonia,e08198312073,E06,flagged,unresolved,False,,0,,
+real,1,norgesvinduet,c43beaa64d4d,E03,flagged,unresolved,False,,0,,
+real,1,norgesvinduet,c43beaa64d4d,E06,flagged,unresolved,False,,0,,
+real,1,etri,35c74d55a420,E03,flagged,unresolved,False,,0,,
+real,1,etri,35c74d55a420,E06,flagged,unresolved,False,,0,,
+real,1,pvc_association,2e8bcb7311b6,E03,flagged,unresolved,False,,0,,
+real,1,pvc_association,2e8bcb7311b6,E06,flagged,unresolved,False,,0,,

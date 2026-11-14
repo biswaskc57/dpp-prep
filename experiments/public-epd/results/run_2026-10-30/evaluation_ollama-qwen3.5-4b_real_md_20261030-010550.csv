@@ -1,0 +1,11 @@
+tier,run,scenario,run_id,element,expected,actual,match,values,dropped,failed_checks,messages
+real,1,tiivi,12292a81be9e,E03,flagged,unresolved,False,,0,,
+real,1,tiivi,12292a81be9e,E06,unresolved,unresolved,True,,0,,
+real,1,cetonia,fca4e559b2da,E03,flagged,unresolved,False,,0,,
+real,1,cetonia,fca4e559b2da,E06,flagged,unresolved,False,,0,,
+real,1,norgesvinduet,07ade56b95c9,E03,flagged,unresolved,False,,0,,
+real,1,norgesvinduet,07ade56b95c9,E06,flagged,flagged,True,0.72,0,support; identity; scope,"quote does not mention 'Uw'; quote does not state the unit 'W/(m2K)' | source refers to 'NEPD-2996-1653-EN', expected 'Norgesvinduet Fixed Frame Window' | value applies to None, required '1230 x 1480 mm'"
+real,1,etri,379340f3e8d2,E03,flagged,flagged,True,Fixed wooden frame with external aluminum cladding and a 3-glazed insulating glass glazed from the inside.,0,support; composition_sum,quote does not mention '%'; quote does not state the unit '%' | shares add up to 0 %
+real,1,etri,379340f3e8d2,E06,flagged,unresolved,False,,2,,
+real,1,pvc_association,e5240dacab62,E03,flagged,unresolved,False,,0,,
+real,1,pvc_association,e5240dacab62,E06,flagged,flagged,True,0.92,0,identity; scope,"source refers to 'EPD-QKE-20170001-IBG1-EN', expected 'PVC-U single-sash window (association EPD)' | value applies to None, required '1230 x 1480 mm'"
