@@ -5,8 +5,13 @@ __pycache__/
 .pytest_cache/
 .venv/
 .env
-# Run outputs: every evaluation writes here; results are kept out of the code history
-out/
+# Run outputs: every evaluation writes to the root out/ folder. Saved results that the
+# thesis reports are kept in results/ and experiments/*/results/ instead.
+/out/
+experiments/*/out/
 *.sqlite
+# Third-party documents (publishers' PDFs) are not redistributed
+experiments/public-epd/docs/*.pdf
+
 # macOS
 .DS_Store
