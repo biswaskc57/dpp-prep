@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Defs_9b" targetNamespace="http://example.org/dpp-prep">
+<bpmn:error id="Err_Tech" name="Technical failure" errorCode="TECH" />
+<bpmn:collaboration id="Collab_Proc_Element"><bpmn:participant id="Pool_Proc_Element" name="Prepare information element: element level (refined process model; runs once per required element)" processRef="Proc_Element" />
+<bpmn:textAnnotation id="N1"><bpmn:text>The AI may only propose. It cannot check, review, approve or release.</bpmn:text></bpmn:textAnnotation>
+<bpmn:association id="As_N1" sourceRef="T_Propose" targetRef="N1" />
+<bpmn:textAnnotation id="N2"><bpmn:text>The reviewer sees the readiness assessments with their reasons. Record-side refusals return here; a new review re-runs the checks on the current version.</bpmn:text></bpmn:textAnnotation>
+<bpmn:association id="As_N2" sourceRef="T_Review" targetRef="N2" />
+<bpmn:textAnnotation id="N3"><bpmn:text>A correction creates a new record version. Earlier checks, assessments, review and approval stay as history but are not effective for it.</bpmn:text></bpmn:textAnnotation>
+<bpmn:association id="As_N3" sourceRef="T_Correct" targetRef="N3" />
+<bpmn:textAnnotation id="N4"><bpmn:text>Approval preconditions: all checks passed on this exact version; evidence inspected; approver differs from reviewer and is in scope.</bpmn:text></bpmn:textAnnotation>
+<bpmn:association id="As_N4" sourceRef="T_Approve" targetRef="N4" />
+<bpmn:textAnnotation id="N5"><bpmn:text>A technical failure never sets Available = not met; it stays not yet assessed, with the reason recorded.</bpmn:text></bpmn:textAnnotation>
+<bpmn:association id="As_N5" sourceRef="E_UnresTech" targetRef="N5" />
+<bpmn:textAnnotation id="N6"><bpmn:text>Dash-dot groups: refined design, not implemented in the demonstrator. Call activities: Figure 10. Error boundary events: technical failure.</bpmn:text></bpmn:textAnnotation>
+<bpmn:group id="Gr1" />
+<bpmn:group id="Gr2" />
+<bpmn:group id="Gr3" />
+<bpmn:group id="Gr4" />
+<bpmn:group id="Gr5" />
+</bpmn:collaboration>
+<bpmn:process id="Proc_Element" isExecutable="false">
+<bpmn:laneSet id="LS_Proc_Element">
+<bpmn:lane id="L_OWN" name="Information owner"><bpmn:flowNodeRef>Start</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Select</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Obtain</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Obtained</bpmn:flowNodeRef><bpmn:flowNodeRef>E_Unresolved</bpmn:flowNodeRef></bpmn:lane>
+<bpmn:lane id="L_AI" name="AI component (proposes only)"><bpmn:flowNodeRef>T_Propose</bpmn:flowNodeRef><bpmn:flowNodeRef>BE_Propose</bpmn:flowNodeRef></bpmn:lane>
+<bpmn:lane id="L_SW" name="Software controls"><bpmn:flowNodeRef>G_Split</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Import</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Join</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Locate</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Located</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Checks</bpmn:flowNodeRef><bpmn:flowNodeRef>SP_Assess</bpmn:flowNodeRef><bpmn:flowNodeRef>T_TechFail</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Retries</bpmn:flowNodeRef><bpmn:flowNodeRef>BE_Import</bpmn:flowNodeRef><bpmn:flowNodeRef>BE_Locate</bpmn:flowNodeRef><bpmn:flowNodeRef>BE_Checks</bpmn:flowNodeRef></bpmn:lane>
+<bpmn:lane id="L_REV" name="Reviewer"><bpmn:flowNodeRef>T_DecideTech</bpmn:flowNodeRef><bpmn:flowNodeRef>G_TechDec</bpmn:flowNodeRef><bpmn:flowNodeRef>E_UnresTech</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Correct</bpmn:flowNodeRef><bpmn:flowNodeRef>T_Review</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Decision</bpmn:flowNodeRef><bpmn:flowNodeRef>E_Rejected</bpmn:flowNodeRef></bpmn:lane>
+<bpmn:lane id="L_APP" name="Approver"><bpmn:flowNodeRef>T_Approve</bpmn:flowNodeRef><bpmn:flowNodeRef>G_Guard</bpmn:flowNodeRef><bpmn:flowNodeRef>E_Approved</bpmn:flowNodeRef><bpmn:flowNodeRef>G_RefType</bpmn:flowNodeRef><bpmn:flowNodeRef>E_NoApprover</bpmn:flowNodeRef></bpmn:lane>
+</bpmn:laneSet>
+<bpmn:dataStoreReference id="DS_Sources" name="Sources (documents, structured records)" />
+<bpmn:dataObject id="Obj_DO_Check" /><bpmn:dataObjectReference id="DO_Check" name="Check results" dataObjectRef="Obj_DO_Check" />
+<bpmn:dataObject id="Obj_DO_Assess" /><bpmn:dataObjectReference id="DO_Assess" name="Readiness assessments" dataObjectRef="Obj_DO_Assess" />
+<bpmn:startEvent id="Start" name="Element assigned"><bpmn:outgoing>F1</bpmn:outgoing></bpmn:startEvent>
+<bpmn:userTask id="T_Select" name="Select source documents and records"><bpmn:incoming>F1</bpmn:incoming><bpmn:incoming>F26</bpmn:incoming><bpmn:outgoing>F2</bpmn:outgoing><bpmn:dataInputAssociation id="DIa1"><bpmn:sourceRef>DS_Sources</bpmn:sourceRef></bpmn:dataInputAssociation></bpmn:userTask>
+<bpmn:userTask id="T_Obtain" name="Obtain missing information or access at its source"><bpmn:incoming>F17</bpmn:incoming><bpmn:outgoing>F25</bpmn:outgoing></bpmn:userTask>
+<bpmn:exclusiveGateway id="G_Obtained" name="Obtained?"><bpmn:incoming>F25</bpmn:incoming><bpmn:outgoing>F26</bpmn:outgoing><bpmn:outgoing>F27</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:endEvent id="E_Unresolved" name="Element unresolved (reason recorded)"><bpmn:incoming>F27</bpmn:incoming></bpmn:endEvent>
+<bpmn:serviceTask id="T_Propose" name="Propose value with supporting evidence"><bpmn:incoming>F3</bpmn:incoming><bpmn:outgoing>F5</bpmn:outgoing></bpmn:serviceTask>
+<bpmn:inclusiveGateway id="G_Split" name="Which sources hold the element?"><bpmn:incoming>F2</bpmn:incoming><bpmn:incoming>F33</bpmn:incoming><bpmn:outgoing>F3</bpmn:outgoing><bpmn:outgoing>F4</bpmn:outgoing></bpmn:inclusiveGateway>
+<bpmn:serviceTask id="T_Import" name="Import value from structured record"><bpmn:incoming>F4</bpmn:incoming><bpmn:outgoing>F6</bpmn:outgoing></bpmn:serviceTask>
+<bpmn:inclusiveGateway id="G_Join"><bpmn:incoming>F5</bpmn:incoming><bpmn:incoming>F6</bpmn:incoming><bpmn:outgoing>F7</bpmn:outgoing></bpmn:inclusiveGateway>
+<bpmn:serviceTask id="T_Locate" name="Locate evidence"><bpmn:incoming>F7</bpmn:incoming><bpmn:incoming>F18</bpmn:incoming><bpmn:outgoing>F8</bpmn:outgoing></bpmn:serviceTask>
+<bpmn:exclusiveGateway id="G_Located" name="Supported proposal left?"><bpmn:incoming>F8</bpmn:incoming><bpmn:outgoing>F9</bpmn:outgoing><bpmn:outgoing>F10</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:serviceTask id="T_Checks" name="Run rule checks (support, type, identity, unit, scope, sum, conflict)"><bpmn:incoming>F9</bpmn:incoming><bpmn:outgoing>F11</bpmn:outgoing><bpmn:dataOutputAssociation id="DOa1"><bpmn:targetRef>DO_Check</bpmn:targetRef></bpmn:dataOutputAssociation></bpmn:serviceTask>
+<bpmn:callActivity id="SP_Assess" name="Assess readiness and allocate response" calledElement="Proc_Assess"><bpmn:incoming>F10</bpmn:incoming><bpmn:incoming>F11</bpmn:incoming><bpmn:outgoing>F12</bpmn:outgoing><bpmn:dataOutputAssociation id="DOa2"><bpmn:targetRef>DO_Assess</bpmn:targetRef></bpmn:dataOutputAssociation></bpmn:callActivity>
+<bpmn:serviceTask id="T_TechFail" name="Handle technical failure (bounded retry)"><bpmn:incoming>F28</bpmn:incoming><bpmn:incoming>F29</bpmn:incoming><bpmn:incoming>F30</bpmn:incoming><bpmn:incoming>F31</bpmn:incoming><bpmn:incoming>F36</bpmn:incoming><bpmn:outgoing>F32</bpmn:outgoing></bpmn:serviceTask>
+<bpmn:exclusiveGateway id="G_Retries" name="Retry left?"><bpmn:incoming>F32</bpmn:incoming><bpmn:outgoing>F33</bpmn:outgoing><bpmn:outgoing>F34</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:userTask id="T_DecideTech" name="Decide on technical failure"><bpmn:incoming>F34</bpmn:incoming><bpmn:outgoing>F35</bpmn:outgoing></bpmn:userTask>
+<bpmn:exclusiveGateway id="G_TechDec"><bpmn:incoming>F35</bpmn:incoming><bpmn:outgoing>F36</bpmn:outgoing><bpmn:outgoing>F37</bpmn:outgoing><bpmn:outgoing>F38</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:endEvent id="E_UnresTech" name="Element unresolved-technical"><bpmn:incoming>F38</bpmn:incoming></bpmn:endEvent>
+<bpmn:userTask id="T_Correct" name="Correct value with source evidence"><bpmn:incoming>F16</bpmn:incoming><bpmn:incoming>F37</bpmn:incoming><bpmn:outgoing>F18</bpmn:outgoing></bpmn:userTask>
+<bpmn:userTask id="T_Review" name="Review evidence and readiness assessments; decide"><bpmn:incoming>F12</bpmn:incoming><bpmn:incoming>F22</bpmn:incoming><bpmn:outgoing>F13</bpmn:outgoing></bpmn:userTask>
+<bpmn:exclusiveGateway id="G_Decision" name="Decision?"><bpmn:incoming>F13</bpmn:incoming><bpmn:outgoing>F14</bpmn:outgoing><bpmn:outgoing>F15</bpmn:outgoing><bpmn:outgoing>F16</bpmn:outgoing><bpmn:outgoing>F17</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:endEvent id="E_Rejected" name="Element rejected (reason recorded)"><bpmn:incoming>F14</bpmn:incoming></bpmn:endEvent>
+<bpmn:userTask id="T_Approve" name="Approve exact record version"><bpmn:incoming>F15</bpmn:incoming><bpmn:incoming>F23</bpmn:incoming><bpmn:outgoing>F19</bpmn:outgoing></bpmn:userTask>
+<bpmn:exclusiveGateway id="G_Guard" name="Approval accepted?"><bpmn:incoming>F19</bpmn:incoming><bpmn:outgoing>F20</bpmn:outgoing><bpmn:outgoing>F21</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:endEvent id="E_Approved" name="Element approved"><bpmn:incoming>F20</bpmn:incoming></bpmn:endEvent>
+<bpmn:exclusiveGateway id="G_RefType" name="Refusal type?"><bpmn:incoming>F21</bpmn:incoming><bpmn:outgoing>F22</bpmn:outgoing><bpmn:outgoing>F23</bpmn:outgoing><bpmn:outgoing>F24</bpmn:outgoing></bpmn:exclusiveGateway>
+<bpmn:endEvent id="E_NoApprover" name="Element unresolved (no eligible approver)"><bpmn:incoming>F24</bpmn:incoming></bpmn:endEvent>
+<bpmn:boundaryEvent id="BE_Propose" attachedToRef="T_Propose" cancelActivity="true"><bpmn:outgoing>F28</bpmn:outgoing><bpmn:errorEventDefinition id="EED_BE_Propose" errorRef="Err_Tech" /></bpmn:boundaryEvent>
+<bpmn:boundaryEvent id="BE_Import" attachedToRef="T_Import" cancelActivity="true"><bpmn:outgoing>F29</bpmn:outgoing><bpmn:errorEventDefinition id="EED_BE_Import" errorRef="Err_Tech" /></bpmn:boundaryEvent>
+<bpmn:boundaryEvent id="BE_Locate" attachedToRef="T_Locate" cancelActivity="true"><bpmn:outgoing>F30</bpmn:outgoing><bpmn:errorEventDefinition id="EED_BE_Locate" errorRef="Err_Tech" /></bpmn:boundaryEvent>
+<bpmn:boundaryEvent id="BE_Checks" attachedToRef="T_Checks" cancelActivity="true"><bpmn:outgoing>F31</bpmn:outgoing><bpmn:errorEventDefinition id="EED_BE_Checks" errorRef="Err_Tech" /></bpmn:boundaryEvent>
+<bpmn:sequenceFlow id="F1" sourceRef="Start" targetRef="T_Select" />
+<bpmn:sequenceFlow id="F2" sourceRef="T_Select" targetRef="G_Split" />
+<bpmn:sequenceFlow id="F3" name="document" sourceRef="G_Split" targetRef="T_Propose" />
+<bpmn:sequenceFlow id="F4" name="record" sourceRef="G_Split" targetRef="T_Import" />
+<bpmn:sequenceFlow id="F5" sourceRef="T_Propose" targetRef="G_Join" />
+<bpmn:sequenceFlow id="F6" sourceRef="T_Import" targetRef="G_Join" />
+<bpmn:sequenceFlow id="F7" sourceRef="G_Join" targetRef="T_Locate" />
+<bpmn:sequenceFlow id="F8" sourceRef="T_Locate" targetRef="G_Located" />
+<bpmn:sequenceFlow id="F9" name="yes" sourceRef="G_Located" targetRef="T_Checks" />
+<bpmn:sequenceFlow id="F10" name="no" sourceRef="G_Located" targetRef="SP_Assess" />
+<bpmn:sequenceFlow id="F11" sourceRef="T_Checks" targetRef="SP_Assess" />
+<bpmn:sequenceFlow id="F12" sourceRef="SP_Assess" targetRef="T_Review" />
+<bpmn:sequenceFlow id="F13" sourceRef="T_Review" targetRef="G_Decision" />
+<bpmn:sequenceFlow id="F14" name="reject" sourceRef="G_Decision" targetRef="E_Rejected" />
+<bpmn:sequenceFlow id="F15" name="accept" sourceRef="G_Decision" targetRef="T_Approve" />
+<bpmn:sequenceFlow id="F16" name="correct" sourceRef="G_Decision" targetRef="T_Correct" />
+<bpmn:sequenceFlow id="F17" name="not in the given sources" sourceRef="G_Decision" targetRef="T_Obtain" />
+<bpmn:sequenceFlow id="F18" name="re-locate" sourceRef="T_Correct" targetRef="T_Locate" />
+<bpmn:sequenceFlow id="F19" sourceRef="T_Approve" targetRef="G_Guard" />
+<bpmn:sequenceFlow id="F20" name="yes" sourceRef="G_Guard" targetRef="E_Approved" />
+<bpmn:sequenceFlow id="F21" name="no" sourceRef="G_Guard" targetRef="G_RefType" />
+<bpmn:sequenceFlow id="F22" name="record-side" sourceRef="G_RefType" targetRef="T_Review" />
+<bpmn:sequenceFlow id="F23" name="approver-side" sourceRef="G_RefType" targetRef="T_Approve" />
+<bpmn:sequenceFlow id="F24" name="none eligible" sourceRef="G_RefType" targetRef="E_NoApprover" />
+<bpmn:sequenceFlow id="F25" sourceRef="T_Obtain" targetRef="G_Obtained" />
+<bpmn:sequenceFlow id="F26" name="yes: new source" sourceRef="G_Obtained" targetRef="T_Select" />
+<bpmn:sequenceFlow id="F27" name="no" sourceRef="G_Obtained" targetRef="E_Unresolved" />
+<bpmn:sequenceFlow id="F28" sourceRef="BE_Propose" targetRef="T_TechFail" />
+<bpmn:sequenceFlow id="F29" sourceRef="BE_Import" targetRef="T_TechFail" />
+<bpmn:sequenceFlow id="F30" sourceRef="BE_Locate" targetRef="T_TechFail" />
+<bpmn:sequenceFlow id="F31" sourceRef="BE_Checks" targetRef="T_TechFail" />
+<bpmn:sequenceFlow id="F32" sourceRef="T_TechFail" targetRef="G_Retries" />
+<bpmn:sequenceFlow id="F33" name="yes: retry" sourceRef="G_Retries" targetRef="G_Split" />
+<bpmn:sequenceFlow id="F34" name="no" sourceRef="G_Retries" targetRef="T_DecideTech" />
+<bpmn:sequenceFlow id="F35" sourceRef="T_DecideTech" targetRef="G_TechDec" />
+<bpmn:sequenceFlow id="F36" name="retry later" sourceRef="G_TechDec" targetRef="T_TechFail" />
+<bpmn:sequenceFlow id="F37" name="correct" sourceRef="G_TechDec" targetRef="T_Correct" />
+<bpmn:sequenceFlow id="F38" name="end" sourceRef="G_TechDec" targetRef="E_UnresTech" />
+</bpmn:process>
+<bpmndi:BPMNDiagram id="Dia_Proc_Element"><bpmndi:BPMNPlane id="Plane_Proc_Element" bpmnElement="Collab_Proc_Element">
+<bpmndi:BPMNShape id="Pool_Proc_Element_di" bpmnElement="Pool_Proc_Element" isHorizontal="true"><dc:Bounds x="120" y="45.0" width="1720" height="1415.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_OWN_di" bpmnElement="L_OWN" isHorizontal="true"><dc:Bounds x="150" y="45.0" width="1690" height="255.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_AI_di" bpmnElement="L_AI" isHorizontal="true"><dc:Bounds x="150" y="300.0" width="1690" height="180.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_SW_di" bpmnElement="L_SW" isHorizontal="true"><dc:Bounds x="150" y="480.0" width="1690" height="360.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_REV_di" bpmnElement="L_REV" isHorizontal="true"><dc:Bounds x="150" y="840.0" width="1690" height="255.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_APP_di" bpmnElement="L_APP" isHorizontal="true"><dc:Bounds x="150" y="1095.0" width="1690" height="365.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Gr1_di" bpmnElement="Gr1"><dc:Bounds x="252" y="102.0" width="126" height="156.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Gr2_di" bpmnElement="Gr2"><dc:Bounds x="1352" y="99.0" width="410" height="168.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Gr3_di" bpmnElement="Gr3"><dc:Bounds x="1172" y="513.0" width="126" height="144.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Gr4_di" bpmnElement="Gr4"><dc:Bounds x="178" y="654.0" width="330" height="432.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Gr5_di" bpmnElement="Gr5"><dc:Bounds x="1500" y="1251.0" width="270" height="200.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Start_di" bpmnElement="Start"><dc:Bounds x="187.0" y="162.0" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="162.0" y="203.0" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Select_di" bpmnElement="T_Select"><dc:Bounds x="260.0" y="120.0" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Obtain_di" bpmnElement="T_Obtain"><dc:Bounds x="1360.0" y="112.5" width="130" height="135.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Obtained_di" bpmnElement="G_Obtained"><dc:Bounds x="1530.0" y="155.0" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="1511.0" y="210.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="E_Unresolved_di" bpmnElement="E_Unresolved"><dc:Bounds x="1622.0" y="162.0" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="1662.0" y="146.2" width="90" height="72.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Propose_di" bpmnElement="T_Propose"><dc:Bounds x="520.0" y="330.0" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Split_di" bpmnElement="G_Split"><dc:Bounds x="420.0" y="560.0" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="349.5" y="501.0" width="90" height="54.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Import_di" bpmnElement="T_Import"><dc:Bounds x="520.0" y="525.0" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Join_di" bpmnElement="G_Join"><dc:Bounds x="680.0" y="560.0" width="50" height="50.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Locate_di" bpmnElement="T_Locate"><dc:Bounds x="760.0" y="525.0" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Located_di" bpmnElement="G_Located"><dc:Bounds x="920.0" y="560.0" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="900.0" y="615.0" width="90" height="54.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Checks_di" bpmnElement="T_Checks"><dc:Bounds x="1000.0" y="517.5" width="130" height="161.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="SP_Assess_di" bpmnElement="SP_Assess"><dc:Bounds x="1175.0" y="517.5" width="120" height="135.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_TechFail_di" bpmnElement="T_TechFail"><dc:Bounds x="260.0" y="660.0" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Retries_di" bpmnElement="G_Retries"><dc:Bounds x="185.0" y="695.0" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="166.0" y="750.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_DecideTech_di" bpmnElement="T_DecideTech"><dc:Bounds x="260.0" y="892.5" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_TechDec_di" bpmnElement="G_TechDec"><dc:Bounds x="395.0" y="927.5" width="50" height="50.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="E_UnresTech_di" bpmnElement="E_UnresTech"><dc:Bounds x="465.0" y="1032.0" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="520.0" y="1016.0" width="90" height="54.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Correct_di" bpmnElement="T_Correct"><dc:Bounds x="1025.0" y="892.5" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Review_di" bpmnElement="T_Review"><dc:Bounds x="1170.0" y="885.0" width="130" height="135.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Decision_di" bpmnElement="G_Decision"><dc:Bounds x="1340.0" y="927.5" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="1280.0" y="904.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="E_Rejected_di" bpmnElement="E_Rejected"><dc:Bounds x="1440.0" y="934.5" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="1420.0" y="975.5" width="90" height="72.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="T_Approve_di" bpmnElement="T_Approve"><dc:Bounds x="1420.0" y="1132.5" width="110" height="120.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_Guard_di" bpmnElement="G_Guard"><dc:Bounds x="1565.0" y="1167.5" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="1525.0" y="1126.5" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="E_Approved_di" bpmnElement="E_Approved"><dc:Bounds x="1680.0" y="1174.5" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="1720.0" y="1180.0" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="G_RefType_di" bpmnElement="G_RefType"><dc:Bounds x="1565.0" y="1295.0" width="50" height="50.0" /><bpmndi:BPMNLabel><dc:Bounds x="1500.5" y="1264.5" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="E_NoApprover_di" bpmnElement="E_NoApprover"><dc:Bounds x="1680.0" y="1302.0" width="36" height="36.0" /><bpmndi:BPMNLabel><dc:Bounds x="1653.0" y="1343.0" width="90" height="122.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="BE_Propose_di" bpmnElement="BE_Propose"><dc:Bounds x="502.0" y="409.5" width="36" height="36.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="BE_Import_di" bpmnElement="BE_Import"><dc:Bounds x="542.0" y="627.0" width="36" height="36.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="BE_Locate_di" bpmnElement="BE_Locate"><dc:Bounds x="772.0" y="627.0" width="36" height="36.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="BE_Checks_di" bpmnElement="BE_Checks"><dc:Bounds x="1012.0" y="660.5" width="36" height="36.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="DS_Sources_di" bpmnElement="DS_Sources"><dc:Bounds x="420" y="127.5" width="50" height="75.0" /><bpmndi:BPMNLabel><dc:Bounds x="485.0" y="126.8" width="90" height="72.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="DO_Check_di" bpmnElement="DO_Check"><dc:Bounds x="1047" y="333.0" width="36" height="75.0" /><bpmndi:BPMNLabel><dc:Bounds x="1078.0" y="352.5" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="DO_Assess_di" bpmnElement="DO_Assess"><dc:Bounds x="1300" y="333.0" width="36" height="75.0" /><bpmndi:BPMNLabel><dc:Bounds x="1336.0" y="351.8" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="N1_di" bpmnElement="N1"><dc:Bounds x="740" y="321.0" width="230" height="67.5" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="As_N1_di" bpmnElement="As_N1"><di:waypoint x="630" y="355.5" /><di:waypoint x="740" y="354.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNShape id="N2_di" bpmnElement="N2"><dc:Bounds x="1440" y="667.5" width="300" height="105.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="As_N2_di" bpmnElement="As_N2"><di:waypoint x="1285" y="885.0" /><di:waypoint x="1440" y="750.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNShape id="N3_di" bpmnElement="N3"><dc:Bounds x="690" y="1125.0" width="300" height="90.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="As_N3_di" bpmnElement="As_N3"><di:waypoint x="1050" y="1012.5" /><di:waypoint x="990" y="1140.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNShape id="N4_di" bpmnElement="N4"><dc:Bounds x="925.0" y="1227.5" width="300" height="90.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="As_N4_di" bpmnElement="As_N4"><di:waypoint x="1420" y="1222.5" /><di:waypoint x="1225.0" y="1268.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNShape id="N5_di" bpmnElement="N5"><dc:Bounds x="620" y="990.0" width="270" height="75.0" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="As_N5_di" bpmnElement="As_N5"><di:waypoint x="501" y="1050.0" /><di:waypoint x="620" y="1035.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNShape id="N6_di" bpmnElement="N6"><dc:Bounds x="600" y="105.0" width="430" height="82.5" /></bpmndi:BPMNShape>
+<bpmndi:BPMNEdge id="F1_di" bpmnElement="F1"><di:waypoint x="228" y="180.0" /><di:waypoint x="260" y="180.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F2_di" bpmnElement="F2"><di:waypoint x="315" y="240.0" /><di:waypoint x="315" y="585.0" /><di:waypoint x="420" y="585.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F3_di" bpmnElement="F3"><di:waypoint x="445" y="560.0" /><di:waypoint x="445" y="390.0" /><di:waypoint x="520" y="390.0" /><bpmndi:BPMNLabel><dc:Bounds x="430.0" y="358.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F4_di" bpmnElement="F4"><di:waypoint x="470" y="585.0" /><di:waypoint x="520" y="585.0" /><bpmndi:BPMNLabel><dc:Bounds x="449.0" y="559.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F5_di" bpmnElement="F5"><di:waypoint x="630" y="390.0" /><di:waypoint x="705" y="390.0" /><di:waypoint x="705" y="560.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F6_di" bpmnElement="F6"><di:waypoint x="630" y="585.0" /><di:waypoint x="680" y="585.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F7_di" bpmnElement="F7"><di:waypoint x="730" y="585.0" /><di:waypoint x="760" y="585.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F8_di" bpmnElement="F8"><di:waypoint x="870" y="585.0" /><di:waypoint x="920" y="585.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F9_di" bpmnElement="F9"><di:waypoint x="970" y="585.0" /><di:waypoint x="1000.0" y="585.0" /><bpmndi:BPMNLabel><dc:Bounds x="940.0" y="556.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F10_di" bpmnElement="F10"><di:waypoint x="945" y="560.0" /><di:waypoint x="945" y="502.5" /><di:waypoint x="1235" y="502.5" /><di:waypoint x="1235" y="517.5" /><bpmndi:BPMNLabel><dc:Bounds x="890.5" y="519.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F11_di" bpmnElement="F11"><di:waypoint x="1130.0" y="585.0" /><di:waypoint x="1175" y="585.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F12_di" bpmnElement="F12"><di:waypoint x="1235" y="652.5" /><di:waypoint x="1235" y="885.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F13_di" bpmnElement="F13"><di:waypoint x="1300" y="952.5" /><di:waypoint x="1340" y="952.5" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F14_di" bpmnElement="F14"><di:waypoint x="1390" y="952.5" /><di:waypoint x="1440" y="952.5" /><bpmndi:BPMNLabel><dc:Bounds x="1367.5" y="924.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F15_di" bpmnElement="F15"><di:waypoint x="1378" y="965.5" /><di:waypoint x="1378" y="1192.5" /><di:waypoint x="1420" y="1192.5" /><bpmndi:BPMNLabel><dc:Bounds x="1359.0" y="1114.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F16_di" bpmnElement="F16"><di:waypoint x="1352" y="965.5" /><di:waypoint x="1352" y="1068.0" /><di:waypoint x="1080" y="1068.0" /><di:waypoint x="1080" y="1012.5" /><bpmndi:BPMNLabel><dc:Bounds x="1165.0" y="1072.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F17_di" bpmnElement="F17"><di:waypoint x="1365" y="927.5" /><di:waypoint x="1365" y="450.0" /><di:waypoint x="1425" y="450.0" /><di:waypoint x="1425" y="240.0" /><bpmndi:BPMNLabel><dc:Bounds x="1263.0" y="708.0" width="90" height="54.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F18_di" bpmnElement="F18"><di:waypoint x="1080" y="892.5" /><di:waypoint x="1080" y="817.5" /><di:waypoint x="840" y="817.5" /><di:waypoint x="840" y="645.0" /><bpmndi:BPMNLabel><dc:Bounds x="900.0" y="793.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F19_di" bpmnElement="F19"><di:waypoint x="1530" y="1192.5" /><di:waypoint x="1565" y="1192.5" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F20_di" bpmnElement="F20"><di:waypoint x="1615" y="1192.5" /><di:waypoint x="1680" y="1192.5" /><bpmndi:BPMNLabel><dc:Bounds x="1597.0" y="1201.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F21_di" bpmnElement="F21"><di:waypoint x="1590" y="1217.5" /><di:waypoint x="1590" y="1295.0" /><bpmndi:BPMNLabel><dc:Bounds x="1558.5" y="1240.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F22_di" bpmnElement="F22"><di:waypoint x="1565" y="1320.0" /><di:waypoint x="1235" y="1320.0" /><di:waypoint x="1235" y="1012.5" /><bpmndi:BPMNLabel><dc:Bounds x="1375.0" y="1294.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F23_di" bpmnElement="F23"><di:waypoint x="1590" y="1345.0" /><di:waypoint x="1590" y="1437.5" /><di:waypoint x="1475" y="1437.5" /><di:waypoint x="1475" y="1252.5" /><bpmndi:BPMNLabel><dc:Bounds x="1500.0" y="1360.0" width="90" height="86.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F24_di" bpmnElement="F24"><di:waypoint x="1615" y="1320.0" /><di:waypoint x="1680" y="1320.0" /><bpmndi:BPMNLabel><dc:Bounds x="1603.0" y="1282.5" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F25_di" bpmnElement="F25"><di:waypoint x="1480" y="180.0" /><di:waypoint x="1530" y="180.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F26_di" bpmnElement="F26"><di:waypoint x="1555" y="155.0" /><di:waypoint x="1555" y="78.0" /><di:waypoint x="315" y="78.0" /><di:waypoint x="315" y="120.0" /><bpmndi:BPMNLabel><dc:Bounds x="880.0" y="58.0" width="90" height="36.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F27_di" bpmnElement="F27"><di:waypoint x="1580" y="180.0" /><di:waypoint x="1622" y="180.0" /><bpmndi:BPMNLabel><dc:Bounds x="1552.5" y="151.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F28_di" bpmnElement="F28"><di:waypoint x="502" y="427.5" /><di:waypoint x="490" y="427.5" /><di:waypoint x="490" y="705.0" /><di:waypoint x="370" y="705.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F29_di" bpmnElement="F29"><di:waypoint x="560" y="663.0" /><di:waypoint x="560" y="735.0" /><di:waypoint x="370" y="735.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F30_di" bpmnElement="F30"><di:waypoint x="790" y="663.0" /><di:waypoint x="790" y="757.5" /><di:waypoint x="370" y="757.5" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F31_di" bpmnElement="F31"><di:waypoint x="1030.0" y="696.5" /><di:waypoint x="1030.0" y="772.5" /><di:waypoint x="370" y="772.5" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F32_di" bpmnElement="F32"><di:waypoint x="260" y="720.0" /><di:waypoint x="235" y="720.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F33_di" bpmnElement="F33"><di:waypoint x="210" y="695.0" /><di:waypoint x="210" y="645.0" /><di:waypoint x="445" y="645.0" /><di:waypoint x="445" y="610.0" /><bpmndi:BPMNLabel><dc:Bounds x="272.5" y="622.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F34_di" bpmnElement="F34"><di:waypoint x="210" y="745.0" /><di:waypoint x="210" y="952.5" /><di:waypoint x="260" y="952.5" /><bpmndi:BPMNLabel><dc:Bounds x="181.0" y="841.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F35_di" bpmnElement="F35"><di:waypoint x="370" y="952.5" /><di:waypoint x="395" y="952.5" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F36_di" bpmnElement="F36"><di:waypoint x="420" y="927.5" /><di:waypoint x="420" y="862.5" /><di:waypoint x="340" y="862.5" /><di:waypoint x="340" y="780.0" /><bpmndi:BPMNLabel><dc:Bounds x="335.0" y="867.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F37_di" bpmnElement="F37"><di:waypoint x="445" y="952.5" /><di:waypoint x="1025" y="952.5" /><bpmndi:BPMNLabel><dc:Bounds x="675.0" y="927.0" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="F38_di" bpmnElement="F38"><di:waypoint x="420" y="977.5" /><di:waypoint x="420" y="1050.0" /><di:waypoint x="465" y="1050.0" /><bpmndi:BPMNLabel><dc:Bounds x="395.5" y="1024.5" width="90" height="18.0" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="DIa1_di" bpmnElement="DIa1"><di:waypoint x="420" y="165.0" /><di:waypoint x="370" y="165.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="DOa1_di" bpmnElement="DOa1"><di:waypoint x="1065" y="517.5" /><di:waypoint x="1065" y="408.0" /></bpmndi:BPMNEdge>
+<bpmndi:BPMNEdge id="DOa2_di" bpmnElement="DOa2"><di:waypoint x="1265" y="517.5" /><di:waypoint x="1312" y="408.0" /></bpmndi:BPMNEdge>
+</bpmndi:BPMNPlane></bpmndi:BPMNDiagram></bpmn:definitions>

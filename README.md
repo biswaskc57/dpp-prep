@@ -72,8 +72,11 @@ seed, no reasoning output and a context window of 8,192 tokens, on an Apple M1 w
 
 - `results/evaluation_2026-10-17/`: result CSVs and model responses of all 18 language-model
   runs plus the stand-in and reference proposer (770 element outcomes), the run log, and the
-  analysis before and after the correction in `9e7d08e`. The SQLite event diaries are not
-  included.
+  analysis before and after the correction in `9e7d08e`, and the SQLite event diaries of
+  the same runs (added 16 Nov 2026; `experiments/dmn/run_cases.py` reads them).
+- `experiments/models/`: the BPMN and data-model versions described in thesis Appendix 3.
+- `docs/evaluation/framework_cases_v1_assessment.xlsx`: the case assessment worksheet
+  (statuses, supporting case sentences, change log).
 - Expected outcomes: `config/evaluation_scenarios.yaml` (basic set) and
   `config/evaluation_scenarios_realistic.yaml` (production-like set, derived on
   12 Oct 2026 by `scripts/preregister.py`). Both were in the repository before the runs.
